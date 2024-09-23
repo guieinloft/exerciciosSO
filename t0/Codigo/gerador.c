@@ -6,12 +6,13 @@
 
 struct gerador_t {
     int n_ant;
-}
+};
 
 gerador_t *gerador_cria(void) {
     gerador_t *self = (gerador_t*)malloc(sizeof(gerador_t));
     assert(self != NULL);
-    self->numero_anterior = time(0);
+    srand(time(0));
+    return self;
 }
 
 void gerador_destroi(gerador_t *self) {
@@ -19,7 +20,7 @@ void gerador_destroi(gerador_t *self) {
 }
 
 int gerador_numero(gerador_t *self) {
-    int n_novo = (self->n_ant * 5 + 1) % 0x7FFFFFFF;
+    int n_novo = rand();
     self->n_ant = n_novo;
     return n_novo;
 }
