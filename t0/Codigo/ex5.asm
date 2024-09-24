@@ -11,6 +11,12 @@ LIMPA   DEFINE 10 ; \n, limpa a linha
 
 GERADOR DEFINE 18 ; define gerador
 
+         le GERADOR
+         resto segredo
+         soma um
+         armm segredo
+         ; cargm segredo
+         ; chama escint
          cargi str1
          chama escstr
 laco     chama lechute
@@ -20,6 +26,7 @@ laco     chama lechute
 str1     string 'Olá. Escolhi um número entre 1 e 100. Adivinha qual.       '
 str2     valor LIMPA
          string 'Digite um número entre 1 e 100 '
+um       valor 1
 
 ; lê um número do usuário, até que seja válido
 lechute  espaco 1
@@ -63,7 +70,7 @@ msg_peq  string 'muito pequeno, tente novamente '
 msg_gr   string 'muito grande, tente novamente '
 msg_ok   string 'parabéns, você acertou!!'
 chute    espaco 1
-segredo  valor 42
+segredo  valor 100
 
 ; função para ler um char da entrada (retorna em A)
 lechar  espaco 1

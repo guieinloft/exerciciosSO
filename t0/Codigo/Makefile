@@ -11,7 +11,7 @@ OBJS_MAIN = cpu.o es.o memoria.o relogio.o console.o terminal.o tela_curses.o \
 		instrucao.o err.o programa.o controle.o main.o gerador.o
 OBJS_MONTADOR = instrucao.o err.o montador.o
 OBJS = ${OBJS_MAIN} ${OBJS_MONTADOR}
-MAQS = ex1.maq ex2.maq ex3.maq ex4.maq ex5.maq ex6.maq
+MAQS = ex1.maq ex2.maq ex3.maq ex4.maq ex5.maq ex6.maq ex7.maq
 TARGETS = main montador ${MAQS}
 
 # arquivos que devem ser feitos, se não for especificado no comando do make
