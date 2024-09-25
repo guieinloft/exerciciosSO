@@ -13,9 +13,6 @@ gerador_t *gerador_cria(void);
 //destroi gerador
 void gerador_destroi(gerador_t *self);
 
-//retorna um numero aleatorio
-int gerador_numero(gerador_t *self);
-
 //funcao para acessar o gerador
 err_t gerador_leitura(void *disp, int id, int *pvalor);
 
