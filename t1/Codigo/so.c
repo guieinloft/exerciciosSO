@@ -99,6 +99,7 @@ void so_destroi(so_t *self)
 int so_cria_processo(so_t *self, char *origem) {
     int ender = so_carrega_programa(self, origem);
     processo_t *p = processo_cria(self->proc_ultimo_id + 1, ender);
+    self->proc_ultimo_id++;
     int i = self->proc_atual;
     while (i < self->proc_atual + PROC_TAM_TABELA) {
         if (self->proc_tabela[i % PROC_TAM_TABELA] == NULL) {
@@ -192,22 +193,25 @@ static void so_escalona(so_t *self)
   //   corrente; pode continuar sendo o mesmo de antes ou não
   // t1: na primeira versão, escolhe um processo caso o processo corrente não possa continuar
   //   executando. depois, implementar escalonador melhor
-  if(self->proc_tabela[self->proc_atual] != NULL && processo_pega_estado(self->proc_tabela[self->proc_atual]) == PROC_PRONTO) {
-      processo_muda_estado(self->proc_tabela[self->proc_atual], PROC_EXECUTANDO);
-  }
-  else {
-      int i = self->proc_atual + 1;
-      while (i < self->proc_atual + PROC_TAM_TABELA) {
-          if (self->proc_tabela[i % PROC_TAM_TABELA] != NULL) {
-              if (processo_pega_estado(self->proc_tabela[i % PROC_TAM_TABELA]) == PROC_PRONTO) {
-                  processo_muda_estado(self->proc_tabela[i % PROC_TAM_TABELA], PROC_EXECUTANDO);
-                  self->proc_atual = i % PROC_TAM_TABELA;
-                  break;
-              }
-          }
-          i++;
-      }
-  }
+    console_printf("Escalonando agora", self->proc_atual);
+    int i = self->proc_atual;
+    while (i < self->proc_atual + PROC_TAM_TABELA) {
+        if (self->proc_tabela[i % PROC_TAM_TABELA] != NULL) {
+            if (processo_pega_estado(self->proc_tabela[i % PROC_TAM_TABELA]) == PROC_EXECUTANDO) {
+                self->proc_atual = i % PROC_TAM_TABELA;
+                console_printf("Executando processo %d", self->proc_atual);
+                return;
+            }
+            if (processo_pega_estado(self->proc_tabela[i % PROC_TAM_TABELA]) == PROC_PRONTO) {
+                processo_muda_estado(self->proc_tabela[i % PROC_TAM_TABELA], PROC_EXECUTANDO);
+                self->proc_atual = i % PROC_TAM_TABELA;
+                console_printf("Executando processo %d", self->proc_atual);
+                return;
+            }
+        }
+        i++;
+    }
+    console_printf("Não há processos a executar.", self->proc_atual);
 }
 
 static int so_despacha(so_t *self)
@@ -380,7 +384,7 @@ static void so_chamada_le(so_t *self)
   //   T1: deveria usar dispositivo de entrada corrente do processo
   processo_t *p_atual = self->proc_tabela[self->proc_atual];
   if (p_atual == NULL) return;
-  int term = processo_pega_id(p_atual) % 4 * 4;
+  int term = (processo_pega_id(p_atual)-1) % 4 * 4;
   for (;;) {
     int estado;
     if (es_le(self->es, D_TERM_A_TECLADO_OK + term, &estado) != ERR_OK) {
@@ -419,7 +423,7 @@ static void so_chamada_escr(so_t *self)
   //   T1: deveria usar o dispositivo de saída corrente do processo
   processo_t *p_atual = self->proc_tabela[self->proc_atual];
   if (p_atual == NULL) return;
-  int term = processo_pega_id(p_atual) % 4 * 4;
+  int term = (processo_pega_id(p_atual)-1) % 4 * 4;
   for (;;) {
     int estado;
     if (es_le(self->es, D_TERM_A_TELA_OK + term, &estado) != ERR_OK) {
@@ -467,6 +471,7 @@ static void so_chamada_cria_proc(so_t *self)
       if (ender_carga > 0) {
         // t1: deveria escrever no PC do descritor do processo criado
         processo_salva_reg_a(self->proc_tabela[self->proc_atual], processo_pega_id(self->proc_tabela[indice]));
+        console_printf("Criado processo com PID %d", processo_pega_id(self->proc_tabela[indice]));
         return;
       } // else?
     }
@@ -474,6 +479,7 @@ static void so_chamada_cria_proc(so_t *self)
   // deveria escrever -1 (se erro) ou o PID do processo criado (se OK) no reg A
   //   do processo que pediu a criação
   processo_salva_reg_a(self->proc_tabela[self->proc_atual], -1);
+  console_printf("Processo não pôde ser criado");
 }
 
 // implementação da chamada se sistema SO_MATA_PROC
@@ -484,6 +490,7 @@ static void so_chamada_mata_proc(so_t *self)
   if (self->proc_tabela[self->proc_atual] == NULL) return;
   int id = processo_pega_reg_x(self->proc_tabela[self->proc_atual]);
   if (id == 0) {
+      id = processo_pega_id(self->proc_tabela[self->proc_atual]);
       processo_mata(self->proc_tabela[self->proc_atual]);
       self->proc_tabela[self->proc_atual] = NULL;
   }
@@ -492,12 +499,13 @@ static void so_chamada_mata_proc(so_t *self)
       if (indice != -1) {
           processo_mata(self->proc_tabela[indice]);
           self->proc_tabela[indice] = NULL;
-          processo_salva_reg_a(self->proc_tabela[self->proc_atual], 0);
+          mem_escreve(self->mem, IRQ_END_A, 0);
       }
       else {
-          processo_salva_reg_a(self->proc_tabela[self->proc_atual], -1);
+          mem_escreve(self->mem, IRQ_END_A, -1);
       }
   }
+  console_printf("Morto processo com PID %d", id);
 }
 
 // implementação da chamada se sistema SO_ESPERA_PROC
