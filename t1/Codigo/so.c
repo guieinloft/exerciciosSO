@@ -10,6 +10,7 @@
 #include "programa.h"
 #include "instrucao.h"
 #include "processo.h"
+#include "escalonador.h"
 
 #include <stdlib.h>
 #include <stdbool.h>
@@ -31,6 +32,8 @@ struct so_t {
   processo_t **proc_tabela;
   int proc_atual;
   int proc_ultimo_id;
+  esc_t *esc;
+  esc_tipo_t esc_tipo;
 };
 
 
@@ -62,6 +65,10 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->proc_atual = 0;
   self->proc_ultimo_id = 0;
 
+  // cria escalonador
+  self->esc = escalonador_cria();
+  self->esc_tipo = ESC_CIRCULAR;
+
   // quando a CPU executar uma instrução CHAMAC, deve chamar a função
   //   so_trata_interrupcao, com primeiro argumento um ptr para o SO
   cpu_define_chamaC(self->cpu, so_trata_interrupcao, self);
@@ -86,6 +93,8 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
     self->erro_interno = true;
   }
 
+  console_printf("criando");
+
 
   return self;
 }
@@ -97,8 +106,10 @@ void so_destroi(so_t *self)
 }
 
 int so_cria_processo(so_t *self, char *origem) {
+    console_printf("Criando processo");
     int ender = so_carrega_programa(self, origem);
     processo_t *p = processo_cria(self->proc_ultimo_id + 1, ender);
+    escalonador_cria_proc(self->esc, p);
     self->proc_ultimo_id++;
     int i = self->proc_atual;
     while (i < self->proc_atual + PROC_TAM_TABELA) {
@@ -120,6 +131,22 @@ int so_busca_processo(so_t *self, int id) {
     // se chegou até aqui, processo não está na tabela
     return -1;
 }
+
+processo_t *so_pega_processo(so_t *self, int indice){
+    return self->proc_tabela[indice];
+}
+
+// TRATAMENTO DE BLOQUEIO {{{1
+
+static void so_trata_bloq_espera(so_t *self, int ind) {
+  processo_t *p = self->proc_tabela[ind];
+  int pid = processo_pega_reg_x(p);
+  int indice = so_busca_processo(self, pid);
+  if(indice == ind || indice == -1) {
+      processo_muda_estado(p, PROC_PRONTO);
+      console_printf("Desbloqueando processo %d", ind); 
+  }
+}  
 
 // TRATAMENTO DE INTERRUPÇÃO {{{1
 
@@ -180,11 +207,17 @@ static void so_salva_estado_da_cpu(so_t *self)
 
 static void so_trata_pendencias(so_t *self)
 {
-  // t1: realiza ações que não são diretamente ligadas com a interrupção que
-  //   está sendo atendida:
-  // - E/S pendente
-  // - desbloqueio de processos
-  // - contabilidades
+    for (int i = 0; i < PROC_TAM_TABELA; i++) {
+        if (self->proc_tabela[i] != NULL && processo_pega_estado(self->proc_tabela[i]) == PROC_BLOQUEADO) {
+            switch (processo_pega_bloq_motivo(self->proc_tabela[i])) {
+                case PROC_BLOQ_ESPERA:
+                so_trata_bloq_espera(self, i);
+                break;
+                default:
+                break;
+            }
+        }
+    }
 }
 
 static void so_escalona(so_t *self)
@@ -194,24 +227,19 @@ static void so_escalona(so_t *self)
   // t1: na primeira versão, escolhe um processo caso o processo corrente não possa continuar
   //   executando. depois, implementar escalonador melhor
     console_printf("Escalonando agora", self->proc_atual);
-    int i = self->proc_atual;
-    while (i < self->proc_atual + PROC_TAM_TABELA) {
-        if (self->proc_tabela[i % PROC_TAM_TABELA] != NULL) {
-            if (processo_pega_estado(self->proc_tabela[i % PROC_TAM_TABELA]) == PROC_EXECUTANDO) {
-                self->proc_atual = i % PROC_TAM_TABELA;
-                console_printf("Executando processo %d", self->proc_atual);
-                return;
-            }
-            if (processo_pega_estado(self->proc_tabela[i % PROC_TAM_TABELA]) == PROC_PRONTO) {
-                processo_muda_estado(self->proc_tabela[i % PROC_TAM_TABELA], PROC_EXECUTANDO);
-                self->proc_atual = i % PROC_TAM_TABELA;
-                console_printf("Executando processo %d", self->proc_atual);
-                return;
-            }
-        }
-        i++;
+    switch (self->esc_tipo) {
+        case ESC_SIMPLES:
+        escalonador_simples(self->esc, self);
+        break;
+        case ESC_CIRCULAR:
+        escalonador_circular(self->esc, self);
+        break;
+        case ESC_PRIORIDADE:
+        escalonador_prioridade(self->esc, self);
+        break;
     }
-    console_printf("Não há processos a executar.", self->proc_atual);
+    int atual_temp = so_busca_processo(self, escalonador_pega_atual(self->esc));
+    self->proc_atual = atual_temp * (atual_temp != -1);
 }
 
 static int so_despacha(so_t *self)
@@ -315,7 +343,8 @@ static void so_trata_irq_relogio(so_t *self)
   // t1: deveria tratar a interrupção
   //   por exemplo, decrementa o quantum do processo corrente, quando se tem
   //   um escalonador com quantum
-  console_printf("SO: interrupção do relógio (não tratada)");
+  processo_decrementa_quantum(self->proc_tabela[self->proc_atual]);
+  console_printf("Quantum %d: %d", self->proc_atual, processo_pega_quantum(self->proc_tabela[self->proc_atual]));
 }
 
 // foi gerada uma interrupção para a qual o SO não está preparado
@@ -487,23 +516,25 @@ static void so_chamada_cria_proc(so_t *self)
 static void so_chamada_mata_proc(so_t *self)
 {
   // T1: deveria matar um processo
+  console_printf("Matando processo");
   if (self->proc_tabela[self->proc_atual] == NULL) return;
   int id = processo_pega_reg_x(self->proc_tabela[self->proc_atual]);
+  int indice;
   if (id == 0) {
       id = processo_pega_id(self->proc_tabela[self->proc_atual]);
-      processo_mata(self->proc_tabela[self->proc_atual]);
-      self->proc_tabela[self->proc_atual] = NULL;
+      indice = self->proc_atual;
   }
   else {
-      int indice = so_busca_processo(self, id);
-      if (indice != -1) {
-          processo_mata(self->proc_tabela[indice]);
-          self->proc_tabela[indice] = NULL;
-          mem_escreve(self->mem, IRQ_END_A, 0);
-      }
-      else {
-          mem_escreve(self->mem, IRQ_END_A, -1);
-      }
+      indice = so_busca_processo(self, id);
+  }
+  if (indice != -1) {
+      escalonador_mata_proc(self->esc, self->proc_tabela[indice]);
+      processo_mata(self->proc_tabela[indice]);
+      self->proc_tabela[indice] = NULL;
+      mem_escreve(self->mem, IRQ_END_A, 0);
+  }
+  else {
+      mem_escreve(self->mem, IRQ_END_A, -1);
   }
   console_printf("Morto processo com PID %d", id);
 }
@@ -512,10 +543,12 @@ static void so_chamada_mata_proc(so_t *self)
 // espera o fim do processo com pid X
 static void so_chamada_espera_proc(so_t *self)
 {
-  // T1: deveria bloquear o processo se for o caso (e desbloquear na morte do esperado)
-  // ainda sem suporte a processos, retorna erro -1
-  console_printf("SO: SO_ESPERA_PROC não implementada");
-  mem_escreve(self->mem, IRQ_END_A, -1);
+  processo_t *p = self->proc_tabela[self->proc_atual];
+  int pid = processo_pega_reg_x(p);
+  int indice = so_busca_processo(self, pid);
+  if(indice == self->proc_atual || indice == -1) return;
+  processo_bloqueia(p, PROC_BLOQ_ESPERA);
+  console_printf("Processo com pid %d bloqueado", pid);
 }
 
 // CARGA DE PROGRAMA {{{1

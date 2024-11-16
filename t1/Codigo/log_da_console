@@ -1,387 +1,2522 @@
 SO: carga de 'trata_int.maq' em 10-15
+criando
 CMD: 'C'
 SO: recebi IRQ 0 (Reset)
+Criando processo
 SO: carga de 'init.maq' em 100-270
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 4
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 3
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 1
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 0
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 4
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 3
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 7
+Criando processo
 SO: carga de 'p1.maq' em 7000-7241
 Criado processo com PID 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 7
+Criando processo
 SO: carga de 'p2.maq' em 8000-8243
 Criado processo com PID 3
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 7
+Criando processo
 SO: carga de 'p3.maq' em 9000-9241
 Criado processo com PID 4
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 0: 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 9
-SO: SO_ESPERA_PROC não implementada
+Processo com pid 2 bloqueado
 Escalonando agora
-Executando processo 0
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 9
-SO: SO_ESPERA_PROC não implementada
-Escalonando agora
-Executando processo 0
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 9
-SO: SO_ESPERA_PROC não implementada
-Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
+CMD: 'D'
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 4
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 3
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 1
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 0
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 2: 4
 Escalonando agora
-Executando processo 0
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 0
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 2: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 8
-Morto processo com PID 1
+Matando processo
+Morto processo com PID 3
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 3: 4
 Escalonando agora
-Executando processo 1
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 1
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 3: 3
 Escalonando agora
-Executando processo 1
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 3: 2
 Escalonando agora
-Executando processo 1
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 1
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 3: 1
 Escalonando agora
-Executando processo 1
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 3: 0
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 4
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 3
 Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-Executando processo 1
 SO: recebi IRQ 3 (E/S: relógio)
-SO: interrupção do relógio (não tratada)
+Quantum 1: 2
 Escalonando agora
-Executando processo 1
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-Executando processo 1
-CMD: 'F'
-Fim da execução.
-relógio: 1138
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 3: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 8
+Matando processo
+Morto processo com PID 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 1
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 4
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 3
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 1: 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 8
+Matando processo
+Morto processo com PID 2
+Desbloqueando processo 0
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 0: 1
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 9
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 9
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 0: 0
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum 0: 4
+Escalonando agora
+SO:

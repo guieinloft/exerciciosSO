@@ -7,6 +7,9 @@ struct processo_t {
     int x;
     int pc;
     proc_estado_t estado;
+    proc_bloqueio_t bloq_motivo;
+    int quantum;
+    double priori;
 };
 
 processo_t *processo_cria(int id, int pc) {
@@ -22,6 +25,14 @@ void processo_muda_estado(processo_t *self, proc_estado_t e_novo) {
 }
 proc_estado_t processo_pega_estado(processo_t *self) {
     return self->estado;
+}
+
+void processo_bloqueia(processo_t *self, proc_bloqueio_t motivo) {
+    self->estado = PROC_BLOQUEADO;
+    self->bloq_motivo = motivo;
+}
+proc_bloqueio_t processo_pega_bloq_motivo(processo_t *self) {
+    return self->bloq_motivo;
 }
 
 void processo_salva_reg_pc(processo_t *self, int pc) {
@@ -45,6 +56,16 @@ int processo_pega_reg_x(processo_t *self) {
 }
 int processo_pega_id(processo_t *self) {
     return self->id;
+}
+
+void processo_muda_quantum(processo_t *self, int quantum) {
+    self->quantum = quantum;
+}
+void processo_decrementa_quantum(processo_t *self) {
+    self->quantum--;
+}
+int processo_pega_quantum(processo_t *self) {
+    return self->quantum;
 }
 
 void processo_mata(processo_t *self) {
