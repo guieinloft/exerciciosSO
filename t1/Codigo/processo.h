@@ -2,6 +2,7 @@
 #define PROCESSO_H
 
 typedef struct processo_t processo_t;
+typedef struct tabela_t tabela_t;
 
 typedef enum {
     PROC_PRONTO,
@@ -17,7 +18,8 @@ typedef enum {
     N_PROC_BLOQUEIO
 } proc_bloqueio_t;
 
-processo_t *processo_cria(int id, int pc);
+// PROCESSOS
+processo_t *processo_cria(int id, int pc, int max_quantum);
 void processo_mata(processo_t *self);
 
 void processo_muda_estado(processo_t *self, proc_estado_t e_novo);
@@ -38,5 +40,22 @@ int processo_pega_id(processo_t *self);
 void processo_muda_quantum(processo_t *self, int quantum);
 void processo_decrementa_quantum(processo_t *self);
 int processo_pega_quantum(processo_t *self);
+void processo_reseta_quantum(processo_t *self);
+
+void processo_muda_priori(processo_t *self, double priori);
+void processo_recalcula_priori(processo_t *self);
+double processo_pega_priori(processo_t *self);
+
+
+// TABELA
+tabela_t *tabela_cria(int cap);
+int tabela_adiciona_processo(tabela_t *self, processo_t *proc);
+void tabela_manda_fim_fila(tabela_t *self);
+int tabela_busca_processo(tabela_t *self, int pid);
+int tabela_remove_processo(tabela_t *self, int pid);
+processo_t *tabela_pega_processo(tabela_t *self, int pid);
+processo_t *tabela_pega_processo_indice(tabela_t *self, int indice);
+int tabela_pega_tam(tabela_t *self);
+void tabela_reordena_priori(tabela_t *self);
 
 #endif

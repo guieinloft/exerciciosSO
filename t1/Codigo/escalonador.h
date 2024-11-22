@@ -9,7 +9,7 @@ typedef enum {
     ESC_PRIORIDADE
 } esc_tipo_t;
 
-esc_t *escalonador_cria(void);
+esc_t *escalonador_cria(tabela_t *t);
 
 void escalonador_cria_proc(esc_t *self, processo_t *proc);
 void escalonador_mata_proc(esc_t *self, processo_t *proc);
