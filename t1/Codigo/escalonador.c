@@ -20,52 +20,55 @@ esc_t *escalonador_cria(tabela_t *t) {
     return esc;
 }
 
-void escalonador_simples(esc_t *self, so_t *so) {
-    if(tabela_pega_processo(self->tabela, 0) == NULL) {
-        return;
+int escalonador_simples(esc_t *self, so_t *so) {
+    if(tabela_pega_tam(self->tabela) == 0 || tabela_pega_processo(self->tabela, 0) == NULL) {
+        return 0;
     }
-    console_printf("tam: %d", tabela_pega_tam(self->tabela));
     for(int i = 0; i <= tabela_pega_tam(self->tabela); i++) {
         processo_t *p = tabela_pega_processo(self->tabela, 0);
-        console_printf("%d %d", processo_pega_id(p), processo_pega_estado(p));
         if (processo_pega_estado(p) == PROC_EXECUTANDO) {
-            return;
+            break;
         }
         else if (processo_pega_estado(p) == PROC_PRONTO) {
             processo_muda_estado(p, PROC_EXECUTANDO);
-            return;
+            break;
         }
         tabela_manda_fim_fila(self->tabela);
     }
+    return 0;
 }
 
-void escalonador_circular(esc_t *self, so_t *so) {
-    if(tabela_pega_processo(self->tabela, 0) == NULL) {
-        return;
+int escalonador_circular(esc_t *self, so_t *so) {
+    if(tabela_pega_tam(self->tabela) == 0 || tabela_pega_processo(self->tabela, 0) == NULL) {
+        return 0;
     }
+    int preemp = 0;
     for(int i = 0; i <= tabela_pega_tam(self->tabela); i++) {
         processo_t *p = tabela_pega_processo(self->tabela, 0);
         if (processo_pega_estado(p) == PROC_EXECUTANDO) {
             if (processo_pega_quantum(p) <= 0) {
                 processo_reseta_quantum(p);
                 processo_muda_estado(p, PROC_PRONTO);
+                preemp = 1;
             }
             else {
-                return;
+                break;
             }
         }
         else if (processo_pega_estado(p) == PROC_PRONTO) {
             processo_muda_estado(p, PROC_EXECUTANDO);
-            return;
+            break;
         }
         tabela_manda_fim_fila(self->tabela);
     }
+    return preemp;
 }
 
-void escalonador_prioridade(esc_t *self, so_t *so) {
+int escalonador_prioridade(esc_t *self, so_t *so) {
     if(tabela_pega_processo(self->tabela, 0) == NULL) {
-        return;
+        return 0;
     }
+    int preemp = 0;
     processo_t *p = tabela_pega_processo(self->tabela, 0);
     if (processo_pega_estado(p) == PROC_EXECUTANDO) {
         if (processo_pega_quantum(p) <= 0) {
@@ -73,17 +76,19 @@ void escalonador_prioridade(esc_t *self, so_t *so) {
             processo_reseta_quantum(p);
             processo_muda_estado(p, PROC_PRONTO);
             tabela_reordena_priori(self->tabela);
+            preemp = 1;
         }
     }
     for(int i = 0; i < tabela_pega_tam(self->tabela); i++) {
         processo_t *p = tabela_pega_processo(self->tabela, 0);
         if (processo_pega_estado(p) == PROC_EXECUTANDO) {
-            return;
+            break;
         }
         else if (processo_pega_estado(p) == PROC_PRONTO) {
             processo_muda_estado(p, PROC_EXECUTANDO);
-            return;
+            break;
         }
         tabela_manda_fim_fila(self->tabela);
     }
+    return preemp;
 }

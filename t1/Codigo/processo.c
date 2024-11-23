@@ -13,6 +13,7 @@ struct processo_t {
     int max_quantum;
     int quantum;
     double priori;
+    proc_metricas_t metricas;
 };
 
 struct tabela_t {
@@ -23,12 +24,15 @@ struct tabela_t {
 };
 
 // PROCESSOS {{{1
+void metricas_inicializa(processo_t *self);
+
 processo_t *processo_cria(int id, int pc, int max_quantum) {
     processo_t *p = (processo_t*)malloc(sizeof(processo_t));
     if (p == NULL) return NULL;
     p->id = id;
     p->pc = pc;
     p->estado = PROC_PRONTO;
+    metricas_inicializa(p);
     p->max_quantum = max_quantum;
     p->quantum = max_quantum;
     p->priori = 0.5;
@@ -36,7 +40,11 @@ processo_t *processo_cria(int id, int pc, int max_quantum) {
 }
 
 void processo_muda_estado(processo_t *self, proc_estado_t e_novo) {
+    if (self->estado == PROC_EXECUTANDO && e_novo == PROC_PRONTO) {
+        self->metricas.n_preempcoes++;
+    }
     self->estado = e_novo;
+    self->metricas.estado_vezes[e_novo]++;
 }
 proc_estado_t processo_pega_estado(processo_t *self) {
     if (self == NULL) return -1;
@@ -44,7 +52,7 @@ proc_estado_t processo_pega_estado(processo_t *self) {
 }
 
 void processo_bloqueia(processo_t *self, proc_bloqueio_t motivo) {
-    self->estado = PROC_BLOQUEADO;
+    processo_muda_estado(self, PROC_BLOQUEADO);
     self->bloq_motivo = motivo;
 }
 proc_bloqueio_t processo_pega_bloq_motivo(processo_t *self) {
@@ -143,26 +151,26 @@ int tabela_busca_processo(tabela_t *self, int pid) {
     return -1;
 }
 
-int tabela_remove_processo(tabela_t *self, int pid) {
+processo_t *tabela_remove_processo(tabela_t *self, int pid) {
+    processo_t *proc;
     if (pid == 0) {
-        processo_mata(self->tab[self->ini]);
+        proc = self->tab[self->ini];
         self->tab[self->ini] = NULL;
         self->ini = (self->ini + 1) % self->cap;
         self->tam--;
-        return 0;
     }
     else {
         int indice = tabela_busca_processo(self, pid);
         if (indice == -1) {
-            return -1;
+            return NULL;
         }
-        processo_mata(self->tab[indice]);
+        proc = self->tab[indice];
         self->tam--;
         for (int i = indice; i < (indice + self->tam); i++) {
             self->tab[i % self->cap] = self->tab[(i + 1) % self->cap];
         }
-        return 0;
     }
+    return proc;
 }
 
 processo_t *tabela_pega_processo(tabela_t *self, int pid) {
@@ -186,10 +194,59 @@ void tabela_reordena_priori(tabela_t *self) {
     for (int i = 1; i < self->tam; i++) {
         processo_t *temp = self->tab[(i + self->ini) % self->cap];
         int j = i;
-        while (j > 0 && processo_pega_priori(temp) > processo_pega_priori(self->tab[(j - 1 + self->ini) % self->cap])) {
+        while (j > 0 && processo_pega_priori(temp) >= processo_pega_priori(self->tab[(j - 1 + self->ini) % self->cap])) {
             self->tab[(j + self->ini) % self->cap] = self->tab[(j - 1 + self->ini) % self->cap];
             j--;
         }
         self->tab[(j + self->ini) % self->cap] = temp;
+    }
+}
+
+// METRICAS {{{1
+void metricas_inicializa(processo_t *self) {
+    self->metricas.n_preempcoes = 0;
+    self->metricas.tempo_retorno = 0;
+    self->metricas.tempo_resposta = 0;
+    for (int i = 0; i < N_PROC_ESTADO; i++) {
+        self->metricas.estado_vezes[i] = 0;
+        self->metricas.estado_tempo[i] = 0;
+    }
+    self->metricas.estado_vezes[PROC_PRONTO] = 1;
+}
+    
+
+void processo_atualiza_metricas(processo_t *self, int delta) {
+    self->metricas.tempo_retorno += delta;
+    self->metricas.estado_tempo[self->estado] += delta;
+    self->metricas.tempo_resposta = self->metricas.estado_tempo[PROC_PRONTO] / self->metricas.estado_vezes[PROC_PRONTO];
+}
+
+// HISTORICO {{{1
+
+historico_t *historico_adiciona_metrica(historico_t *hist, processo_t *proc) {
+    if (proc == NULL) return hist;
+    historico_t *novo = (historico_t*)malloc(sizeof(historico_t));
+    novo->id = proc->id;
+    novo->metricas = proc->metricas;
+    novo->prox = hist;
+    return novo;
+}
+
+int historico_pega_id(historico_t *hist) {
+    if (hist == NULL) return 0;
+    return hist->id;
+}
+
+proc_metricas_t historico_pega_metricas(historico_t *hist) {
+    return hist->metricas;
+}
+
+void historico_apaga(historico_t *hist) {
+    historico_t *h = hist;
+    historico_t *h_ant;
+    while (h != NULL) {
+        h_ant = h;
+        h = h->prox;
+        free(h_ant);
     }
 }
