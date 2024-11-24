@@ -2,7 +2,7 @@
 #define PROCESSO_H
 
 typedef struct processo_t processo_t;
-typedef struct tabela_t tabela_t;
+typedef struct historico_t historico_t;
 
 typedef enum {
     PROC_PRONTO,
@@ -26,12 +26,6 @@ typedef struct proc_metricas_t {
     int estado_vezes[N_PROC_ESTADO];
     int estado_tempo[N_PROC_ESTADO];
 } proc_metricas_t;
-
-typedef struct historico_t {
-    int id;
-    proc_metricas_t metricas;
-    struct historico_t *prox;
-} historico_t;
 
 // PROCESSOS
 processo_t *processo_cria(int id, int pc, int max_quantum);
@@ -61,18 +55,6 @@ void processo_muda_priori(processo_t *self, double priori);
 void processo_recalcula_priori(processo_t *self);
 double processo_pega_priori(processo_t *self);
 
-
-// TABELA
-tabela_t *tabela_cria(int cap);
-int tabela_adiciona_processo(tabela_t *self, processo_t *proc);
-void tabela_manda_fim_fila(tabela_t *self);
-int tabela_busca_processo(tabela_t *self, int pid);
-processo_t *tabela_remove_processo(tabela_t *self, int pid);
-processo_t *tabela_pega_processo(tabela_t *self, int pid);
-processo_t *tabela_pega_processo_indice(tabela_t *self, int indice);
-int tabela_pega_tam(tabela_t *self);
-void tabela_reordena_priori(tabela_t *self);
-
 // METRICAS
 void processo_atualiza_metricas(processo_t *self, int delta);
 
@@ -81,5 +63,6 @@ historico_t *historico_adiciona_metrica(historico_t *hist, processo_t *proc);
 int historico_pega_id(historico_t *hist);
 proc_metricas_t historico_pega_metricas(historico_t *hist);
 void historico_apaga(historico_t *hist);
+historico_t *historico_prox(historico_t *hist);
 
 #endif

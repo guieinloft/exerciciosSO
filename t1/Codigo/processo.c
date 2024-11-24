@@ -16,11 +16,10 @@ struct processo_t {
     proc_metricas_t metricas;
 };
 
-struct tabela_t {
-    int ini;
-    int tam;
-    int cap;
-    processo_t ** tab;
+struct historico_t {
+    int id;
+    proc_metricas_t metricas;
+    struct historico_t *prox;
 };
 
 // PROCESSOS {{{1
@@ -83,7 +82,7 @@ int processo_pega_reg_x(processo_t *self) {
 }
 int processo_pega_id(processo_t *self) {
     if (self != NULL) return self->id;
-    return 0;
+    return -1;
 }
 
 void processo_muda_quantum(processo_t *self, int quantum) {
@@ -118,88 +117,6 @@ double processo_pega_priori(processo_t *self) {
 
 void processo_mata(processo_t *self) {
     free(self);
-}
-
-// TABELA {{{1
-tabela_t *tabela_cria(int cap) {
-    tabela_t *t = (tabela_t*)malloc(sizeof(tabela_t));
-    t->ini = 0;
-    t->tam = 0;
-    t->cap = cap;
-    t->tab = (processo_t**)malloc(sizeof(processo_t*) * cap);
-    return t;
-}
-
-int tabela_adiciona_processo(tabela_t *self, processo_t *proc) {
-    if (self->tam >= self->cap) return -1;
-    self->tab[(self->ini + self->tam) % self->cap] = proc;
-    self->tam++;
-    return 0;
-}
-
-void tabela_manda_fim_fila(tabela_t *self) {
-    self->tab[(self->ini + self->tam) % self->cap] = self->tab[self->ini];
-    self->ini = (self->ini + 1) % self->cap;
-}
-
-int tabela_busca_processo(tabela_t *self, int pid) {
-    for (int i = self->ini; i < self->ini + self->tam; i++) {
-        if (processo_pega_id(self->tab[i % self->cap]) == pid) {
-            return i % self->cap;
-        }
-    }
-    return -1;
-}
-
-processo_t *tabela_remove_processo(tabela_t *self, int pid) {
-    processo_t *proc;
-    if (pid == 0) {
-        proc = self->tab[self->ini];
-        self->tab[self->ini] = NULL;
-        self->ini = (self->ini + 1) % self->cap;
-        self->tam--;
-    }
-    else {
-        int indice = tabela_busca_processo(self, pid);
-        if (indice == -1) {
-            return NULL;
-        }
-        proc = self->tab[indice];
-        self->tam--;
-        for (int i = indice; i < (indice + self->tam); i++) {
-            self->tab[i % self->cap] = self->tab[(i + 1) % self->cap];
-        }
-    }
-    return proc;
-}
-
-processo_t *tabela_pega_processo(tabela_t *self, int pid) {
-    if (pid == 0) return self->tab[self->ini];
-    int indice = tabela_busca_processo(self, pid);
-    if (indice == -1) return NULL;
-    return self->tab[indice];
-}
-
-processo_t *tabela_pega_processo_indice(tabela_t *self, int indice) {
-    return self->tab[(indice + self->ini) % self->cap];
-}
-
-int tabela_pega_tam(tabela_t *self) {
-    return self->tam;
-}
-
-void tabela_reordena_priori(tabela_t *self) {
-    // implementacao do insertion sort
-    // futuramente da pra trocar pra um nlgn
-    for (int i = 1; i < self->tam; i++) {
-        processo_t *temp = self->tab[(i + self->ini) % self->cap];
-        int j = i;
-        while (j > 0 && processo_pega_priori(temp) >= processo_pega_priori(self->tab[(j - 1 + self->ini) % self->cap])) {
-            self->tab[(j + self->ini) % self->cap] = self->tab[(j - 1 + self->ini) % self->cap];
-            j--;
-        }
-        self->tab[(j + self->ini) % self->cap] = temp;
-    }
 }
 
 // METRICAS {{{1
@@ -249,4 +166,11 @@ void historico_apaga(historico_t *hist) {
         h = h->prox;
         free(h_ant);
     }
+}
+
+historico_t *historico_prox(historico_t *hist) {
+    if (hist != NULL) {
+        return hist->prox;
+    }
+    return NULL;
 }

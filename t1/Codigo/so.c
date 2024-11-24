@@ -38,7 +38,7 @@ struct so_t {
   console_t *console;
   bool erro_interno;
   // t1: tabela de processos, processo corrente, pendências, etc
-  tabela_t *proc_tabela;
+  processo_t **proc_tabela;
   processo_t *proc_atual;
   int proc_ultimo_id;
   
@@ -75,13 +75,13 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->erro_interno = false;
   
   // cria tabela de processos
-  self->proc_tabela = tabela_cria(PROC_TAM_TABELA);
+  self->proc_tabela = (processo_t**)malloc(sizeof(processo_t*) * PROC_TAM_TABELA);
   self->proc_atual = NULL;
   self->proc_ultimo_id = 0;
 
   // cria escalonador
-  self->esc = escalonador_cria(self->proc_tabela);
-  self->esc_tipo = ESC_SIMPLES;
+  self->esc = escalonador_cria(PROC_TAM_TABELA);
+  self->esc_tipo = ESC_PRIORIDADE;
 
   self->hist = NULL;
 
@@ -111,27 +111,67 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
 
   console_printf("criando");
 
-
   return self;
 }
 
 void so_destroi(so_t *self)
 {
   cpu_define_chamaC(self->cpu, NULL, NULL);
+  escalonador_destroi(self->esc);
   historico_apaga(self->hist);
+  free(self->proc_tabela);
   free(self);
 }
 
-processo_t *so_cria_processo(so_t *self, char *origem) {
+// PROCESSOS {{{1
+static processo_t *so_cria_processo(so_t *self, char *origem) {
     console_printf("Criando processo");
     int ender = so_carrega_programa(self, origem);
     processo_t *p = processo_cria(self->proc_ultimo_id + 1, ender, MAX_QUANTUM);
     if (p == NULL) return NULL;
-    tabela_adiciona_processo(self->proc_tabela, p);
+    for (int i = 0; i < PROC_TAM_TABELA; i++) {
+        if (self->proc_tabela[i] == NULL) {
+            self->proc_tabela[i] = p;
+            break;
+        }
+    }
+    escalonador_adiciona_processo(self->esc, p);
     self->proc_ultimo_id++;
     return p;
 }
 
+static int so_mata_processo(so_t *self, int id) {
+    escalonador_remove_processo(self->esc, 0);
+    int index = -1;
+    for (int i = 0; i < PROC_TAM_TABELA; i++) {
+        if (id == 0 && self->proc_atual == self->proc_tabela[i]) {
+            self->proc_atual = NULL;
+            index = i;
+            break;
+        }
+        else if (id == processo_pega_id(self->proc_tabela[i])) {
+            index = i;
+            break;
+        }
+    }
+    if (index == -1) return -1;
+    self->hist = historico_adiciona_metrica(self->hist, self->proc_tabela[index]);
+    processo_mata(self->proc_tabela[index]);
+    self->proc_tabela[index] = NULL;
+    return 0;
+}
+
+static void so_bloqueia_processo(so_t *self, proc_bloqueio_t motivo) {
+    processo_bloqueia(self->proc_atual, motivo);
+    escalonador_remove_processo(self->esc, 0);
+    console_printf("Processo bloqueado");
+}
+
+static void so_desbloqueia_processo(so_t *self, processo_t *proc) {
+    processo_muda_estado(proc, PROC_PRONTO);
+    escalonador_adiciona_processo(self->esc, proc);
+    console_printf("Processo desbloqueado");
+}
 // MÉTRICAS {{{1
 static void so_atualiza_metricas(so_t *self, int preemp) {
     int t_relogio_anterior = self->t_relogio_atual;
@@ -142,12 +182,12 @@ static void so_atualiza_metricas(so_t *self, int preemp) {
     if (t_relogio_anterior == -1) return;
     int delta = self->t_relogio_atual - t_relogio_anterior;
     self->metricas.t_exec += delta;
-    if (self->proc_atual != NULL && processo_pega_estado(self->proc_atual) != PROC_EXECUTANDO) {
+    if (self->proc_atual == NULL || processo_pega_estado(self->proc_atual) != PROC_EXECUTANDO) {
         self->metricas.t_ocioso += delta;
     }
     self->metricas.n_preempcoes += preemp;
-    for (int i = 0; i < tabela_pega_tam(self->proc_tabela); i++) {
-        processo_t *p = tabela_pega_processo_indice(self->proc_tabela, i);
+    for (int i = 0; i < PROC_TAM_TABELA; i++) {
+        processo_t *p = self->proc_tabela[i];
         if (p != NULL) {
             processo_atualiza_metricas(p, delta);
         }
@@ -163,14 +203,15 @@ static void so_imprime_metricas(so_t *self) {
         console_printf("N. interrup. %d: %d", i, self->metricas.n_irq[i]);
     }
     /*
-    for (historico_t *h = self->hist; h != NULL; h = h->prox) {
-        console_printf("\nID: %d", h->id);
-        console_printf("N. preempções: %d", h->metricas.n_preempcoes);
-        console_printf("T. retorno:    %d", h->metricas.tempo_retorno);
-        console_printf("T. resposta:   %d", h->metricas.tempo_resposta);
+    for (historico_t *h = self->hist; h != NULL; h = historico_prox(h)) {
+        proc_metricas_t metricas = historico_pega_metricas(h);
+        console_printf("\nID: %d", historico_pega_id(id));
+        console_printf("N. preempções: %d", metricas.n_preempcoes);
+        console_printf("T. retorno:    %d", metricas.tempo_retorno);
+        console_printf("T. resposta:   %d", metricas.tempo_resposta);
         for (int i = 0; i < N_PROC_ESTADO; i++) {
-            console_printf("Vezes em %d: %d", i, h->metricas.estado_vezes[i]);
-            console_printf("Tempo em %d: %d", i, h->metricas.estado_tempo[i]);
+            console_printf("Vezes em %d: %d", i, metricas.estado_vezes[i]);
+            console_printf("Tempo em %d: %d", i, metricas.estado_tempo[i]);
         }
     }
     */
@@ -187,67 +228,75 @@ static void so_imprime_metricas_arquivo(so_t *self) {
     for (int i = 0; i < N_IRQ; i++) {
         fprintf(log, "N. interrup. %d: %d\n", i, self->metricas.n_irq[i]);
     }
-    for (historico_t *h = self->hist; h != NULL; h = h->prox) {
-        fprintf(log, "\nID: %d\n", h->id);
-        fprintf(log, "N. preempções: %d\n", h->metricas.n_preempcoes);
-        fprintf(log, "T. retorno:    %d\n", h->metricas.tempo_retorno);
-        fprintf(log, "T. resposta:   %d\n", h->metricas.tempo_resposta);
+    for (historico_t *h = self->hist; h != NULL; h = historico_prox(h)) {
+        proc_metricas_t metricas = historico_pega_metricas(h);
+        fprintf(log, "\nID: %d\n", historico_pega_id(h));
+        fprintf(log, "N. preempções: %d\n", metricas.n_preempcoes);
+        fprintf(log, "T. retorno:    %d\n", metricas.tempo_retorno);
+        fprintf(log, "T. resposta:   %d\n", metricas.tempo_resposta);
         for (int i = 0; i < N_PROC_ESTADO; i++) {
-            fprintf(log, "Vezes em %d: %d\n", i, h->metricas.estado_vezes[i]);
-            fprintf(log, "Tempo em %d: %d\n", i, h->metricas.estado_tempo[i]);
+            fprintf(log, "Vezes em %d: %d\n", i, metricas.estado_vezes[i]);
+            fprintf(log, "Tempo em %d: %d\n", i, metricas.estado_tempo[i]);
         }
     }
 }
 
 // TRATAMENTO DE BLOQUEIO {{{1
 
-static void so_trata_bloq_espera(so_t *self, processo_t *p) {
+static int so_trata_bloq_espera(so_t *self, processo_t *p) {
   int pid = processo_pega_reg_x(p);
-  processo_t *p2 = tabela_pega_processo(self->proc_tabela, pid);
-  if(p2 == p || p2 == NULL) {
+  if (pid == processo_pega_id(p)) {
       processo_muda_estado(p, PROC_PRONTO);
-      console_printf("Desbloqueando processo");
+      escalonador_adiciona_processo(self->esc, p);
+      return 1;
   }
+  for (int i = 0; i < PROC_TAM_TABELA; i++) {
+      if (pid == processo_pega_id(self->proc_tabela[i])) {
+          return 0;
+      }
+  }
+  so_desbloqueia_processo(self, p);
+  return 1;
 }
 
-static void so_trata_bloq_entrada(so_t *self, processo_t *p) {
+static int so_trata_bloq_entrada(so_t *self, processo_t *p) {
     int term = (processo_pega_id(p) - 1) % 4 * 4;
     int estado;
     if (es_le(self->es, D_TERM_A_TECLADO_OK + term, &estado) != ERR_OK) {
         self->erro_interno = true;
-        return;
+        return 0;
     }
     if (estado == 0) {
-        return;
+        return 0;
     }
     int dado;
     if (es_le(self->es, D_TERM_A_TECLADO + term, &dado) != ERR_OK) {
         self->erro_interno = true;
-        return;
+        return 0;
     }
     processo_salva_reg_a(p, dado);
-    processo_muda_estado(p, PROC_PRONTO);
-    console_printf("Desbloqueando processo");
+    so_desbloqueia_processo(self, p);
+    return 1;
 }
 
-static void so_trata_bloq_saida(so_t *self, processo_t *p) {
+static int so_trata_bloq_saida(so_t *self, processo_t *p) {
     int term = (processo_pega_id(p) - 1) % 4 * 4;
     int estado;
     if (es_le(self->es, D_TERM_A_TELA_OK + term, &estado) != ERR_OK) {
         self->erro_interno = true;
-        return;
+        return 0;
     }
     if (estado == 0) {
-        return;
+        return 0;
     }
     int dado = processo_pega_reg_x(p);
     if (es_escreve(self->es, D_TERM_A_TELA + term, dado) != ERR_OK) {
         self->erro_interno = true;
-        return;
+        return 0;
     }
     processo_salva_reg_a(p, 0);
-    processo_muda_estado(p, PROC_PRONTO);
-    console_printf("Desbloqueando processo");
+    so_desbloqueia_processo(self, p);
+    return 1;
 }
 
 // TRATAMENTO DE INTERRUPÇÃO {{{1
@@ -290,7 +339,7 @@ static int so_trata_interrupcao(void *argC, int reg_A)
   // escolhe o próximo processo a executar
   so_escalona(self);
   // recupera o estado do processo escolhido
-  if (tabela_pega_tam(self->proc_tabela) != 0) {
+  if (self->proc_tabela[0] != NULL) {
       return so_despacha(self);
   }
   else {
@@ -317,8 +366,8 @@ static void so_salva_estado_da_cpu(so_t *self)
 
 static void so_trata_pendencias(so_t *self)
 {
-    for (int i = 0; i < tabela_pega_tam(self->proc_tabela); i++) {
-        processo_t *p = tabela_pega_processo_indice(self->proc_tabela, i);
+    for (int i = 0; i < PROC_TAM_TABELA; i++) {
+        processo_t *p = self->proc_tabela[i];
         if (p != NULL) {
             if (processo_pega_estado(p) == PROC_BLOQUEADO) {
                 switch (processo_pega_bloq_motivo(p)) {
@@ -358,7 +407,7 @@ static void so_escalona(so_t *self)
         preemp = escalonador_prioridade(self->esc, self);
         break;
     }
-    self->proc_atual = tabela_pega_processo(self->proc_tabela, 0);
+    self->proc_atual = escalonador_pega_atual(self->esc);
     console_printf("PROC ATUAL: %d %d", processo_pega_id(self->proc_atual), processo_pega_estado(self->proc_atual));
     so_atualiza_metricas(self, preemp);
 }
@@ -469,9 +518,7 @@ static void so_trata_irq_err_cpu(so_t *self)
   if(err == ERR_OK) return;
   console_printf("Matando processo");
   if (self->proc_atual == NULL) return;
-  processo_t *proc = tabela_remove_processo(self->proc_tabela, 0);
-  if (proc != NULL) {
-      processo_mata(proc);
+  if (so_mata_processo(self, 0) == 0) {
       mem_escreve(self->mem, IRQ_END_A, 0);
       console_printf("Morto processo");
   }
@@ -560,7 +607,7 @@ static void so_chamada_le(so_t *self)
         return;
     }
     if (estado == 0) {
-        processo_bloqueia(self->proc_atual, PROC_BLOQ_ENTRADA);
+        so_bloqueia_processo(self, PROC_BLOQ_ENTRADA);
         return;
     }
     int dado;
@@ -582,7 +629,7 @@ static void so_chamada_escr(so_t *self)
         return;
     }
     if (estado == 0) {
-        processo_bloqueia(self->proc_atual, PROC_BLOQ_SAIDA);
+        so_bloqueia_processo(self, PROC_BLOQ_SAIDA);
         return;
     }
     int dado = processo_pega_reg_x(self->proc_atual);
@@ -631,10 +678,7 @@ static void so_chamada_mata_proc(so_t *self)
   console_printf("Matando processo");
   if (self->proc_atual == NULL) return;
   int id = processo_pega_reg_x(self->proc_atual);
-  processo_t *proc = tabela_remove_processo(self->proc_tabela, id);
-  if (proc != NULL) {
-      self->hist = historico_adiciona_metrica(self->hist, proc);
-      processo_mata(proc);
+  if (so_mata_processo(self, id) == 0) {
       mem_escreve(self->mem, IRQ_END_A, 0);
       console_printf("Morto processo com PID %d", id);
   }
@@ -649,10 +693,15 @@ static void so_chamada_espera_proc(so_t *self)
 {
   processo_t *p = self->proc_atual;
   int pid = processo_pega_reg_x(p);
-  processo_t *p2 = tabela_pega_processo(self->proc_tabela, pid);
-  if(p2 == p || p2 == NULL) return;
-  processo_bloqueia(p, PROC_BLOQ_ESPERA);
-  console_printf("Processo bloqueado");
+  if (pid == processo_pega_id(p)) {
+      return;
+  }
+  for (int i = 0; i < PROC_TAM_TABELA; i++) {
+      if (pid == processo_pega_id(self->proc_tabela[i])) {
+          so_bloqueia_processo(self, PROC_BLOQ_ESPERA);
+          return;
+      }
+  }
 }
 
 // CARGA DE PROGRAMA {{{1
