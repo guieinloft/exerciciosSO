@@ -108,7 +108,7 @@ void processo_muda_priori(processo_t *self, double priori) {
 }
 void processo_recalcula_priori(processo_t *self) {
     if (self == NULL) return;
-    self->priori = (self->priori + (double)self->quantum / self->max_quantum) / 2.0;
+    self->priori = (self->priori + (double)(self->max_quantum - self->quantum) / self->max_quantum) / 2.0;
 }
 double processo_pega_priori(processo_t *self) {
     if (self == NULL) return 0.0;

@@ -43,6 +43,7 @@ int escalonador_adiciona_processo(esc_t *self, processo_t *proc) {
 int escalonador_busca_processo(esc_t *self, int pid);
 void escalonador_remove_processo(esc_t *self, int pid) {
     if (pid == 0) {
+        processo_recalcula_priori(self->tab[self->ini]);
         self->tab[self->ini] = NULL;
         self->ini = (self->ini + 1) % self->cap;
         self->tam--;
@@ -52,6 +53,7 @@ void escalonador_remove_processo(esc_t *self, int pid) {
         if (indice == -1) {
             return;
         }
+        processo_recalcula_priori(self->tab[indice]);
         self->tam--;
         for (int i = indice; i < (indice + self->tam); i++) {
             self->tab[i % self->cap] = self->tab[(i + 1) % self->cap];
@@ -84,7 +86,7 @@ void escalonador_reordena_priori(esc_t *self) {
     for (int i = 1; i < self->tam; i++) {
         processo_t *temp = self->tab[(i + self->ini) % self->cap];
         int j = i;
-        while (j > 0 && processo_pega_priori(temp) >= processo_pega_priori(self->tab[(j - 1 + self->ini) % self->cap])) {
+        while (j > 0 && processo_pega_priori(temp) < processo_pega_priori(self->tab[(j - 1 + self->ini) % self->cap])) {
             self->tab[(j + self->ini) % self->cap] = self->tab[(j - 1 + self->ini) % self->cap];
             j--;
         }

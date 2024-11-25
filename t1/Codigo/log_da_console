@@ -335,126 +335,6 @@ teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9000
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
 PROC ATUAL: 3 1
 PC: 8000
 teste
@@ -571,6 +451,126 @@ SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9000
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -935,126 +935,6 @@ teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
 Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
 PROC ATUAL: 2 1
 PC: 7161
 teste
@@ -1175,242 +1055,122 @@ teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -1535,6 +1295,126 @@ teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
 Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
 teste
@@ -1639,6 +1519,318 @@ SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7191
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7213
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8217
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -1757,348 +1949,6 @@ teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
 Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8217
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7191
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7213
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8161
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8197
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8157
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7157
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7193
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7225
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7157
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
 teste
@@ -2173,20 +2023,56 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8134
+PC: 8161
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8126
+PC: 8162
 teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8172
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8165
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -2198,39 +2084,13 @@ SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8217
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
+PROC ATUAL: 3 1
+PC: 8133
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -2243,24 +2103,6 @@ SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8125
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -2270,6 +2112,92 @@ PC: 9163
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7157
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7159
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7217
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
@@ -2278,24 +2206,24 @@ SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Escalonando agora
 PROC ATUAL: 4 1
-PC: 9211
+PC: 9163
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7131
+PC: 7134
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
-Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
 PC: 7126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
+Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
 PC: 7123
@@ -2328,36 +2256,36 @@ SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Escalonando agora
 PROC ATUAL: 4 1
-PC: 9207
+PC: 9163
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8136
+PC: 8126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
-Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8128
+PC: 8136
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
+Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8125
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8195
+PC: 8133
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
@@ -2368,6 +2296,120 @@ Processo bloqueado
 Escalonando agora
 PROC ATUAL: 2 1
 PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9163
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8128
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
@@ -2407,7 +2449,7 @@ PROC ATUAL: 4 1
 PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
+Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9207
@@ -2426,14 +2468,8 @@ PROC ATUAL: 3 1
 PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
+Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
@@ -2443,23 +2479,29 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8134
+PC: 8124
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8124
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
+Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8134
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
+Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8193
@@ -2471,144 +2513,6 @@ PROC ATUAL: 3 1
 PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8223
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9163
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8128
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8125
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8195
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
 Escalonando agora
 PROC ATUAL: 4 1
@@ -2622,76 +2526,6 @@ PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9163
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8159
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9227
@@ -2701,56 +2535,6 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8133
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9199
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 3 1
 PC: 8223
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2758,13 +2542,6 @@ SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8161
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -2788,6 +2565,7 @@ PC: 7124
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
+Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
 PC: 7122
@@ -2810,6 +2588,12 @@ Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
 teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Processo bloqueado
@@ -2818,16 +2602,60 @@ PROC ATUAL: 3 1
 PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8219
+PC: 8124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8128
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8159
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8227
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -2841,26 +2669,26 @@ Quantum p_atual: 4
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7124
+PC: 7122
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7122
+PC: 7132
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7132
+PC: 7126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7126
+PC: 7123
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -2869,7 +2697,7 @@ PROC ATUAL: 4 1
 PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
+Quantum p_atual: 3
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9155
@@ -2887,18 +2715,50 @@ Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
 teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8163
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
-PROC ATUAL: 3 1
-PC: 8136
+PROC ATUAL: 2 1
+PC: 7132
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
-Processo desbloqueado
 Escalonando agora
-PROC ATUAL: 3 1
-PC: 8133
+PROC ATUAL: 2 1
+PC: 7126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -2908,23 +2768,73 @@ PC: 9160
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
 Processo bloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
+Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8133
+PC: 8124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8125
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
+Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8205
+PC: 8136
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8156
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -2932,12 +2842,6 @@ Escalonando agora
 PROC ATUAL: 3 1
 PC: 8162
 teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8219
-teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Processo bloqueado
@@ -2949,26 +2853,26 @@ SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7126
+PC: 7122
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7123
+PC: 7132
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7134
+PC: 7126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7131
+PC: 7123
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -3012,33 +2916,33 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7124
+PC: 7134
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7132
+PC: 7124
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7126
+PC: 7122
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7123
+PC: 7132
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7134
+PC: 7126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -3051,6 +2955,12 @@ SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -3060,14 +2970,6 @@ PC: 9199
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 3 1
-PC: 8162
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
@@ -3077,7 +2979,7 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8126
+PC: 8133
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
@@ -3087,13 +2989,13 @@ PC: 8125
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
-Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8136
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
+Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 3 1
 PC: 8133
@@ -3153,32 +3055,32 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7131
+PC: 7123
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7126
+PC: 7122
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7123
+PC: 7132
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7134
+PC: 7126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7131
+PC: 7123
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -3273,32 +3175,32 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7124
+PC: 7134
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7124
+PC: 7134
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7122
+PC: 7131
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7132
+PC: 7124
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7126
+PC: 7122
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -3343,32 +3245,32 @@ SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7123
+PC: 7132
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7122
+PC: 7131
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 3
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7132
+PC: 7124
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7126
+PC: 7122
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7123
+PC: 7132
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
@@ -3393,7 +3295,160 @@ SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 Escalonando agora
 PROC ATUAL: 3 1
-PC: 8114
+PC: 8126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9155
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8136
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8133
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8205
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8219
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8219
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 3 1
+PC: 8162
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -3406,51 +3461,26 @@ SO: chamada de sistema 8
 Matando processo
 Morto processo com PID 0
 Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
+PROC ATUAL: 4 1
+PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 0
 Escalonando agora
 PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
+PC: 9170
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9215
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -3458,811 +3488,6 @@ Processo bloqueado
 Escalonando agora
 PROC ATUAL: 2 1
 PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9199
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7201
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7213
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9199
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9199
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9199
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9199
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7134
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7123
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7126
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 4
@@ -4302,7 +3527,7 @@ PROC ATUAL: 4 1
 PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
+Quantum p_atual: 3
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9199
@@ -4390,7 +3615,7 @@ PROC ATUAL: 4 1
 PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
+Quantum p_atual: 2
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9155
@@ -4419,107 +3644,10 @@ Quantum p_atual: 3
 Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
-PC: 7131
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7124
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 1
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7122
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
+PC: 7203
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9199
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7132
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7201
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7154
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 2 1
-PC: 7160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Processo desbloqueado
 Escalonando agora
 PROC ATUAL: 2 1
 PC: 7160
@@ -4533,6 +3661,33 @@ PC: 9160
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9227
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: -1 -1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Processo desbloqueado
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
 Escalonando agora
 PROC ATUAL: 4 1
 PC: 9193
@@ -4577,6 +3732,937 @@ Escalonando agora
 PROC ATUAL: 2 1
 PC: 7160
 teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9155
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9155
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9155
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9155
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9155
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7123
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7131
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7124
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7122
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7132
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7126
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7134
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7128
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7163
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9197
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7164
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: -1 -1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: -1 -1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Processo desbloqueado
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: -1 -1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Escalonando agora
+PROC ATUAL: -1 -1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Processo desbloqueado
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9160
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+Escalonando agora
+PROC ATUAL: 4 1
+PC: 9199
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
+Escalonando agora
+PROC ATUAL: -1 -1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+Processo desbloqueado
+Processo desbloqueado
+Escalonando agora
+PROC ATUAL: 2 1
+PC: 7160
+teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
 Processo bloqueado
@@ -4612,8 +4698,9 @@ Escalonando agora
 PROC ATUAL: 4 1
 PC: 9160
 teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo bloqueado
 Escalonando agora
 PROC ATUAL: 1 1
 PC: 138
@@ -4626,153 +4713,6 @@ PC: 144
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 9
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9191
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 4
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 3
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 2
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9155
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
-Processo bloqueado
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Escalonando agora
-PROC ATUAL: -1 -1
-teste
-SO: recebi IRQ 3 (E/S: relógio)
-Quantum p_atual: 0
-Processo desbloqueado
-Escalonando agora
-PROC ATUAL: 4 1
-PC: 9160
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 2
 Processo bloqueado
 Escalonando agora
 PROC ATUAL: -1 -1
@@ -5736,15 +5676,15 @@ Matando processo
 Morto processo com PID 0
 Escalonando agora
 PROC ATUAL: -1 -1
-Tempo execução: 23393
-Tempo ocioso:   2099
-N. preempções:  71
+Tempo execução: 22852
+Tempo ocioso:   1767
+N. preempções:  72
 N. interrup. 0: 1
 N. interrup. 1: 0
 N. interrup. 2: 462
-N. interrup. 3: 466
+N. interrup. 3: 455
 N. interrup. 4: 0
 N. interrup. 5: 0
 CMD: 'F'
 Fim da execução.
-relógio: 84254
+relógio: 146756
