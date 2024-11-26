@@ -35,6 +35,7 @@ void escalonador_destroi(esc_t *self) {
 // TABELA
 int escalonador_adiciona_processo(esc_t *self, processo_t *proc) {
     if (self->tam >= self->cap) return -1;
+    processo_reseta_quantum(proc);
     self->tab[(self->ini + self->tam) % self->cap] = proc;
     self->tam++;
     return 0;
@@ -63,6 +64,7 @@ void escalonador_remove_processo(esc_t *self, int pid) {
 
 void escalonador_manda_fim_fila(esc_t *self) {
     self->tab[(self->ini + self->tam) % self->cap] = self->tab[self->ini];
+    self->tab[self->ini] = NULL;
     self->ini = (self->ini + 1) % self->cap;
 }
 
@@ -112,9 +114,9 @@ int escalonador_circular(esc_t *self, so_t *so) {
     int preemp = 0;
     if (processo_pega_estado(self->tab[self->ini]) == PROC_EXECUTANDO) {
         if (processo_pega_quantum(self->tab[self->ini]) <= 0) {
+            preemp = 1;
             processo_reseta_quantum(self->tab[self->ini]);
             processo_muda_estado(self->tab[self->ini], PROC_PRONTO);
-            preemp = 1;
             escalonador_manda_fim_fila(self);
         }
     }
@@ -131,10 +133,10 @@ int escalonador_prioridade(esc_t *self, so_t *so) {
     int preemp = 0;
     if (processo_pega_estado(self->tab[self->ini]) == PROC_EXECUTANDO) {
         if (processo_pega_quantum(self->tab[self->ini]) <= 0) {
+            preemp = 1;
             processo_recalcula_priori(self->tab[self->ini]);
             processo_reseta_quantum(self->tab[self->ini]);
             processo_muda_estado(self->tab[self->ini], PROC_PRONTO);
-            preemp = 1;
             escalonador_reordena_priori(self);
         }
     }

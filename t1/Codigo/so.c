@@ -83,7 +83,13 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->esc = escalonador_cria(PROC_TAM_TABELA);
   self->esc_tipo = ESC_PRIORIDADE;
 
+  // cria histórico
   self->hist = NULL;
+
+  // cria métricas
+  self->metricas.t_exec = 0;
+  self->metricas.t_ocioso = 0;
+  self->metricas.n_preempcoes = 0;
 
   // quando a CPU executar uma instrução CHAMAC, deve chamar a função
   //   so_trata_interrupcao, com primeiro argumento um ptr para o SO
@@ -182,7 +188,7 @@ static void so_atualiza_metricas(so_t *self, int preemp) {
     if (t_relogio_anterior == -1) return;
     int delta = self->t_relogio_atual - t_relogio_anterior;
     self->metricas.t_exec += delta;
-    if (self->proc_atual == NULL || processo_pega_estado(self->proc_atual) != PROC_EXECUTANDO) {
+    if (self->proc_atual == NULL) {
         self->metricas.t_ocioso += delta;
     }
     self->metricas.n_preempcoes += preemp;

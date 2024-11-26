@@ -1,0 +1,53 @@
+Tempo execução: 21332
+Tempo ocioso:   466
+N. preempções:  129
+N. interrup. 0: 1
+N. interrup. 1: 0
+N. interrup. 2: 462
+N. interrup. 3: 849
+N. interrup. 4: 0
+N. interrup. 5: 0
+
+ID: 1
+N. preempções: 5
+T. retorno:    21316
+T. resposta:   0
+Vezes em 0: 7
+Tempo em 0: 0
+Vezes em 1: 7
+Tempo em 1: 784
+Vezes em 2: 1
+Tempo em 2: 20532
+
+ID: 2
+N. preempções: 84
+T. retorno:    20557
+T. resposta:   118
+Vezes em 0: 93
+Tempo em 0: 10991
+Vezes em 1: 93
+Tempo em 1: 9041
+Vezes em 2: 8
+Tempo em 2: 525
+
+ID: 4
+N. preempções: 12
+T. retorno:    19919
+T. resposta:   99
+Vezes em 0: 96
+Tempo em 0: 9580
+Vezes em 1: 96
+Tempo em 1: 7127
+Vezes em 2: 83
+Tempo em 2: 3212
+
+ID: 3
+N. preempções: 28
+T. retorno:    10777
+T. resposta:   140
+Vezes em 0: 43
+Tempo em 0: 6038
+Vezes em 1: 43
+Tempo em 1: 3914
+Vezes em 2: 14
+Tempo em 2: 825
