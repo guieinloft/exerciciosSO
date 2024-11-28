@@ -1,4 +1,4 @@
-# 1. Introdução:
+# 1. Introdução
 Um sistema operacional é um software capaz de gerenciar recursos de um dispositivo, como memória e processamento, controlar a execução de programas e processos, definir prioridade de execução de um programa, etc. Além disso, ele fornece uma abstração do hardware para o usuário final, conectando os programas aos componentes físicos do computador.
 
 Os primeiros computadores podiam apenas executar código de máquina e precisavam de um ser humano para controlar a execução de processos. Porém, na década de 60, os primeiros sistemas operacionais surgiram. Ao longo do tempo, estes sistemas operacionais foram ganhando novos recursos, como escalonamento, multiprocessamento, gerenciamento de entrada e saída, entre outros.
