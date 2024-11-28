@@ -108,6 +108,6 @@ Os escalonadores preemptivos apresentaram uma melhoria de desempenho sobre o esc
 Portanto, pode-se dizer que a escolha de escalonador, de intervalo de tempo de relógio e de _quantum_ são um aspecto importante a ser considerado na implementação de um sistema operacional. Cabe ao desenvolvedor decidir quais parâmetros são os ideais para o hardware e seus requisitos.
 
 # 6. Referências
-TANENBAUM, A. S.; BOS, H. Sistemas Operacionais Modernos, 4th ed. New Jersey: Pearson, 2015.
+TANENBAUM, A. S.; BOS, H. Sistemas Operacionais Modernos, 4th ed. Upper Saddle River: Pearson, 2015.
 
 SISTEMA OPERATIVO. In: WIKIPÉDIA, a enciclopédia livre. Flórida: Wikimedia Foundation, 2024. Disponível em: <[https://pt.wikipedia.org/w/index.php?title=Sistema_operativo&oldid=68588140](https://pt.wikipedia.org/w/index.php?title=Sistema_operativo&oldid=68588140)>. Acesso em: 28 nov. 2024.
