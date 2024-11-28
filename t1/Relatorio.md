@@ -1,6 +1,9 @@
 # 1. Introdução:
+Um sistema operacional é um software capaz de gerenciar recursos de um dispositivo, como memória e processamento, controlar a execução de programas e processos, definir prioridade de execução de um programa, etc. Além disso, ele fornece uma abstração do hardware para o usuário final, conectando os programas aos componentes físicos do computador.
 
-Este relatório abordará os resultados 
+Os primeiros computadores podiam apenas executar código de máquina e precisavam de um ser humano para controlar a execução de processos. Porém, na década de 60, os primeiros sistemas operacionais surgiram. Ao longo do tempo, estes sistemas operacionais foram ganhando novos recursos, como escalonamento, multiprocessamento, gerenciamento de entrada e saída, entre outros.
+
+Neste relatório, será observado a maneira que diferentes algoritmos de escalonamento, com e sem preempção, podem afetar o desempenho do sistema operacional. Também será analisado o impacto de modificar diferentes parâmetros de tempo na velocidade do sistema. 
 
 # 2. Objetivo
 Analisar diferentes técnicas de escalonamento de processos e seu impacto no desempenho do sistema operacional. Entender como diferentes configurações podem afetar a velocidade do sistema operacional.
@@ -87,6 +90,7 @@ O escalonador prioritário apresentou os melhores resultados entre os escalonado
 
 ## Interrupções de relógio (escalonador prioritário, quantum = 5):
 ![Gráfico do tempo de execução e tempo ocioso do sistema operacional em relação ao intervalo de interrupção de relógio](https://raw.githubusercontent.com/guieinloft/exerciciosSO/refs/heads/main/t1/Metricas/gr_intervalo.png)
+
 Percebe-se que o sistema operacional possui melhor desempenho com um intervalo específico de tempo, neste caso sendo 40 instruções, tendo desempenho pior com intervalos menores e maiores que este número. Percebe-se também, que o tempo ocioso do SO diminui em relação ao tempo, porém, ao interromper a execução dos processos frequentemente faz com que muito tempo seja desperdiçado executando o sistema operacional.
 
 ## Quantum (escalonador prioritário, int. relógio = 50):
@@ -96,7 +100,10 @@ Praticamente o mesmo comportamento da mudança de intervalo acontece com a mudan
 
 # 5. Conclusão
 O sistema operacional foi implementado de acordo com os requisitos apresentados pelo professor.
+
 Os escalonadores preemptivos apresentaram uma melhoria de desempenho sobre o escalonador não-preemptivo, com o escalonador prioritário apresentando o melhor desempenho entre os preemptivos. Isso indica que a preemptividade é benéfica para o desempenho do sistema operacional.
+
 Entretanto, caso ocorram muitas preempções durante um curto intervalo de tempo, ou caso o sistema operacional interrompa frequentemente a CPU, pode causar um _overhead_ significativo e afetar o tempo de execução do sistema, indicado pelos resultados da mudança de intervalo e de _quantum_.
+
 Portanto, pode-se dizer que a escolha de escalonador, de intervalo de tempo de relógio e de _quantum_ são um aspecto importante a ser considerado na implementação de um sistema operacional. Cabe ao desenvolvedor decidir quais parâmetros são os ideais para o hardware e seus requisitos.
 
