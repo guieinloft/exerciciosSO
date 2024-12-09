@@ -122,7 +122,6 @@ int escalonador_prioridade(esc_t *self, so_t *so) {
     if(self->tam == 0 || self->tab[self->ini] == NULL) {
         return 0;
     }
-    console_printf("tam: %d", self->tam);
     int preemp = 0;
     if (processo_pega_estado(self->tab[self->ini]) == PROC_EXECUTANDO) {
         if (processo_pega_quantum(self->tab[self->ini]) <= 0) {

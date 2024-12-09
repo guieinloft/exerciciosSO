@@ -1,8 +1,6 @@
 #ifndef PROCESSO_H
 #define PROCESSO_H
 
-#include "tabpag.h"
-
 typedef struct processo_t processo_t;
 typedef struct historico_t historico_t;
 
@@ -56,8 +54,6 @@ void processo_reseta_quantum(processo_t *self);
 void processo_muda_priori(processo_t *self, double priori);
 void processo_recalcula_priori(processo_t *self);
 double processo_pega_priori(processo_t *self);
-
-tabpag_t *processo_pega_tabpag(processo_t *self);
 
 // METRICAS
 void processo_atualiza_metricas(processo_t *self, int delta);

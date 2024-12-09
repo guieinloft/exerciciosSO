@@ -56,14 +56,11 @@ typedef struct so_metricas_t {
 struct so_t {
   cpu_t *cpu;
   mem_t *mem;
-  mem_t *disco;
   mmu_t *mmu;
   es_t *es;
   console_t *console;
   bool erro_interno;
   // t1: tabela de processos, processo corrente, pendências, etc
-  tabpag_t *tabpag_global;
-  
   processo_t **proc_tabela;
   processo_t *proc_atual;
   int proc_ultimo_id;
@@ -79,6 +76,10 @@ struct so_t {
   // t2: com memória virtual, o controle de memória livre e ocupada é mais
   //     completo que isso
   int quadro_livre;
+  // uma tabela de páginas para poder usar a MMU
+  // t2: com processos, não tem esta tabela global, tem que ter uma para
+  //     cada processo
+  tabpag_t *tabpag_global;
 };
 
 
@@ -97,7 +98,7 @@ static bool so_copia_str_do_processo(so_t *self, int tam, char str[tam],
 // CRIAÇÃO {{{1
 
 
-so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
+so_t *so_cria(cpu_t *cpu, mem_t *mem, mmu_t *mmu,
               es_t *es, console_t *console)
 {
   so_t *self = malloc(sizeof(*self));
@@ -105,7 +106,6 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
 
   self->cpu = cpu;
   self->mem = mem;
-  self->disco = disco;
   self->mmu = mmu;
   self->es = es;
   self->console = console;
@@ -176,36 +176,16 @@ void so_destroi(so_t *self)
 }
 
 // PROCESSOS {{{1
-static processo_t *so_cria_processo(so_t *self, char *origem) {
-    console_printf("Criando processo");
-    processo_t *p = processo_cria(self->proc_ultimo_id + 1, 0, MAX_QUANTUM);
-    int ender = so_carrega_programa(self, p, origem);
-    processo_salva_reg_pc(p, ender);
-    if (p == NULL) return NULL;
+static void so_adiciona_processo(so_t *self, processo_t *p) {
+    if (p == NULL) return;
     for (int i = 0; i < PROC_TAM_TABELA; i++) {
         if (self->proc_tabela[i] == NULL) {
             self->proc_tabela[i] = p;
-            console_printf("Processo adicionado em %d", i);
             break;
         }
     }
     escalonador_adiciona_processo(self->esc, p);
     self->proc_ultimo_id++;
-    return p;
-}
-
-static int so_adiciona_processo(so_t *self, processo_t *p) {
-    if (p == NULL) return -1;
-    for (int i = 0; i < PROC_TAM_TABELA; i++) {
-        if (self->proc_tabela[i] == NULL) {
-            self->proc_tabela[i] = p;
-            console_printf("Processo adicionado em %d", i);
-            break;
-        }
-    }
-    escalonador_adiciona_processo(self->esc, p);
-    self->proc_ultimo_id++;
-    return 0;
 }
 
 static int so_mata_processo(so_t *self, int id) {
@@ -407,7 +387,9 @@ static int so_trata_interrupcao(void *argC, int reg_A)
   so_escalona(self);
   // recupera o estado do processo escolhido
   if (self->proc_tabela[0] != NULL) {
-      return so_despacha(self);
+      int retorno = so_despacha(self);
+      console_printf("RETORNO DESPACHA: %d", retorno);
+      return retorno;
   }
   else {
       return so_desliga(self);
@@ -484,7 +466,6 @@ static int so_despacha(so_t *self)
   mem_escreve(self->mem, IRQ_END_PC, pc);
   mem_escreve(self->mem, IRQ_END_A, a);
   mem_escreve(self->mem, IRQ_END_X, x);
-  mmu_define_tabpag(self->mmu, processo_pega_tabpag(self->proc_atual));
   console_printf("PC: %d", pc);
   return 0;
 }
@@ -538,16 +519,26 @@ static void so_trata_irq(so_t *self, int irq)
 // interrupção gerada uma única vez, quando a CPU inicializa
 static void so_trata_irq_reset(so_t *self)
 {
+  // t1: deveria criar um processo para o init, e inicializar o estado do
+  //   processador para esse processo com os registradores zerados, exceto
+  //   o PC e o modo.
+  // como não tem suporte a processos, está carregando os valores dos
+  //   registradores diretamente para a memória, de onde a CPU vai carregar
+  //   para os seus registradores quando executar a instrução RETI
+
   // coloca o programa "init" na memória
   // t2: deveria criar um processo, e programar a tabela de páginas dele
-  self->proc_atual = so_cria_processo(self, "init.maq");
-  if (self->proc_atual == NULL || processo_pega_reg_pc(self->proc_atual) != 0) {
+  processo_t *processo = processo_cria(self->proc_ultimo_id + 1, 0, MAX_QUANTUM); // deveria inicializar um processo...
+  int ender = so_carrega_programa(self, processo, "init.maq");
+  if (ender != 0) {
     console_printf("SO: problema na carga do programa inicial");
     self->erro_interno = true;
     return;
   }
+  so_adiciona_processo(self, processo);
+  self->proc_atual = processo;
 
-  // altera o PC para o endereço de carga
+  // altera o PC para o endereço de carga (deve ter sido o endereço virtual 0)
   mem_escreve(self->mem, IRQ_END_PC, processo_pega_reg_pc(self->proc_atual));
   // passa o processador para modo usuário
   mem_escreve(self->mem, IRQ_END_modo, usuario);
@@ -699,19 +690,20 @@ static void so_chamada_cria_proc(so_t *self)
   // ainda sem suporte a processos, carrega programa e passa a executar ele
   // quem chamou o sistema não vai mais ser executado, coitado!
   // T1: deveria criar um novo processo
+  processo_t *processo = processo_cria(self->proc_ultimo_id + 1, 0, MAX_QUANTUM); // T2: o processo criado
+
   // em X está o endereço onde está o nome do arquivo
-  processo_t *p = processo_cria(self->proc_ultimo_id + 1, 0, MAX_QUANTUM);
   int ender_proc;
   // t1: deveria ler o X do descritor do processo criador
   if (mem_le(self->mem, IRQ_END_X, &ender_proc) == ERR_OK) {
     char nome[100];
-    if (so_copia_str_do_processo(self, 100, nome, ender_proc, p)) {
-      int ender_carga = so_carrega_programa(self, p, nome);
+    if (so_copia_str_do_processo(self, 100, nome, ender_proc, processo)) {
+      int ender_carga = so_carrega_programa(self, processo, nome);
+      // o endereço de carga é endereço virtual, deve ser 0
       if (ender_carga == 0) {
-        // t1: deveria escrever no PC do descritor do processo criado
-        so_adiciona_processo(self, p);
-        processo_salva_reg_a(self->proc_atual, processo_pega_id(p));
-        console_printf("Criado processo com PID %d", processo_pega_id(p));
+        // deveria escrever no PC do descritor do processo criado
+        so_adiciona_processo(self, processo);
+        processo_salva_reg_a(self->proc_atual, -1);
         return;
       } // else?
     }
@@ -746,18 +738,14 @@ static void so_chamada_espera_proc(so_t *self)
   processo_t *p = self->proc_atual;
   int pid = processo_pega_reg_x(p);
   if (pid == processo_pega_id(p)) {
-      console_printf("Processo atual nao foi bloqueado");
       return;
   }
   for (int i = 0; i < PROC_TAM_TABELA; i++) {
-      console_printf("%d %d", pid, processo_pega_id(self->proc_tabela[i]));
       if (pid == processo_pega_id(self->proc_tabela[i])) {
           so_bloqueia_processo(self, PROC_BLOQ_ESPERA);
-          console_printf("Processo atual bloqueado");
           return;
       }
   }
-  console_printf("Processo atual nao foi bloqueado");
 }
 
 // CARGA DE PROGRAMA {{{1
@@ -828,7 +816,7 @@ static int so_carrega_programa_na_memoria_virtual(so_t *self,
   // mapeia as páginas nos quadros
   int quadro = quadro_ini;
   for (int pagina = pagina_ini; pagina <= pagina_fim; pagina++) {
-    tabpag_define_quadro(processo_pega_tabpag(processo), pagina, quadro);
+    //tabpag_define_quadro(self->tabpag_global, pagina, quadro);
     quadro++;
   }
   self->quadro_livre = quadro;
