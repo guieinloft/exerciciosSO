@@ -1,6 +1,6 @@
 Tempo execução: 24049
 Tempo ocioso:   2431
-N. preempções:  58
+N. preempções:  0
 N. interrup. 0: 1
 N. interrup. 1: 0
 N. interrup. 2: 462

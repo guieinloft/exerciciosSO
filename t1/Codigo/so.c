@@ -24,6 +24,8 @@
 #define PROC_TAM_TABELA 1000
 #define MAX_QUANTUM 5
 
+#define ESC_TIPO ESC_PRIORIDADE
+
 typedef struct so_metricas_t {
     int t_exec;
     int t_ocioso;
@@ -43,7 +45,6 @@ struct so_t {
   int proc_ultimo_id;
   
   esc_t *esc;
-  esc_tipo_t esc_tipo;
   
   int t_relogio_atual;
   
@@ -80,8 +81,7 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->proc_ultimo_id = 0;
 
   // cria escalonador
-  self->esc = escalonador_cria(PROC_TAM_TABELA);
-  self->esc_tipo = ESC_PRIORIDADE;
+  self->esc = escalonador_cria(ESC_TIPO, PROC_TAM_TABELA, MAX_QUANTUM);
 
   // cria histórico
   self->hist = NULL;
@@ -170,7 +170,7 @@ static int so_mata_processo(so_t *self, int id) {
 static void so_bloqueia_processo(so_t *self, proc_bloqueio_t motivo) {
     processo_bloqueia(self->proc_atual, motivo);
     escalonador_remove_processo(self->esc, 0);
-    console_printf("Processo bloqueado");
+    console_printf("Processo %d bloqueado", processo_pega_id(self->proc_atual));
 }
 
 static void so_desbloqueia_processo(so_t *self, processo_t *proc) {
@@ -225,7 +225,7 @@ static void so_imprime_metricas(so_t *self) {
 
 static void so_imprime_metricas_arquivo(so_t *self) {
     char nome[100];
-    sprintf(nome, "../Metricas/log_%d_%d_%d.txt", self->esc_tipo, INTERVALO_INTERRUPCAO, MAX_QUANTUM);
+    sprintf(nome, "../Metricas/log_%d_%d_%d.txt", ESC_TIPO, INTERVALO_INTERRUPCAO, MAX_QUANTUM);
     FILE *log = fopen(nome, "w");
     fprintf(log, "Tempo execução: %d\n", self->metricas.t_exec);
     fprintf(log, "Tempo ocioso:   %d\n", self->metricas.t_ocioso);
@@ -252,8 +252,7 @@ static void so_imprime_metricas_arquivo(so_t *self) {
 static int so_trata_bloq_espera(so_t *self, processo_t *p) {
   int pid = processo_pega_reg_x(p);
   if (pid == processo_pega_id(p)) {
-      processo_muda_estado(p, PROC_PRONTO);
-      escalonador_adiciona_processo(self->esc, p);
+      so_desbloqueia_processo(self, p);
       return 1;
   }
   for (int i = 0; i < PROC_TAM_TABELA; i++) {
@@ -374,21 +373,19 @@ static void so_trata_pendencias(so_t *self)
 {
     for (int i = 0; i < PROC_TAM_TABELA; i++) {
         processo_t *p = self->proc_tabela[i];
-        if (p != NULL) {
-            if (processo_pega_estado(p) == PROC_BLOQUEADO) {
-                switch (processo_pega_bloq_motivo(p)) {
-                    case PROC_BLOQ_ESPERA:
-                    so_trata_bloq_espera(self, p);
-                    break;
-                    case PROC_BLOQ_ENTRADA:
-                    so_trata_bloq_entrada(self, p);
-                    break;
-                    case PROC_BLOQ_SAIDA:
-                    so_trata_bloq_saida(self, p);
-                    break;
-                    default:
-                    break;
-                }
+        if (p != NULL && processo_pega_estado(p) == PROC_BLOQUEADO) {
+            switch (processo_pega_bloq_motivo(p)) {
+                case PROC_BLOQ_ESPERA:
+                so_trata_bloq_espera(self, p);
+                break;
+                case PROC_BLOQ_ENTRADA:
+                so_trata_bloq_entrada(self, p);
+                break;
+                case PROC_BLOQ_SAIDA:
+                so_trata_bloq_saida(self, p);
+                break;
+                default:
+                break;
             }
         }
     }
@@ -401,18 +398,8 @@ static void so_escalona(so_t *self)
   // t1: na primeira versão, escolhe um processo caso o processo corrente não possa continuar
   //   executando. depois, implementar escalonador melhor
     int preemp = 0;
-    console_printf("Escalonando agora", self->proc_atual);
-    switch (self->esc_tipo) {
-        case ESC_SIMPLES:
-        preemp = escalonador_simples(self->esc, self);
-        break;
-        case ESC_CIRCULAR:
-        preemp = escalonador_circular(self->esc, self);
-        break;
-        case ESC_PRIORIDADE:
-        preemp = escalonador_prioridade(self->esc, self);
-        break;
-    }
+    console_printf("Escalonando agora");
+    escalonador_escalona(self->esc, self);
     self->proc_atual = escalonador_pega_atual(self->esc);
     console_printf("PROC ATUAL: %d %d", processo_pega_id(self->proc_atual), processo_pega_estado(self->proc_atual));
     so_atualiza_metricas(self, preemp);
