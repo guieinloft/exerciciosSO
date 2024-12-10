@@ -17,6 +17,7 @@ struct processo_t {
     double priori;
     proc_metricas_t metricas;
     tabpag_t *tabpag;
+    int pagina_disco;
 };
 
 struct historico_t {
@@ -129,6 +130,16 @@ double processo_pega_priori(processo_t *self) {
 tabpag_t *processo_pega_tabpag(processo_t *self) {
     if (self != NULL) return self->tabpag;
     return NULL;
+}
+
+int processo_pega_pagina_disco(processo_t *self) {
+    if (self != NULL) return self->pagina_disco;
+    return -1;
+}
+
+void processo_salva_pagina_disco(processo_t *self, int pagina_disco) {
+    if (self == NULL) return;
+    self->pagina_disco = pagina_disco;
 }
 
 void processo_mata(processo_t *self) {

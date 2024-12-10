@@ -60,6 +60,8 @@ void processo_recalcula_priori(processo_t *self);
 double processo_pega_priori(processo_t *self);
 
 tabpag_t *processo_pega_tabpag(processo_t *self);
+int processo_pega_pagina_disco(processo_t *self);
+void processo_salva_pagina_disco(processo_t *self, int pagina_disco);
 
 // METRICAS
 void processo_atualiza_metricas(processo_t *self, int delta);

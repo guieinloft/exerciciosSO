@@ -76,11 +76,8 @@ struct so_t {
   // primeiro quadro da memória que está livre (quadros anteriores estão ocupados)
   // t2: com memória virtual, o controle de memória livre e ocupada é mais
   //     completo que isso
-  int quadro_livre;
-  // uma tabela de páginas para poder usar a MMU
-  // t2: com processos, não tem esta tabela global, tem que ter uma para
-  //     cada processo
-  tabpag_t *tabpag_global;
+  int quadro_livre_pri;
+  int quadro_livre_sec;
 };
 
 
@@ -153,16 +150,12 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
     self->erro_interno = true;
   }
 
-  // inicializa a tabela de páginas global, e entrega ela para a MMU
-  // t2: com processos, essa tabela não existiria, teria uma por processo, que
-  //     deve ser colocada na MMU quando o processo é despachado para execução
-  self->tabpag_global = tabpag_cria();
-  mmu_define_tabpag(self->mmu, self->tabpag_global);
   // define o primeiro quadro livre de memória como o seguinte àquele que
   //   contém o endereço 99 (as 100 primeiras posições de memória (pelo menos)
   //   não vão ser usadas por programas de usuário)
   // t2: o controle de memória livre deve ser mais aprimorado que isso  
-  self->quadro_livre = 99 / TAM_PAGINA + 1;
+  self->quadro_livre_pri = 99 / TAM_PAGINA + 1;
+  self->quadro_livre_sec = 0;
   console_printf("Criando SO");
 
   return self;
@@ -350,6 +343,28 @@ static int so_trata_bloq_saida(so_t *self, processo_t *p) {
     return 1;
 }
 
+// TRATAMENTO DE PAGE FAULT {{{1
+static void so_trata_page_fault(so_t *self) {
+    int comp = processo_pega_reg_comp(self->proc_atual);
+    int pag_disco = processo_pega_pagina_disco(self->proc_atual) + comp/TAM_PAGINA;
+    int end_disco_ini = pag_disco * TAM_PAGINA;
+    int dado;
+    int end_mem_ini = self->quadro_livre_pri * TAM_PAGINA;
+    for (int i = 0; i < TAM_PAGINA; i++) {
+        if (mem_le(self->disco, end_disco_ini + i, &dado) != ERR_OK) {
+            console_printf("Erro na leitura do disco");
+            return;
+        }
+        if (mem_escreve(self->mem, end_mem_ini + i, dado) != ERR_OK) {
+            console_printf("Erro na escrita na memória");
+            return;
+        }
+    }
+    tabpag_define_quadro(processo_pega_tabpag(self->proc_atual), comp / TAM_PAGINA, self->quadro_livre_pri);
+    self->quadro_livre_pri++;
+    console_printf("Página nos endereços %d-%d", (self->quadro_livre_pri - 1) * TAM_PAGINA, self->quadro_livre_pri * TAM_PAGINA - 1);
+}
+
 // TRATAMENTO DE INTERRUPÇÃO {{{1
 
 // funções auxiliares para o tratamento de interrupção
@@ -476,6 +491,7 @@ static int so_despacha(so_t *self)
   mem_escreve(self->mem, IRQ_END_X, x);
   mem_escreve(self->mem, IRQ_END_complemento, comp);
   mmu_define_tabpag(self->mmu, processo_pega_tabpag(self->proc_atual));
+  mem_escreve(self->mem, IRQ_END_erro, ERR_OK);
   console_printf("PC: %d", pc);
   return 0;
 }
@@ -570,10 +586,7 @@ static void so_trata_irq_err_cpu(so_t *self)
   console_printf("SO: IRQ erro na CPU: %s", err_nome(err));
   if(err == ERR_OK) return;
   if(err == ERR_PAG_AUSENTE) {
-      int comp;
-      mem_le(self->mem, IRQ_END_complemento, &comp);
-      console_printf("ENDEREÇO: %d", comp);
-      self->erro_interno = 1;
+      so_trata_page_fault(self);
       return;
   }
   console_printf("Matando processo");
@@ -829,20 +842,21 @@ static int so_carrega_programa_na_memoria_virtual(so_t *self,
   int end_virt_fim = end_virt_ini + prog_tamanho(programa) - 1;
   int pagina_ini = end_virt_ini / TAM_PAGINA;
   int pagina_fim = end_virt_fim / TAM_PAGINA;
-  int quadro_ini = self->quadro_livre;
+  int quadro_ini = self->quadro_livre_sec;
+  processo_salva_pagina_disco(processo, quadro_ini);
   // mapeia as páginas nos quadros
   int quadro = quadro_ini;
   for (int pagina = pagina_ini; pagina <= pagina_fim; pagina++) {
-    tabpag_define_quadro(processo_pega_tabpag(processo), pagina, quadro);
+    //tabpag_define_quadro(processo_pega_tabpag(processo), pagina, quadro);
     quadro++;
   }
-  self->quadro_livre = quadro;
+  self->quadro_livre_sec = quadro;
 
   // carrega o programa na memória principal
   int end_fis_ini = quadro_ini * TAM_PAGINA;
   int end_fis = end_fis_ini;
   for (int end_virt = end_virt_ini; end_virt <= end_virt_fim; end_virt++) {
-    if (mem_escreve(self->mem, end_fis, prog_dado(programa, end_virt)) != ERR_OK) {
+    if (mem_escreve(self->disco, end_fis, prog_dado(programa, end_virt)) != ERR_OK) {
       console_printf("Erro na carga da memória, end virt %d fís %d\n", end_virt,
                      end_fis);
       return -1;
