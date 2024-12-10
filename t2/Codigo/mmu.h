@@ -21,7 +21,7 @@ typedef struct mmu_t mmu_t;
 
 // tamanho de uma página, em palavras de memória
 // t2: pode ser alterado para comparar configurações diferentes
-#define TAM_PAGINA 10
+#define TAM_PAGINA 3
 
 // cria uma MMU para gerenciar acessos à memória
 // retorna um ponteiro para um descritor, que deverá ser usado em todas

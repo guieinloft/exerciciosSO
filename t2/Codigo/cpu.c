@@ -7,7 +7,6 @@
 #include "cpu.h"
 #include "err.h"
 #include "instrucao.h"
-#include "console.h"
 
 #include <stdbool.h>
 #include <stdlib.h>
@@ -137,7 +136,6 @@ void cpu_concatena_descricao(cpu_t *self, char *str)
 static bool pega_mem(cpu_t *self, int endereco, int *pval)
 {
   self->erro = mmu_le(self->mmu, endereco, pval, self->modo);
-  console_printf("END: %d INSTRUCAO: %d", endereco, *pval);
   if (self->erro == ERR_OK) return true;
   self->complemento = endereco;
   return false;

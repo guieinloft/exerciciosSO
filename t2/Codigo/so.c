@@ -791,7 +791,10 @@ static void so_chamada_cria_proc(so_t *self)
   // t1: deveria ler o X do descritor do processo criador
   if (mem_le(self->mem, IRQ_END_X, &ender_proc) == ERR_OK) {
     char nome[100];
-    if (so_copia_str_do_processo(self, 100, nome, ender_proc, processo)) {
+    processo_t *p2 = processo; // gambiarra (se não o processo principal corrompe)
+    bool copia_str = so_copia_str_do_processo(self, 100, nome, ender_proc, processo);
+    console_printf("%llu", p2);
+    if (copia_str) {
       int ender_carga = so_carrega_programa(self, processo, nome);
       // o endereço de carga é endereço virtual, deve ser 0
       if (ender_carga == 0) {
@@ -950,7 +953,6 @@ static bool so_copia_str_do_processo(so_t *self, int tam, char str[tam],
     //   os endereços e acessar a memória
     err_t erro_mmu = mmu_le(self->mmu, end_virt + indice_str, &caractere, usuario);
     if (erro_mmu != ERR_OK) {
-        console_printf("ERRO MMU: %d", erro_mmu);
         if (erro_mmu == ERR_PAG_AUSENTE) {
             so_trata_pag_ausente(self, end_virt + indice_str);
             indice_str--;
@@ -959,7 +961,7 @@ static bool so_copia_str_do_processo(so_t *self, int tam, char str[tam],
             return false;
         }
     }
-    if (caractere < 0 || caractere > 255) {
+    else if (caractere < 0 || caractere > 255) {
       return false;
     }
     str[indice_str] = caractere;
@@ -967,7 +969,6 @@ static bool so_copia_str_do_processo(so_t *self, int tam, char str[tam],
       return true;
     }
   }
-  // estourou o tamanho de str
   return false;
 }
 
