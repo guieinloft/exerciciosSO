@@ -78,9 +78,10 @@ void mem_quadros_remove_fila(mem_quadros_t *self, int indice) {
     }
 }
 
-void mem_quadros_muda_estado(mem_quadros_t *self, int indice, bool livre, int dono) {
+void mem_quadros_muda_estado(mem_quadros_t *self, int indice, bool livre, int dono, int pagina) {
     self->quadros[indice].livre = livre;
     self->quadros[indice].dono = dono;
+    self->quadros[indice].pagina = pagina;
     if (livre) {
         mem_quadros_remove_fila(self, indice);
     }

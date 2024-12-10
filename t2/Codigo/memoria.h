@@ -7,7 +7,7 @@
 #define MEMORIA_H
 
 #include "err.h"
-#define MEM_TAM 500 // tamanho da memória principal
+#define MEM_TAM 300 // tamanho da memória principal
 #define DISCO_TAM 10000000 // tamanho da memória secundária (disco)
 
 // tipo opaco que representa a memória

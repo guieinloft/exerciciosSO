@@ -221,7 +221,7 @@ static void so_bloqueia_processo(so_t *self, proc_bloqueio_t motivo) {
 static void so_desbloqueia_processo(so_t *self, processo_t *proc) {
     processo_muda_estado(proc, PROC_PRONTO);
     escalonador_adiciona_processo(self->esc, proc);
-    console_printf("Processo desbloqueado");
+    console_printf("Processo %d desbloqueado", processo_pega_id(proc));
 }
 
 static processo_t *so_busca_processo(so_t *self, int pid) {
@@ -308,7 +308,6 @@ static void so_imprime_metricas_arquivo(so_t *self) {
 }
 
 // TRATAMENTO DE BLOQUEIO {{{1
-
 static int so_trata_bloq_espera(so_t *self, processo_t *p) {
   int pid = processo_pega_reg_x(p);
   console_printf("%d", pid);
@@ -367,22 +366,31 @@ static int so_trata_bloq_saida(so_t *self, processo_t *p) {
 
 // TRATAMENTO DE PAGE FAULT {{{1
 static int so_libera_pagina(so_t *self) {
+    console_printf("SUBSTITUINDO PAGINA");
     int quadro_livre = mem_quadros_libera_quadro(self->quadros);
     int pid = mem_quadros_pega_dono(self->quadros, quadro_livre);
     int pagina = mem_quadros_pega_pagina(self->quadros, quadro_livre);
     processo_t *p = so_busca_processo(self, pid);
-    if (p == NULL) {
-        console_printf("PROCESSO %d NAO ENCONTRADO", pid);
-        self->erro_interno = 1;
-    }
     tabpag_t *tab = processo_pega_tabpag(p);
-    if (tab == NULL) {
-        console_printf("TABELA DO PROCESSO %d NAO ENCONTRADO", pid);
-        self->erro_interno = 1;
+    console_printf("BIT ALT: %d", tabpag_bit_alteracao(tab, pagina));
+    if (tabpag_bit_alteracao(tab, pagina)) {
+        int pag_disco = processo_pega_pagina_disco(p) + pagina;
+        int end_disco_ini = pag_disco * TAM_PAGINA;
+        int end_mem_ini = quadro_livre * TAM_PAGINA;
+        int dado;
+        for (int i = 0; i < TAM_PAGINA; i++) {
+            if (mem_le(self->mem, end_mem_ini + i, &dado) != ERR_OK) {
+                console_printf("Erro na leitura da memória");
+                return -1;
+            }
+            if (mem_escreve(self->disco, end_disco_ini + i, dado) != ERR_OK) {
+                console_printf("Erro na escrita no disco");
+                return -1;
+            }
+        }
     }
-    else {
-        tabpag_invalida_pagina(processo_pega_tabpag(p), pagina);
-    }
+    tabpag_invalida_pagina(tab, pagina);
+    console_printf("Liberado pg %d do proc %d", pagina, pid);
     return quadro_livre;
 }
 
@@ -410,7 +418,7 @@ static void so_trata_pag_ausente(so_t *self, int comp) {
         console_printf("Lendo de D-%d e escrevendo em M-%d", end_disco_ini + i, end_mem_ini + i);
     }
     tabpag_define_quadro(processo_pega_tabpag(self->proc_atual), comp / TAM_PAGINA, quadro_livre);
-    mem_quadros_muda_estado(self->quadros, quadro_livre, 0, processo_pega_id(self->proc_atual));
+    mem_quadros_muda_estado(self->quadros, quadro_livre, 0, processo_pega_id(self->proc_atual), comp / TAM_PAGINA);
     console_printf("Página %d nos endereços %d-%d", comp/TAM_PAGINA, quadro_livre * TAM_PAGINA, (quadro_livre + 1) * TAM_PAGINA - 1);
     processo_atualiza_n_pag_ausente(self->proc_atual);
     self->metricas.n_pag_ausente++;
@@ -543,7 +551,9 @@ static int so_despacha(so_t *self)
   mem_escreve(self->mem, IRQ_END_complemento, comp);
   mmu_define_tabpag(self->mmu, processo_pega_tabpag(self->proc_atual));
   mem_escreve(self->mem, IRQ_END_erro, ERR_OK);
-  console_printf("PC: %d", pc);
+  int inst;
+  mmu_le(self->mmu, pc+1, &inst, usuario);
+  console_printf("PC: %d, INST: %d", pc, inst);
   console_printf("Página: %d", pc/TAM_PAGINA);
   return 0;
 }
@@ -780,14 +790,11 @@ static void so_chamada_cria_proc(so_t *self)
   int ender_proc;
   // t1: deveria ler o X do descritor do processo criador
   if (mem_le(self->mem, IRQ_END_X, &ender_proc) == ERR_OK) {
-    console_printf("até aqui foi");
     char nome[100];
     if (so_copia_str_do_processo(self, 100, nome, ender_proc, processo)) {
-      console_printf("até aqui foi");
       int ender_carga = so_carrega_programa(self, processo, nome);
       // o endereço de carga é endereço virtual, deve ser 0
       if (ender_carga == 0) {
-        console_printf("até aqui foi");
         // deveria escrever no PC do descritor do processo criado
         so_adiciona_processo(self, processo);
         processo_salva_reg_a(self->proc_atual, self->proc_ultimo_id);
