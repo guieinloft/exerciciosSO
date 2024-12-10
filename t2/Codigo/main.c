@@ -18,8 +18,6 @@
 #include <stdlib.h>
 
 // constantes
-#define MEM_TAM 10000        // tamanho da memória principal
-#define DISCO_TAM 10000000   // tamanho da memória secundária (disco)
 
 // estrutura com os componentes do computador simulado
 typedef struct {

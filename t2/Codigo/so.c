@@ -12,6 +12,7 @@
 #include "instrucao.h"
 #include "processo.h"
 #include "escalonador.h"
+#include "mem_quadro.h"
 
 #include <stdlib.h>
 #include <stdbool.h>
@@ -77,6 +78,7 @@ struct so_t {
   // primeiro quadro da memória que está livre (quadros anteriores estão ocupados)
   // t2: com memória virtual, o controle de memória livre e ocupada é mais
   //     completo que isso
+  mem_quadros_t *quadros;
   int quadro_livre_pri;
   int quadro_livre_sec;
 };
@@ -158,7 +160,9 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
   // t2: o controle de memória livre deve ser mais aprimorado que isso  
   self->quadro_livre_pri = 99 / TAM_PAGINA + 1;
   self->quadro_livre_sec = 0;
-  console_printf("Criando SO");
+  console_printf("%d TAM MEMORIA", MEM_TAM);
+
+  self->quadros = mem_quadros_cria(MEM_TAM / TAM_PAGINA,  99 / TAM_PAGINA + 1);
 
   return self;
 }
@@ -217,6 +221,15 @@ static void so_desbloqueia_processo(so_t *self, processo_t *proc) {
     escalonador_adiciona_processo(self->esc, proc);
     console_printf("Processo desbloqueado");
 }
+
+static processo_t *so_busca_processo(so_t *self, int pid) {
+    for (int i = 0; i < PROC_TAM_TABELA; i++) {
+        if (self->proc_tabela[i] != NULL && processo_pega_id(self->proc_tabela[i]) == pid) {
+            return self->proc_tabela[i];
+        }
+    }
+    return NULL;
+}
 // MÉTRICAS {{{1
 static void so_atualiza_metricas(so_t *self, int preemp) {
     int t_relogio_anterior = self->t_relogio_atual;
@@ -241,6 +254,7 @@ static void so_atualiza_metricas(so_t *self, int preemp) {
 
 static void so_imprime_metricas(so_t *self) {
     console_printf("Tempo execução: %d", self->metricas.t_exec);
+    /*
     console_printf("Tempo ocioso:   %d", self->metricas.t_ocioso);
     console_printf("N. preempções:  %d", self->metricas.n_preempcoes);
     console_printf("N. pag. ausente:  %d", self->metricas.n_pag_ausente);
@@ -248,6 +262,7 @@ static void so_imprime_metricas(so_t *self) {
     for (int i = 0; i < N_IRQ; i++) {
         console_printf("N. interrup. %d: %d", i, self->metricas.n_irq[i]);
     }
+    */
     /*
     for (historico_t *h = self->hist; h != NULL; h = historico_prox(h)) {
         proc_metricas_t metricas = historico_pega_metricas(h);
@@ -353,7 +368,16 @@ static void so_trata_pag_ausente(so_t *self, int comp) {
     int pag_disco = processo_pega_pagina_disco(self->proc_atual) + comp/TAM_PAGINA;
     int end_disco_ini = pag_disco * TAM_PAGINA;
     int dado;
-    int end_mem_ini = self->quadro_livre_pri * TAM_PAGINA;
+    int quadro_livre = mem_quadros_tem_livre(self->quadros);
+    console_printf("QUADRO LIVRE: %d", quadro_livre);
+    if (quadro_livre == -1) {
+        quadro_livre = mem_quadros_libera_quadro(self->quadros);
+        int pid = mem_quadros_pega_dono(self->quadros, quadro_livre);
+        int pagina = mem_quadros_pega_pagina(self->quadros, quadro_livre);
+        processo_t *p = so_busca_processo(self, pid);
+        tabpag_invalida_pagina(processo_pega_tabpag(p), pagina);
+    }
+    int end_mem_ini = quadro_livre * TAM_PAGINA;
     for (int i = 0; i < TAM_PAGINA; i++) {
         if (mem_le(self->disco, end_disco_ini + i, &dado) != ERR_OK) {
             console_printf("Erro na leitura do disco");
@@ -364,9 +388,9 @@ static void so_trata_pag_ausente(so_t *self, int comp) {
             return;
         }
     }
-    tabpag_define_quadro(processo_pega_tabpag(self->proc_atual), comp / TAM_PAGINA, self->quadro_livre_pri);
-    self->quadro_livre_pri++;
-    console_printf("Página nos endereços %d-%d", (self->quadro_livre_pri - 1) * TAM_PAGINA, self->quadro_livre_pri * TAM_PAGINA - 1);
+    tabpag_define_quadro(processo_pega_tabpag(self->proc_atual), comp / TAM_PAGINA, quadro_livre);
+    mem_quadros_muda_estado(self->quadros, quadro_livre, 0, processo_pega_id(self->proc_atual));
+    console_printf("Página nos endereços %d-%d", quadro_livre * TAM_PAGINA, (quadro_livre + 1) * TAM_PAGINA - 1);
     processo_atualiza_n_pag_ausente(self->proc_atual);
     self->metricas.n_pag_ausente++;
 }
