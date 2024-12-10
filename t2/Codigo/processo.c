@@ -152,6 +152,7 @@ void metricas_inicializa(processo_t *self) {
     self->metricas.n_preempcoes = 0;
     self->metricas.tempo_retorno = 0;
     self->metricas.tempo_resposta = 0;
+    self->metricas.n_pag_ausente = 0;
     for (int i = 0; i < N_PROC_ESTADO; i++) {
         self->metricas.estado_vezes[i] = 0;
         self->metricas.estado_tempo[i] = 0;
@@ -164,6 +165,10 @@ void processo_atualiza_metricas(processo_t *self, int delta) {
     self->metricas.tempo_retorno += delta;
     self->metricas.estado_tempo[self->estado] += delta;
     self->metricas.tempo_resposta = self->metricas.estado_tempo[PROC_PRONTO] / self->metricas.estado_vezes[PROC_PRONTO];
+}
+
+void processo_atualiza_n_pag_ausente(processo_t *self) {
+    if (self != NULL) self->metricas.n_pag_ausente++;
 }
 
 // HISTORICO {{{1

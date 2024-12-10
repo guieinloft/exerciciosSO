@@ -24,6 +24,7 @@ typedef struct proc_metricas_t {
     int n_preempcoes;
     int tempo_retorno;
     int tempo_resposta;
+    int n_pag_ausente;
 
     int estado_vezes[N_PROC_ESTADO];
     int estado_tempo[N_PROC_ESTADO];
@@ -65,6 +66,7 @@ void processo_salva_pagina_disco(processo_t *self, int pagina_disco);
 
 // METRICAS
 void processo_atualiza_metricas(processo_t *self, int delta);
+void processo_atualiza_n_pag_ausente(processo_t *self);
 
 // HISTORICO
 historico_t *historico_adiciona_metrica(historico_t *hist, processo_t *proc);

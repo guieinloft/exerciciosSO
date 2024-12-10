@@ -50,6 +50,7 @@ typedef struct so_metricas_t {
     int t_exec;
     int t_ocioso;
     int n_preempcoes;
+    int n_pag_ausente;
     int n_irq[N_IRQ];
 } so_metricas_t;
 
@@ -125,6 +126,7 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
   self->metricas.t_exec = 0;
   self->metricas.t_ocioso = 0;
   self->metricas.n_preempcoes = 0;
+  self->metricas.n_pag_ausente = 0;
 
   // quando a CPU executar uma instrução CHAMAC, deve chamar a função
   //   so_trata_interrupcao, com primeiro argumento um ptr para o SO
@@ -241,6 +243,7 @@ static void so_imprime_metricas(so_t *self) {
     console_printf("Tempo execução: %d", self->metricas.t_exec);
     console_printf("Tempo ocioso:   %d", self->metricas.t_ocioso);
     console_printf("N. preempções:  %d", self->metricas.n_preempcoes);
+    console_printf("N. pag. ausente:  %d", self->metricas.n_pag_ausente);
 
     for (int i = 0; i < N_IRQ; i++) {
         console_printf("N. interrup. %d: %d", i, self->metricas.n_irq[i]);
@@ -260,14 +263,15 @@ static void so_imprime_metricas(so_t *self) {
     */
     
 }
-/*
+
 static void so_imprime_metricas_arquivo(so_t *self) {
     char nome[100];
-    sprintf(nome, "../Metricas/log_%d_%d_%d.txt", ESC_TIPO, INTERVALO_INTERRUPCAO, MAX_QUANTUM);
+    sprintf(nome, "../Metricas/log_%d.txt", TAM_PAGINA);
     FILE *log = fopen(nome, "w");
     fprintf(log, "Tempo execução: %d\n", self->metricas.t_exec);
     fprintf(log, "Tempo ocioso:   %d\n", self->metricas.t_ocioso);
     fprintf(log, "N. preempções:  %d\n", self->metricas.n_preempcoes);
+    fprintf(log, "N. pag_ausente:  %d\n", self->metricas.n_pag_ausente);
 
     for (int i = 0; i < N_IRQ; i++) {
         fprintf(log, "N. interrup. %d: %d\n", i, self->metricas.n_irq[i]);
@@ -278,13 +282,14 @@ static void so_imprime_metricas_arquivo(so_t *self) {
         fprintf(log, "N. preempções: %d\n", metricas.n_preempcoes);
         fprintf(log, "T. retorno:    %d\n", metricas.tempo_retorno);
         fprintf(log, "T. resposta:   %d\n", metricas.tempo_resposta);
+        fprintf(log, "N. pag. ausente:   %d\n", metricas.n_pag_ausente);
         for (int i = 0; i < N_PROC_ESTADO; i++) {
             fprintf(log, "Vezes em %d: %d\n", i, metricas.estado_vezes[i]);
             fprintf(log, "Tempo em %d: %d\n", i, metricas.estado_tempo[i]);
         }
     }
 }
-*/
+
 // TRATAMENTO DE BLOQUEIO {{{1
 
 static int so_trata_bloq_espera(so_t *self, processo_t *p) {
@@ -344,8 +349,7 @@ static int so_trata_bloq_saida(so_t *self, processo_t *p) {
 }
 
 // TRATAMENTO DE PAGE FAULT {{{1
-static void so_trata_page_fault(so_t *self) {
-    int comp = processo_pega_reg_comp(self->proc_atual);
+static void so_trata_pag_ausente(so_t *self, int comp) {
     int pag_disco = processo_pega_pagina_disco(self->proc_atual) + comp/TAM_PAGINA;
     int end_disco_ini = pag_disco * TAM_PAGINA;
     int dado;
@@ -363,6 +367,8 @@ static void so_trata_page_fault(so_t *self) {
     tabpag_define_quadro(processo_pega_tabpag(self->proc_atual), comp / TAM_PAGINA, self->quadro_livre_pri);
     self->quadro_livre_pri++;
     console_printf("Página nos endereços %d-%d", (self->quadro_livre_pri - 1) * TAM_PAGINA, self->quadro_livre_pri * TAM_PAGINA - 1);
+    processo_atualiza_n_pag_ausente(self->proc_atual);
+    self->metricas.n_pag_ausente++;
 }
 
 // TRATAMENTO DE INTERRUPÇÃO {{{1
@@ -507,7 +513,7 @@ int so_desliga(so_t *self) {
     }
 
     so_imprime_metricas(self);
-    //so_imprime_metricas_arquivo(self);
+    so_imprime_metricas_arquivo(self);
     return 1;
 }
 
@@ -586,7 +592,9 @@ static void so_trata_irq_err_cpu(so_t *self)
   console_printf("SO: IRQ erro na CPU: %s", err_nome(err));
   if(err == ERR_OK) return;
   if(err == ERR_PAG_AUSENTE) {
-      so_trata_page_fault(self);
+      int comp;
+      mem_le(self->mem, IRQ_END_complemento, &comp);
+      so_trata_pag_ausente(self, comp);
       return;
   }
   console_printf("Matando processo");
@@ -726,11 +734,14 @@ static void so_chamada_cria_proc(so_t *self)
   int ender_proc;
   // t1: deveria ler o X do descritor do processo criador
   if (mem_le(self->mem, IRQ_END_X, &ender_proc) == ERR_OK) {
+    console_printf("até aqui foi");
     char nome[100];
     if (so_copia_str_do_processo(self, 100, nome, ender_proc, processo)) {
+      console_printf("até aqui foi");
       int ender_carga = so_carrega_programa(self, processo, nome);
       // o endereço de carga é endereço virtual, deve ser 0
       if (ender_carga == 0) {
+        console_printf("até aqui foi");
         // deveria escrever no PC do descritor do processo criado
         so_adiciona_processo(self, processo);
         processo_salva_reg_a(self->proc_atual, self->proc_ultimo_id);
@@ -884,8 +895,16 @@ static bool so_copia_str_do_processo(so_t *self, int tam, char str[tam],
     int caractere;
     // não tem memória virtual implementada, posso usar a mmu para traduzir
     //   os endereços e acessar a memória
-    if (mmu_le(self->mmu, end_virt + indice_str, &caractere, usuario) != ERR_OK) {
-      return false;
+    err_t erro_mmu = mmu_le(self->mmu, end_virt + indice_str, &caractere, usuario);
+    if (erro_mmu != ERR_OK) {
+        console_printf("ERRO MMU: %d", erro_mmu);
+        if (erro_mmu == ERR_PAG_AUSENTE) {
+            so_trata_pag_ausente(self, end_virt + indice_str);
+            indice_str--;
+        }
+        else {
+            return false;
+        }
     }
     if (caractere < 0 || caractere > 255) {
       return false;

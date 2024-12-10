@@ -42,6 +42,7 @@ TAM: 1
 PROC ATUAL: 1 1
 PC: 145
 RETORNO DESPACHA: 0
+CMD: 'D'
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
@@ -365,116 +366,12345 @@ RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 7
-Processo não pôde ser criado
-pend 0 1
-Escalonando agora
-TAM: 1
-PROC ATUAL: 1 1
-PC: 14
-RETORNO DESPACHA: 0
-teste
-SO: recebi IRQ 1 (Erro de execução)
-SO: IRQ erro na CPU: Página ausente
+até aqui foi
+ERRO MMU: 8
 Página nos endereços 180-189
-pend 0 1
-Escalonando agora
-TAM: 1
-PROC ATUAL: 1 1
-PC: 14
-RETORNO DESPACHA: 0
-CMD: 'P'
-CMD: '1'
-teste
-SO: recebi IRQ 1 (Erro de execução)
-SO: IRQ erro na CPU: Página ausente
-Página nos endereços 190-199
-pend 0 1
-Escalonando agora
-TAM: 1
-PROC ATUAL: 1 1
-PC: 19
-RETORNO DESPACHA: 0
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 7
-Processo não pôde ser criado
-pend 0 1
-Escalonando agora
-TAM: 1
-PROC ATUAL: 1 1
-PC: 22
-RETORNO DESPACHA: 0
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-teste
-SO: recebi IRQ 1 (Erro de execução)
-SO: IRQ erro na CPU: Página ausente
-Página nos endereços 200-209
-pend 0 1
-Escalonando agora
-TAM: 1
-PROC ATUAL: 1 1
-PC: 22
-RETORNO DESPACHA: 0
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
-teste
-SO: recebi IRQ 2 (Chamada de sistema)
-SO: chamada de sistema 7
-SO: carga de 'p3.maq'
+até aqui foi
+SO: carga de 'p1.maq'
 carregado na memória virtual V0-240 F170-410
+até aqui foi
 pend 0 1
 pend 1 0
 Escalonando agora
 TAM: 2
 PROC ATUAL: 1 1
-PC: 30
+PC: 14
 RETORNO DESPACHA: 0
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 190-199
+pend 0 1
+pend 1 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 1 1
+PC: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 200-209
+pend 0 1
+pend 1 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 1 1
+PC: 19
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 7
+até aqui foi
+até aqui foi
+SO: carga de 'p2.maq'
+carregado na memória virtual V0-242 F420-662
+até aqui foi
+pend 0 1
+pend 1 0
+pend 2 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 1 1
+PC: 22
+RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
 Página nos endereços 210-219
 pend 0 1
 pend 1 0
+pend 2 0
 Escalonando agora
-TAM: 2
+TAM: 3
+PROC ATUAL: 1 1
+PC: 22
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 7
+até aqui foi
+até aqui foi
+SO: carga de 'p3.maq'
+carregado na memória virtual V0-240 F670-910
+até aqui foi
+pend 0 1
+pend 1 0
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 4
 PROC ATUAL: 1 1
 PC: 30
 RETORNO DESPACHA: 0
-CMD: '1'
-CMD: '1'
-CMD: '1'
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 220-229
+pend 0 1
+pend 1 0
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 4
+PROC ATUAL: 1 1
+PC: 30
+RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
 Quantum p_atual: 1
 pend 0 1
 pend 1 0
+pend 2 0
+pend 3 0
 Escalonando agora
-TAM: 2
+TAM: 4
 PROC ATUAL: 1 1
 PC: 30
 RETORNO DESPACHA: 0
-CMD: '1'
-CMD: '1'
-CMD: '1'
-CMD: '1'
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 9
+Processo 1 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 0
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 230-239
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 0
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 240-249
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 70
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 250-259
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 70
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 260-269
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 89
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 270-279
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 91
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 280-289
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 146
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 290-299
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 300-309
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 149
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 0
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 310-319
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 0
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 320-329
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 72
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 330-339
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 72
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 340-349
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 93
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 350-359
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 148
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 360-369
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 148
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 146
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 370-379
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 0
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 380-389
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 0
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 390-399
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 70
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 400-409
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 70
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 410-419
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 89
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 420-429
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 91
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 430-439
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 146
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 440-449
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 148
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 164
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 450-459
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 148
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 164
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 460-469
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 470-479
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 156
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 480-489
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 154
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 490-499
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 154
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 500-509
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 148
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 510-519
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 166
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 165
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 520-529
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 161
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 146
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 530-539
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 164
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 161
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 540-549
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 149
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 148
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 164
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 550-559
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 156
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 560-569
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 150
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 166
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 154
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 570-579
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 148
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 164
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 580-589
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 154
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 151
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 590-599
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 168
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 600-609
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 170
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 610-619
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 187
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 620-629
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 189
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 630-639
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 640-649
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 201
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 165
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 650-659
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 660-669
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 170
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 670-679
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 170
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 680-689
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 189
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 690-699
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 189
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 700-709
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 191
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 710-719
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 720-729
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 168
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 168
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 730-739
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 170
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 740-749
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 187
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 750-759
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 189
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 760-769
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 770-779
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 201
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 780-789
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 209
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 191
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 790-799
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 213
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 800-809
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 219
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 164
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 810-819
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 99
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 201
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 215
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 191
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 820-829
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 201
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 830-839
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 209
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 840-849
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 219
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 221
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 850-859
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 99
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 197
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 860-869
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 109
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 870-879
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 74
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 209
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 880-889
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 219
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 233
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 890-899
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 99
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 900-909
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 109
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 910-919
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 119
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 119
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 920-929
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 930-939
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 109
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 940-949
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 119
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 950-959
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 74
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 960-969
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 133
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 128
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 125
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 211
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 128
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 125
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 136
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 133
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 128
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 125
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 136
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 133
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 159
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 128
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 125
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 136
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 133
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 227
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 166
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 161
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 136
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 133
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 195
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 128
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 197
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 156
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 128
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 197
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 156
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 128
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 197
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 156
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 3 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 2
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 2
+Processo desbloqueado
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Escalonando agora
+TAM: 2
+PROC ATUAL: 3 1
+PC: 162
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 78
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 970-979
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 78
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 8
+Matando processo
+Morto processo com PID 0
+pend 0 2
+2
+pend 1 0
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 195
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 227
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 0
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 2
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 205
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 229
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 199
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 126
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 122
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 132
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 123
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 134
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 131
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 2 1
+PC: 124
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 197
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 154
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 2 bloqueado
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 2
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 2
+Processo desbloqueado
+pend 3 1
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+2
+pend 1 0
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 2 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 8
+Matando processo
+Morto processo com PID 0
+pend 0 2
+2
+Processo desbloqueado
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 38
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 980-989
+pend 0 1
+pend 3 2
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 40
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 9
+pend 0 1
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 2
+PROC ATUAL: 1 1
+PC: 44
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 9
+Processo 1 bloqueado
+pend 0 2
+4
+pend 3 0
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 217
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+4
+pend 3 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 155
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+Processo 4 bloqueado
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Escalonando agora
+PROC ATUAL: -1 -1
+RETORNO DESPACHA: 1
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+4
+pend 3 2
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 4 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 8
+Matando processo
+Morto processo com PID 0
+pend 0 2
+4
+Processo desbloqueado
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 50
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 990-999
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 50
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 164
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 1000-1009
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 145
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 160
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 158
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 157
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 163
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+Página nos endereços 1010-1019
+pend 0 1
+Escalonando agora
+TAM: 1
+PROC ATUAL: 1 1
+PC: 145
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 8
+Matando processo
+Morto processo com PID 0
+Escalonando agora
+PROC ATUAL: -1 -1
+Tempo execução: 23541
+Tempo ocioso:   1946
+N. preempções:  0
+N. pag. ausente:  92
+N. interrup. 0: 1
+N. interrup. 1: 91
+N. interrup. 2: 462
+N. interrup. 3: 469
+N. interrup. 4: 0
+N. interrup. 5: 0
 CMD: 'F'
 Fim da execução.
-relógio: 458
+relógio: 44280
