@@ -1,6 +1,6 @@
 SO: carga de 'trata_int.maq'
 carregado na memória física, 10-15
-300 TAM MEMORIA
+500 TAM MEMORIA
 CMD: 'C'
 teste
 SO: recebi IRQ 0 (Reset)
@@ -11,61 +11,127 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 0
+END_DISCO = 0
 QUADRO LIVRE: 10
-Página nos endereços 100-109
+Lendo de D-0 e escrevendo em M-100
+Lendo de D-1 e escrevendo em M-101
+Lendo de D-2 e escrevendo em M-102
+Lendo de D-3 e escrevendo em M-103
+Lendo de D-4 e escrevendo em M-104
+Lendo de D-5 e escrevendo em M-105
+Lendo de D-6 e escrevendo em M-106
+Lendo de D-7 e escrevendo em M-107
+Lendo de D-8 e escrevendo em M-108
+Lendo de D-9 e escrevendo em M-109
+Página 0 nos endereços 100-109
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 143
+END_DISCO = 140
 QUADRO LIVRE: 11
-Página nos endereços 110-119
+Lendo de D-140 e escrevendo em M-110
+Lendo de D-141 e escrevendo em M-111
+Lendo de D-142 e escrevendo em M-112
+Lendo de D-143 e escrevendo em M-113
+Lendo de D-144 e escrevendo em M-114
+Lendo de D-145 e escrevendo em M-115
+Lendo de D-146 e escrevendo em M-116
+Lendo de D-147 e escrevendo em M-117
+Lendo de D-148 e escrevendo em M-118
+Lendo de D-149 e escrevendo em M-119
+Página 14 nos endereços 110-119
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 2
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 66
+END_DISCO = 60
 QUADRO LIVRE: 12
-Página nos endereços 120-129
+Lendo de D-60 e escrevendo em M-120
+Lendo de D-61 e escrevendo em M-121
+Lendo de D-62 e escrevendo em M-122
+Lendo de D-63 e escrevendo em M-123
+Lendo de D-64 e escrevendo em M-124
+Lendo de D-65 e escrevendo em M-125
+Lendo de D-66 e escrevendo em M-126
+Lendo de D-67 e escrevendo em M-127
+Lendo de D-68 e escrevendo em M-128
+Lendo de D-69 e escrevendo em M-129
+Página 6 nos endereços 120-129
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 145
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 150
+END_DISCO = 150
 QUADRO LIVRE: 13
-Página nos endereços 130-139
+Lendo de D-150 e escrevendo em M-130
+Lendo de D-151 e escrevendo em M-131
+Lendo de D-152 e escrevendo em M-132
+Lendo de D-153 e escrevendo em M-133
+Lendo de D-154 e escrevendo em M-134
+Lendo de D-155 e escrevendo em M-135
+Lendo de D-156 e escrevendo em M-136
+Lendo de D-157 e escrevendo em M-137
+Lendo de D-158 e escrevendo em M-138
+Lendo de D-159 e escrevendo em M-139
+Página 15 nos endereços 130-139
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 149
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 169
+END_DISCO = 160
 QUADRO LIVRE: 14
-Página nos endereços 140-149
+Lendo de D-160 e escrevendo em M-140
+Lendo de D-161 e escrevendo em M-141
+Lendo de D-162 e escrevendo em M-142
+Lendo de D-163 e escrevendo em M-143
+Lendo de D-164 e escrevendo em M-144
+Lendo de D-165 e escrevendo em M-145
+Lendo de D-166 e escrevendo em M-146
+Lendo de D-167 e escrevendo em M-147
+Lendo de D-168 e escrevendo em M-148
+Lendo de D-169 e escrevendo em M-149
+Página 16 nos endereços 140-149
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 158
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -75,6 +141,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -84,6 +151,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -93,6 +161,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -102,8 +171,8 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
-CMD: 'D'
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 2
@@ -112,17 +181,31 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 70
+END_DISCO = 70
 QUADRO LIVRE: 15
-Página nos endereços 150-159
+Lendo de D-70 e escrevendo em M-150
+Lendo de D-71 e escrevendo em M-151
+Lendo de D-72 e escrevendo em M-152
+Lendo de D-73 e escrevendo em M-153
+Lendo de D-74 e escrevendo em M-154
+Lendo de D-75 e escrevendo em M-155
+Lendo de D-76 e escrevendo em M-156
+Lendo de D-77 e escrevendo em M-157
+Lendo de D-78 e escrevendo em M-158
+Lendo de D-79 e escrevendo em M-159
+Página 7 nos endereços 150-159
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 145
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -132,6 +215,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -141,6 +225,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -150,6 +235,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -159,6 +245,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -168,6 +255,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 158
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -177,6 +265,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -186,6 +275,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -195,6 +285,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -204,6 +295,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 157
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -213,6 +305,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -222,6 +315,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -231,6 +325,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -240,6 +335,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 149
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -249,17 +345,32 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
+CMD: 'D'
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 80
+END_DISCO = 80
 QUADRO LIVRE: 16
-Página nos endereços 160-169
+Lendo de D-80 e escrevendo em M-160
+Lendo de D-81 e escrevendo em M-161
+Lendo de D-82 e escrevendo em M-162
+Lendo de D-83 e escrevendo em M-163
+Lendo de D-84 e escrevendo em M-164
+Lendo de D-85 e escrevendo em M-165
+Lendo de D-86 e escrevendo em M-166
+Lendo de D-87 e escrevendo em M-167
+Lendo de D-88 e escrevendo em M-168
+Lendo de D-89 e escrevendo em M-169
+Página 8 nos endereços 160-169
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 145
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -269,6 +380,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -278,6 +390,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -287,6 +400,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 167
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -296,6 +410,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -305,6 +420,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -314,6 +430,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -323,6 +440,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 166
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -332,6 +450,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -341,6 +460,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -350,6 +470,7 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -359,25 +480,51 @@ Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 10
+END_DISCO = 10
 QUADRO LIVRE: 17
-Página nos endereços 170-179
+Lendo de D-10 e escrevendo em M-170
+Lendo de D-11 e escrevendo em M-171
+Lendo de D-12 e escrevendo em M-172
+Lendo de D-13 e escrevendo em M-173
+Lendo de D-14 e escrevendo em M-174
+Lendo de D-15 e escrevendo em M-175
+Lendo de D-16 e escrevendo em M-176
+Lendo de D-17 e escrevendo em M-177
+Lendo de D-18 e escrevendo em M-178
+Lendo de D-19 e escrevendo em M-179
+Página 1 nos endereços 170-179
 pend 0 1
 Escalonando agora
 TAM: 1
 PROC ATUAL: 1 1
 PC: 10
+Página: 1
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
 SO: chamada de sistema 7
 até aqui foi
 ERRO MMU: 8
+COMP: 90
+END_DISCO = 90
 QUADRO LIVRE: 18
-Página nos endereços 180-189
+Lendo de D-90 e escrevendo em M-180
+Lendo de D-91 e escrevendo em M-181
+Lendo de D-92 e escrevendo em M-182
+Lendo de D-93 e escrevendo em M-183
+Lendo de D-94 e escrevendo em M-184
+Lendo de D-95 e escrevendo em M-185
+Lendo de D-96 e escrevendo em M-186
+Lendo de D-97 e escrevendo em M-187
+Lendo de D-98 e escrevendo em M-188
+Lendo de D-99 e escrevendo em M-189
+Página 9 nos endereços 180-189
 até aqui foi
 SO: carga de 'p1.maq'
 carregado na memória virtual V0-240 F170-410
@@ -388,30 +535,57 @@ Escalonando agora
 TAM: 2
 PROC ATUAL: 1 1
 PC: 14
+Página: 1
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 109
+END_DISCO = 100
 QUADRO LIVRE: 19
-Página nos endereços 190-199
+Lendo de D-100 e escrevendo em M-190
+Lendo de D-101 e escrevendo em M-191
+Lendo de D-102 e escrevendo em M-192
+Lendo de D-103 e escrevendo em M-193
+Lendo de D-104 e escrevendo em M-194
+Lendo de D-105 e escrevendo em M-195
+Lendo de D-106 e escrevendo em M-196
+Lendo de D-107 e escrevendo em M-197
+Lendo de D-108 e escrevendo em M-198
+Lendo de D-109 e escrevendo em M-199
+Página 10 nos endereços 190-199
 pend 0 1
 pend 1 0
 Escalonando agora
 TAM: 2
 PROC ATUAL: 1 1
 PC: 14
+Página: 1
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 20
+END_DISCO = 20
 QUADRO LIVRE: 20
-Página nos endereços 200-209
+Lendo de D-20 e escrevendo em M-200
+Lendo de D-21 e escrevendo em M-201
+Lendo de D-22 e escrevendo em M-202
+Lendo de D-23 e escrevendo em M-203
+Lendo de D-24 e escrevendo em M-204
+Lendo de D-25 e escrevendo em M-205
+Lendo de D-26 e escrevendo em M-206
+Lendo de D-27 e escrevendo em M-207
+Lendo de D-28 e escrevendo em M-208
+Lendo de D-29 e escrevendo em M-209
+Página 2 nos endereços 200-209
 pend 0 1
 pend 1 0
 Escalonando agora
 TAM: 2
 PROC ATUAL: 1 1
 PC: 19
+Página: 1
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -428,12 +602,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 1 1
 PC: 22
+Página: 2
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 110
+END_DISCO = 110
 QUADRO LIVRE: 21
-Página nos endereços 210-219
+Lendo de D-110 e escrevendo em M-210
+Lendo de D-111 e escrevendo em M-211
+Lendo de D-112 e escrevendo em M-212
+Lendo de D-113 e escrevendo em M-213
+Lendo de D-114 e escrevendo em M-214
+Lendo de D-115 e escrevendo em M-215
+Lendo de D-116 e escrevendo em M-216
+Lendo de D-117 e escrevendo em M-217
+Lendo de D-118 e escrevendo em M-218
+Lendo de D-119 e escrevendo em M-219
+Página 11 nos endereços 210-219
 pend 0 1
 pend 1 0
 pend 2 0
@@ -441,6 +628,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 1 1
 PC: 22
+Página: 2
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -458,12 +646,25 @@ Escalonando agora
 TAM: 4
 PROC ATUAL: 1 1
 PC: 30
+Página: 3
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 30
+END_DISCO = 30
 QUADRO LIVRE: 22
-Página nos endereços 220-229
+Lendo de D-30 e escrevendo em M-220
+Lendo de D-31 e escrevendo em M-221
+Lendo de D-32 e escrevendo em M-222
+Lendo de D-33 e escrevendo em M-223
+Lendo de D-34 e escrevendo em M-224
+Lendo de D-35 e escrevendo em M-225
+Lendo de D-36 e escrevendo em M-226
+Lendo de D-37 e escrevendo em M-227
+Lendo de D-38 e escrevendo em M-228
+Lendo de D-39 e escrevendo em M-229
+Página 3 nos endereços 220-229
 pend 0 1
 pend 1 0
 pend 2 0
@@ -472,6 +673,7 @@ Escalonando agora
 TAM: 4
 PROC ATUAL: 1 1
 PC: 30
+Página: 3
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -484,6 +686,7 @@ Escalonando agora
 TAM: 4
 PROC ATUAL: 1 1
 PC: 30
+Página: 3
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -498,12 +701,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 0
+END_DISCO = 170
 QUADRO LIVRE: 23
-Página nos endereços 230-239
+Lendo de D-170 e escrevendo em M-230
+Lendo de D-171 e escrevendo em M-231
+Lendo de D-172 e escrevendo em M-232
+Lendo de D-173 e escrevendo em M-233
+Lendo de D-174 e escrevendo em M-234
+Lendo de D-175 e escrevendo em M-235
+Lendo de D-176 e escrevendo em M-236
+Lendo de D-177 e escrevendo em M-237
+Lendo de D-178 e escrevendo em M-238
+Lendo de D-179 e escrevendo em M-239
+Página 0 nos endereços 230-239
 pend 0 2
 2
 pend 1 1
@@ -513,12 +729,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 70
+END_DISCO = 240
 QUADRO LIVRE: 24
-Página nos endereços 240-249
+Lendo de D-240 e escrevendo em M-240
+Lendo de D-241 e escrevendo em M-241
+Lendo de D-242 e escrevendo em M-242
+Lendo de D-243 e escrevendo em M-243
+Lendo de D-244 e escrevendo em M-244
+Lendo de D-245 e escrevendo em M-245
+Lendo de D-246 e escrevendo em M-246
+Lendo de D-247 e escrevendo em M-247
+Lendo de D-248 e escrevendo em M-248
+Lendo de D-249 e escrevendo em M-249
+Página 7 nos endereços 240-249
 pend 0 2
 2
 pend 1 1
@@ -528,12 +757,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 70
+Página: 7
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 88
+END_DISCO = 250
 QUADRO LIVRE: 25
-Página nos endereços 250-259
+Lendo de D-250 e escrevendo em M-250
+Lendo de D-251 e escrevendo em M-251
+Lendo de D-252 e escrevendo em M-252
+Lendo de D-253 e escrevendo em M-253
+Lendo de D-254 e escrevendo em M-254
+Lendo de D-255 e escrevendo em M-255
+Lendo de D-256 e escrevendo em M-256
+Lendo de D-257 e escrevendo em M-257
+Lendo de D-258 e escrevendo em M-258
+Lendo de D-259 e escrevendo em M-259
+Página 8 nos endereços 250-259
 pend 0 2
 2
 pend 1 1
@@ -543,12 +785,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 70
+Página: 7
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 90
+END_DISCO = 260
 QUADRO LIVRE: 26
-Página nos endereços 260-269
+Lendo de D-260 e escrevendo em M-260
+Lendo de D-261 e escrevendo em M-261
+Lendo de D-262 e escrevendo em M-262
+Lendo de D-263 e escrevendo em M-263
+Lendo de D-264 e escrevendo em M-264
+Lendo de D-265 e escrevendo em M-265
+Lendo de D-266 e escrevendo em M-266
+Lendo de D-267 e escrevendo em M-267
+Lendo de D-268 e escrevendo em M-268
+Lendo de D-269 e escrevendo em M-269
+Página 9 nos endereços 260-269
 pend 0 2
 2
 pend 1 1
@@ -558,12 +813,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 89
+Página: 8
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 140
+END_DISCO = 310
 QUADRO LIVRE: 27
-Página nos endereços 270-279
+Lendo de D-310 e escrevendo em M-270
+Lendo de D-311 e escrevendo em M-271
+Lendo de D-312 e escrevendo em M-272
+Lendo de D-313 e escrevendo em M-273
+Lendo de D-314 e escrevendo em M-274
+Lendo de D-315 e escrevendo em M-275
+Lendo de D-316 e escrevendo em M-276
+Lendo de D-317 e escrevendo em M-277
+Lendo de D-318 e escrevendo em M-278
+Lendo de D-319 e escrevendo em M-279
+Página 14 nos endereços 270-279
 pend 0 2
 2
 pend 1 1
@@ -573,12 +841,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 91
+Página: 9
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 153
+END_DISCO = 320
 QUADRO LIVRE: 28
-Página nos endereços 280-289
+Lendo de D-320 e escrevendo em M-280
+Lendo de D-321 e escrevendo em M-281
+Lendo de D-322 e escrevendo em M-282
+Lendo de D-323 e escrevendo em M-283
+Lendo de D-324 e escrevendo em M-284
+Lendo de D-325 e escrevendo em M-285
+Lendo de D-326 e escrevendo em M-286
+Lendo de D-327 e escrevendo em M-287
+Lendo de D-328 e escrevendo em M-288
+Lendo de D-329 e escrevendo em M-289
+Página 15 nos endereços 280-289
 pend 0 2
 2
 pend 1 1
@@ -588,12 +869,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 146
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
+COMP: 166
+END_DISCO = 330
 QUADRO LIVRE: 29
-Página nos endereços 290-299
+Lendo de D-330 e escrevendo em M-290
+Lendo de D-331 e escrevendo em M-291
+Lendo de D-332 e escrevendo em M-292
+Lendo de D-333 e escrevendo em M-293
+Lendo de D-334 e escrevendo em M-294
+Lendo de D-335 e escrevendo em M-295
+Lendo de D-336 e escrevendo em M-296
+Lendo de D-337 e escrevendo em M-297
+Lendo de D-338 e escrevendo em M-298
+Lendo de D-339 e escrevendo em M-299
+Página 16 nos endereços 290-299
 pend 0 2
 2
 pend 1 1
@@ -603,6 +897,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 155
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -616,6 +911,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 159
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -629,6 +925,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -642,6 +939,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -655,6 +953,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -668,6 +967,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 157
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -681,6 +981,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -694,6 +995,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -707,6 +1009,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -720,6 +1023,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 155
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -733,6 +1037,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -746,12 +1051,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 100-109
+COMP: 10
+END_DISCO = 180
+QUADRO LIVRE: 30
+Lendo de D-180 e escrevendo em M-300
+Lendo de D-181 e escrevendo em M-301
+Lendo de D-182 e escrevendo em M-302
+Lendo de D-183 e escrevendo em M-303
+Lendo de D-184 e escrevendo em M-304
+Lendo de D-185 e escrevendo em M-305
+Lendo de D-186 e escrevendo em M-306
+Lendo de D-187 e escrevendo em M-307
+Lendo de D-188 e escrevendo em M-308
+Lendo de D-189 e escrevendo em M-309
+Página 1 nos endereços 300-309
 pend 0 2
 2
 pend 1 1
@@ -761,6 +1079,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 142
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -774,6 +1093,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -787,6 +1107,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 149
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -800,6 +1121,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -813,6 +1135,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -826,6 +1149,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -839,12 +1163,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 110-119
+COMP: 0
+END_DISCO = 420
+QUADRO LIVRE: 31
+Lendo de D-420 e escrevendo em M-310
+Lendo de D-421 e escrevendo em M-311
+Lendo de D-422 e escrevendo em M-312
+Lendo de D-423 e escrevendo em M-313
+Lendo de D-424 e escrevendo em M-314
+Lendo de D-425 e escrevendo em M-315
+Lendo de D-426 e escrevendo em M-316
+Lendo de D-427 e escrevendo em M-317
+Lendo de D-428 e escrevendo em M-318
+Lendo de D-429 e escrevendo em M-319
+Página 0 nos endereços 310-319
 pend 0 2
 2
 pend 1 0
@@ -854,12 +1191,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 120-129
+COMP: 72
+END_DISCO = 490
+QUADRO LIVRE: 32
+Lendo de D-490 e escrevendo em M-320
+Lendo de D-491 e escrevendo em M-321
+Lendo de D-492 e escrevendo em M-322
+Lendo de D-493 e escrevendo em M-323
+Lendo de D-494 e escrevendo em M-324
+Lendo de D-495 e escrevendo em M-325
+Lendo de D-496 e escrevendo em M-326
+Lendo de D-497 e escrevendo em M-327
+Lendo de D-498 e escrevendo em M-328
+Lendo de D-499 e escrevendo em M-329
+Página 7 nos endereços 320-329
 pend 0 2
 2
 pend 1 0
@@ -869,12 +1219,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 72
+Página: 7
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 130-139
+COMP: 90
+END_DISCO = 510
+QUADRO LIVRE: 33
+Lendo de D-510 e escrevendo em M-330
+Lendo de D-511 e escrevendo em M-331
+Lendo de D-512 e escrevendo em M-332
+Lendo de D-513 e escrevendo em M-333
+Lendo de D-514 e escrevendo em M-334
+Lendo de D-515 e escrevendo em M-335
+Lendo de D-516 e escrevendo em M-336
+Lendo de D-517 e escrevendo em M-337
+Lendo de D-518 e escrevendo em M-338
+Lendo de D-519 e escrevendo em M-339
+Página 9 nos endereços 330-339
 pend 0 2
 2
 pend 1 0
@@ -884,12 +1247,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 72
+Página: 7
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 140-149
+COMP: 142
+END_DISCO = 560
+QUADRO LIVRE: 34
+Lendo de D-560 e escrevendo em M-340
+Lendo de D-561 e escrevendo em M-341
+Lendo de D-562 e escrevendo em M-342
+Lendo de D-563 e escrevendo em M-343
+Lendo de D-564 e escrevendo em M-344
+Lendo de D-565 e escrevendo em M-345
+Lendo de D-566 e escrevendo em M-346
+Lendo de D-567 e escrevendo em M-347
+Lendo de D-568 e escrevendo em M-348
+Lendo de D-569 e escrevendo em M-349
+Página 14 nos endereços 340-349
 pend 0 2
 2
 pend 1 0
@@ -899,12 +1275,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 93
+Página: 9
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 150-159
+COMP: 155
+END_DISCO = 570
+QUADRO LIVRE: 35
+Lendo de D-570 e escrevendo em M-350
+Lendo de D-571 e escrevendo em M-351
+Lendo de D-572 e escrevendo em M-352
+Lendo de D-573 e escrevendo em M-353
+Lendo de D-574 e escrevendo em M-354
+Lendo de D-575 e escrevendo em M-355
+Lendo de D-576 e escrevendo em M-356
+Lendo de D-577 e escrevendo em M-357
+Lendo de D-578 e escrevendo em M-358
+Lendo de D-579 e escrevendo em M-359
+Página 15 nos endereços 350-359
 pend 0 2
 2
 pend 1 0
@@ -914,12 +1303,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 148
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 160-169
+COMP: 168
+END_DISCO = 580
+QUADRO LIVRE: 36
+Lendo de D-580 e escrevendo em M-360
+Lendo de D-581 e escrevendo em M-361
+Lendo de D-582 e escrevendo em M-362
+Lendo de D-583 e escrevendo em M-363
+Lendo de D-584 e escrevendo em M-364
+Lendo de D-585 e escrevendo em M-365
+Lendo de D-586 e escrevendo em M-366
+Lendo de D-587 e escrevendo em M-367
+Lendo de D-588 e escrevendo em M-368
+Lendo de D-589 e escrevendo em M-369
+Página 16 nos endereços 360-369
 pend 0 2
 2
 pend 1 0
@@ -929,6 +1331,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 157
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -942,6 +1345,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -955,6 +1359,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 148
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -968,6 +1373,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -981,6 +1387,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -994,6 +1401,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1007,6 +1415,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 146
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1020,6 +1429,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1033,6 +1443,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1046,6 +1457,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1059,6 +1471,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 144
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1072,12 +1485,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 170-179
+COMP: 10
+END_DISCO = 430
+QUADRO LIVRE: 37
+Lendo de D-430 e escrevendo em M-370
+Lendo de D-431 e escrevendo em M-371
+Lendo de D-432 e escrevendo em M-372
+Lendo de D-433 e escrevendo em M-373
+Lendo de D-434 e escrevendo em M-374
+Lendo de D-435 e escrevendo em M-375
+Lendo de D-436 e escrevendo em M-376
+Lendo de D-437 e escrevendo em M-377
+Lendo de D-438 e escrevendo em M-378
+Lendo de D-439 e escrevendo em M-379
+Página 1 nos endereços 370-379
 pend 0 2
 2
 pend 1 0
@@ -1087,6 +1513,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 144
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1100,6 +1527,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1113,6 +1541,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1126,6 +1555,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1139,6 +1569,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1152,6 +1583,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1165,6 +1597,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1178,12 +1611,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 180-189
+COMP: 0
+END_DISCO = 670
+QUADRO LIVRE: 38
+Lendo de D-670 e escrevendo em M-380
+Lendo de D-671 e escrevendo em M-381
+Lendo de D-672 e escrevendo em M-382
+Lendo de D-673 e escrevendo em M-383
+Lendo de D-674 e escrevendo em M-384
+Lendo de D-675 e escrevendo em M-385
+Lendo de D-676 e escrevendo em M-386
+Lendo de D-677 e escrevendo em M-387
+Lendo de D-678 e escrevendo em M-388
+Lendo de D-679 e escrevendo em M-389
+Página 0 nos endereços 380-389
 pend 0 2
 2
 pend 1 0
@@ -1193,12 +1639,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 0
+Página: 0
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 190-199
+COMP: 70
+END_DISCO = 740
+QUADRO LIVRE: 39
+Lendo de D-740 e escrevendo em M-390
+Lendo de D-741 e escrevendo em M-391
+Lendo de D-742 e escrevendo em M-392
+Lendo de D-743 e escrevendo em M-393
+Lendo de D-744 e escrevendo em M-394
+Lendo de D-745 e escrevendo em M-395
+Lendo de D-746 e escrevendo em M-396
+Lendo de D-747 e escrevendo em M-397
+Lendo de D-748 e escrevendo em M-398
+Lendo de D-749 e escrevendo em M-399
+Página 7 nos endereços 390-399
 pend 0 2
 2
 pend 1 0
@@ -1208,12 +1667,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 70
+Página: 7
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 200-209
+COMP: 88
+END_DISCO = 750
+QUADRO LIVRE: 40
+Lendo de D-750 e escrevendo em M-400
+Lendo de D-751 e escrevendo em M-401
+Lendo de D-752 e escrevendo em M-402
+Lendo de D-753 e escrevendo em M-403
+Lendo de D-754 e escrevendo em M-404
+Lendo de D-755 e escrevendo em M-405
+Lendo de D-756 e escrevendo em M-406
+Lendo de D-757 e escrevendo em M-407
+Lendo de D-758 e escrevendo em M-408
+Lendo de D-759 e escrevendo em M-409
+Página 8 nos endereços 400-409
 pend 0 2
 2
 pend 1 0
@@ -1223,12 +1695,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 70
+Página: 7
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 210-219
+COMP: 90
+END_DISCO = 760
+QUADRO LIVRE: 41
+Lendo de D-760 e escrevendo em M-410
+Lendo de D-761 e escrevendo em M-411
+Lendo de D-762 e escrevendo em M-412
+Lendo de D-763 e escrevendo em M-413
+Lendo de D-764 e escrevendo em M-414
+Lendo de D-765 e escrevendo em M-415
+Lendo de D-766 e escrevendo em M-416
+Lendo de D-767 e escrevendo em M-417
+Lendo de D-768 e escrevendo em M-418
+Lendo de D-769 e escrevendo em M-419
+Página 9 nos endereços 410-419
 pend 0 2
 2
 pend 1 0
@@ -1238,12 +1723,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 89
+Página: 8
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 220-229
+COMP: 140
+END_DISCO = 810
+QUADRO LIVRE: 42
+Lendo de D-810 e escrevendo em M-420
+Lendo de D-811 e escrevendo em M-421
+Lendo de D-812 e escrevendo em M-422
+Lendo de D-813 e escrevendo em M-423
+Lendo de D-814 e escrevendo em M-424
+Lendo de D-815 e escrevendo em M-425
+Lendo de D-816 e escrevendo em M-426
+Lendo de D-817 e escrevendo em M-427
+Lendo de D-818 e escrevendo em M-428
+Lendo de D-819 e escrevendo em M-429
+Página 14 nos endereços 420-429
 pend 0 2
 2
 pend 1 0
@@ -1253,12 +1751,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 91
+Página: 9
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 230-239
+COMP: 153
+END_DISCO = 820
+QUADRO LIVRE: 43
+Lendo de D-820 e escrevendo em M-430
+Lendo de D-821 e escrevendo em M-431
+Lendo de D-822 e escrevendo em M-432
+Lendo de D-823 e escrevendo em M-433
+Lendo de D-824 e escrevendo em M-434
+Lendo de D-825 e escrevendo em M-435
+Lendo de D-826 e escrevendo em M-436
+Lendo de D-827 e escrevendo em M-437
+Lendo de D-828 e escrevendo em M-438
+Lendo de D-829 e escrevendo em M-439
+Página 15 nos endereços 430-439
 pend 0 2
 2
 pend 1 0
@@ -1268,12 +1779,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 146
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 240-249
+COMP: 166
+END_DISCO = 830
+QUADRO LIVRE: 44
+Lendo de D-830 e escrevendo em M-440
+Lendo de D-831 e escrevendo em M-441
+Lendo de D-832 e escrevendo em M-442
+Lendo de D-833 e escrevendo em M-443
+Lendo de D-834 e escrevendo em M-444
+Lendo de D-835 e escrevendo em M-445
+Lendo de D-836 e escrevendo em M-446
+Lendo de D-837 e escrevendo em M-447
+Lendo de D-838 e escrevendo em M-448
+Lendo de D-839 e escrevendo em M-449
+Página 16 nos endereços 440-449
 pend 0 2
 2
 pend 1 0
@@ -1283,6 +1807,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 155
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1296,6 +1821,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1309,6 +1835,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 148
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1322,6 +1849,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1335,6 +1863,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1348,6 +1877,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1361,6 +1891,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 164
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1374,6 +1905,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1387,6 +1919,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1400,6 +1933,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1413,6 +1947,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1426,12 +1961,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 250-259
+COMP: 10
+END_DISCO = 680
+QUADRO LIVRE: 45
+Lendo de D-680 e escrevendo em M-450
+Lendo de D-681 e escrevendo em M-451
+Lendo de D-682 e escrevendo em M-452
+Lendo de D-683 e escrevendo em M-453
+Lendo de D-684 e escrevendo em M-454
+Lendo de D-685 e escrevendo em M-455
+Lendo de D-686 e escrevendo em M-456
+Lendo de D-687 e escrevendo em M-457
+Lendo de D-688 e escrevendo em M-458
+Lendo de D-689 e escrevendo em M-459
+Página 1 nos endereços 450-459
 pend 0 2
 2
 pend 1 0
@@ -1441,6 +1989,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 142
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1454,6 +2003,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1467,6 +2017,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1480,6 +2031,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1493,6 +2045,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1506,6 +2059,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1519,6 +2073,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1532,6 +2087,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 148
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1545,6 +2101,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1558,6 +2115,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1571,6 +2129,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1584,6 +2143,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 164
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1597,6 +2157,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1610,6 +2171,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1623,6 +2185,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1636,12 +2199,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 163
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 260-269
+COMP: 20
+END_DISCO = 190
+QUADRO LIVRE: 46
+Lendo de D-190 e escrevendo em M-460
+Lendo de D-191 e escrevendo em M-461
+Lendo de D-192 e escrevendo em M-462
+Lendo de D-193 e escrevendo em M-463
+Lendo de D-194 e escrevendo em M-464
+Lendo de D-195 e escrevendo em M-465
+Lendo de D-196 e escrevendo em M-466
+Lendo de D-197 e escrevendo em M-467
+Lendo de D-198 e escrevendo em M-468
+Lendo de D-199 e escrevendo em M-469
+Página 2 nos endereços 460-469
 pend 0 2
 2
 pend 1 1
@@ -1651,6 +2227,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 142
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1664,6 +2241,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1677,6 +2255,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1690,6 +2269,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1703,6 +2283,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1716,6 +2297,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1729,6 +2311,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1742,6 +2325,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1755,6 +2339,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1768,6 +2353,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1781,6 +2367,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1794,6 +2381,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 2 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1807,6 +2395,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1820,6 +2409,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1833,6 +2423,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1846,6 +2437,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1859,6 +2451,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1872,6 +2465,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1885,12 +2479,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 270-279
+COMP: 20
+END_DISCO = 440
+QUADRO LIVRE: 47
+Lendo de D-440 e escrevendo em M-470
+Lendo de D-441 e escrevendo em M-471
+Lendo de D-442 e escrevendo em M-472
+Lendo de D-443 e escrevendo em M-473
+Lendo de D-444 e escrevendo em M-474
+Lendo de D-445 e escrevendo em M-475
+Lendo de D-446 e escrevendo em M-476
+Lendo de D-447 e escrevendo em M-477
+Lendo de D-448 e escrevendo em M-478
+Lendo de D-449 e escrevendo em M-479
+Página 2 nos endereços 470-479
 pend 0 2
 2
 pend 1 0
@@ -1900,6 +2507,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 144
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1913,6 +2521,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 159
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1926,6 +2535,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1939,6 +2549,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1952,6 +2563,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -1965,6 +2577,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 157
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1978,6 +2591,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -1991,6 +2605,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2004,6 +2619,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -2017,6 +2633,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 156
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2030,6 +2647,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2043,6 +2661,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2056,6 +2675,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 3 1
 PC: 162
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -2069,6 +2689,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2082,6 +2703,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2095,6 +2717,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2108,6 +2731,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -2121,6 +2745,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2134,6 +2759,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2147,12 +2773,25 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 1 (Erro de execução)
 SO: IRQ erro na CPU: Página ausente
-QUADRO LIVRE: -1
-Página nos endereços 280-289
+COMP: 20
+END_DISCO = 690
+QUADRO LIVRE: 48
+Lendo de D-690 e escrevendo em M-480
+Lendo de D-691 e escrevendo em M-481
+Lendo de D-692 e escrevendo em M-482
+Lendo de D-693 e escrevendo em M-483
+Lendo de D-694 e escrevendo em M-484
+Lendo de D-695 e escrevendo em M-485
+Lendo de D-696 e escrevendo em M-486
+Lendo de D-697 e escrevendo em M-487
+Lendo de D-698 e escrevendo em M-488
+Lendo de D-699 e escrevendo em M-489
+Página 2 nos endereços 480-489
 pend 0 2
 2
 pend 1 0
@@ -2162,6 +2801,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 142
+Página: 14
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -2175,6 +2815,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 157
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2188,6 +2829,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2201,6 +2843,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2214,6 +2857,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 3 (E/S: relógio)
@@ -2227,6 +2871,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 155
+Página: 15
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2240,6 +2885,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2253,6 +2899,7 @@ Escalonando agora
 TAM: 3
 PROC ATUAL: 4 1
 PC: 160
+Página: 16
 RETORNO DESPACHA: 0
 teste
 SO: recebi IRQ 2 (Chamada de sistema)
@@ -2262,3 +2909,3343 @@ pend 0 2
 pend 1 0
 pend 2 0
 pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 154
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 30
+END_DISCO = 200
+QUADRO LIVRE: 49
+Lendo de D-200 e escrevendo em M-490
+Lendo de D-201 e escrevendo em M-491
+Lendo de D-202 e escrevendo em M-492
+Lendo de D-203 e escrevendo em M-493
+Lendo de D-204 e escrevendo em M-494
+Lendo de D-205 e escrevendo em M-495
+Lendo de D-206 e escrevendo em M-496
+Lendo de D-207 e escrevendo em M-497
+Lendo de D-208 e escrevendo em M-498
+Lendo de D-209 e escrevendo em M-499
+Página 3 nos endereços 490-499
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 157
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 155
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 154
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 40
+END_DISCO = 210
+QUADRO LIVRE: 10
+Lendo de D-210 e escrevendo em M-100
+Lendo de D-211 e escrevendo em M-101
+Lendo de D-212 e escrevendo em M-102
+Lendo de D-213 e escrevendo em M-103
+Lendo de D-214 e escrevendo em M-104
+Lendo de D-215 e escrevendo em M-105
+Lendo de D-216 e escrevendo em M-106
+Lendo de D-217 e escrevendo em M-107
+Lendo de D-218 e escrevendo em M-108
+Lendo de D-219 e escrevendo em M-109
+Página 4 nos endereços 100-109
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 148
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 30
+END_DISCO = 450
+QUADRO LIVRE: 11
+Lendo de D-450 e escrevendo em M-110
+Lendo de D-451 e escrevendo em M-111
+Lendo de D-452 e escrevendo em M-112
+Lendo de D-453 e escrevendo em M-113
+Lendo de D-454 e escrevendo em M-114
+Lendo de D-455 e escrevendo em M-115
+Lendo de D-456 e escrevendo em M-116
+Lendo de D-457 e escrevendo em M-117
+Lendo de D-458 e escrevendo em M-118
+Lendo de D-459 e escrevendo em M-119
+Página 3 nos endereços 110-119
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 166
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 165
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 163
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 40
+END_DISCO = 460
+QUADRO LIVRE: 12
+Lendo de D-460 e escrevendo em M-120
+Lendo de D-461 e escrevendo em M-121
+Lendo de D-462 e escrevendo em M-122
+Lendo de D-463 e escrevendo em M-123
+Lendo de D-464 e escrevendo em M-124
+Lendo de D-465 e escrevendo em M-125
+Lendo de D-466 e escrevendo em M-126
+Lendo de D-467 e escrevendo em M-127
+Lendo de D-468 e escrevendo em M-128
+Lendo de D-469 e escrevendo em M-129
+Página 4 nos endereços 120-129
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 161
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 146
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 30
+END_DISCO = 700
+QUADRO LIVRE: 13
+Lendo de D-700 e escrevendo em M-130
+Lendo de D-701 e escrevendo em M-131
+Lendo de D-702 e escrevendo em M-132
+Lendo de D-703 e escrevendo em M-133
+Lendo de D-704 e escrevendo em M-134
+Lendo de D-705 e escrevendo em M-135
+Lendo de D-706 e escrevendo em M-136
+Lendo de D-707 e escrevendo em M-137
+Lendo de D-708 e escrevendo em M-138
+Lendo de D-709 e escrevendo em M-139
+Página 3 nos endereços 130-139
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 164
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 161
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 40
+END_DISCO = 710
+QUADRO LIVRE: 14
+Lendo de D-710 e escrevendo em M-140
+Lendo de D-711 e escrevendo em M-141
+Lendo de D-712 e escrevendo em M-142
+Lendo de D-713 e escrevendo em M-143
+Lendo de D-714 e escrevendo em M-144
+Lendo de D-715 e escrevendo em M-145
+Lendo de D-716 e escrevendo em M-146
+Lendo de D-717 e escrevendo em M-147
+Lendo de D-718 e escrevendo em M-148
+Lendo de D-719 e escrevendo em M-149
+Página 4 nos endereços 140-149
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 159
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 149
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 148
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 164
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 50
+END_DISCO = 220
+QUADRO LIVRE: 15
+Lendo de D-220 e escrevendo em M-150
+Lendo de D-221 e escrevendo em M-151
+Lendo de D-222 e escrevendo em M-152
+Lendo de D-223 e escrevendo em M-153
+Lendo de D-224 e escrevendo em M-154
+Lendo de D-225 e escrevendo em M-155
+Lendo de D-226 e escrevendo em M-156
+Lendo de D-227 e escrevendo em M-157
+Lendo de D-228 e escrevendo em M-158
+Lendo de D-229 e escrevendo em M-159
+Página 5 nos endereços 150-159
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 159
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 157
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 156
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 50
+END_DISCO = 470
+QUADRO LIVRE: 16
+Lendo de D-470 e escrevendo em M-160
+Lendo de D-471 e escrevendo em M-161
+Lendo de D-472 e escrevendo em M-162
+Lendo de D-473 e escrevendo em M-163
+Lendo de D-474 e escrevendo em M-164
+Lendo de D-475 e escrevendo em M-165
+Lendo de D-476 e escrevendo em M-166
+Lendo de D-477 e escrevendo em M-167
+Lendo de D-478 e escrevendo em M-168
+Lendo de D-479 e escrevendo em M-169
+Página 5 nos endereços 160-169
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 150
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 166
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 157
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 155
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 154
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 50
+END_DISCO = 720
+QUADRO LIVRE: 17
+Lendo de D-720 e escrevendo em M-170
+Lendo de D-721 e escrevendo em M-171
+Lendo de D-722 e escrevendo em M-172
+Lendo de D-723 e escrevendo em M-173
+Lendo de D-724 e escrevendo em M-174
+Lendo de D-725 e escrevendo em M-175
+Lendo de D-726 e escrevendo em M-176
+Lendo de D-727 e escrevendo em M-177
+Lendo de D-728 e escrevendo em M-178
+Lendo de D-729 e escrevendo em M-179
+Página 5 nos endereços 170-179
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 148
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 164
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 60
+END_DISCO = 230
+QUADRO LIVRE: 18
+Lendo de D-230 e escrevendo em M-180
+Lendo de D-231 e escrevendo em M-181
+Lendo de D-232 e escrevendo em M-182
+Lendo de D-233 e escrevendo em M-183
+Lendo de D-234 e escrevendo em M-184
+Lendo de D-235 e escrevendo em M-185
+Lendo de D-236 e escrevendo em M-186
+Lendo de D-237 e escrevendo em M-187
+Lendo de D-238 e escrevendo em M-188
+Lendo de D-239 e escrevendo em M-189
+Página 6 nos endereços 180-189
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 157
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 155
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 154
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 151
+Página: 15
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 237
+END_DISCO = 400
+QUADRO LIVRE: 19
+Lendo de D-400 e escrevendo em M-190
+Lendo de D-401 e escrevendo em M-191
+Lendo de D-402 e escrevendo em M-192
+Lendo de D-403 e escrevendo em M-193
+Lendo de D-404 e escrevendo em M-194
+Lendo de D-405 e escrevendo em M-195
+Lendo de D-406 e escrevendo em M-196
+Lendo de D-407 e escrevendo em M-197
+Lendo de D-408 e escrevendo em M-198
+Lendo de D-409 e escrevendo em M-199
+Página 23 nos endereços 190-199
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 168
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 170
+END_DISCO = 340
+QUADRO LIVRE: 20
+Lendo de D-340 e escrevendo em M-200
+Lendo de D-341 e escrevendo em M-201
+Lendo de D-342 e escrevendo em M-202
+Lendo de D-343 e escrevendo em M-203
+Lendo de D-344 e escrevendo em M-204
+Lendo de D-345 e escrevendo em M-205
+Lendo de D-346 e escrevendo em M-206
+Lendo de D-347 e escrevendo em M-207
+Lendo de D-348 e escrevendo em M-208
+Lendo de D-349 e escrevendo em M-209
+Página 17 nos endereços 200-209
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 170
+Página: 17
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 187
+END_DISCO = 350
+QUADRO LIVRE: 21
+Lendo de D-350 e escrevendo em M-210
+Lendo de D-351 e escrevendo em M-211
+Lendo de D-352 e escrevendo em M-212
+Lendo de D-353 e escrevendo em M-213
+Lendo de D-354 e escrevendo em M-214
+Lendo de D-355 e escrevendo em M-215
+Lendo de D-356 e escrevendo em M-216
+Lendo de D-357 e escrevendo em M-217
+Lendo de D-358 e escrevendo em M-218
+Lendo de D-359 e escrevendo em M-219
+Página 18 nos endereços 210-219
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 187
+Página: 18
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 190
+END_DISCO = 360
+QUADRO LIVRE: 22
+Lendo de D-360 e escrevendo em M-220
+Lendo de D-361 e escrevendo em M-221
+Lendo de D-362 e escrevendo em M-222
+Lendo de D-363 e escrevendo em M-223
+Lendo de D-364 e escrevendo em M-224
+Lendo de D-365 e escrevendo em M-225
+Lendo de D-366 e escrevendo em M-226
+Lendo de D-367 e escrevendo em M-227
+Lendo de D-368 e escrevendo em M-228
+Lendo de D-369 e escrevendo em M-229
+Página 19 nos endereços 220-229
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 189
+Página: 18
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 200
+END_DISCO = 370
+QUADRO LIVRE: 23
+Lendo de D-370 e escrevendo em M-230
+Lendo de D-371 e escrevendo em M-231
+Lendo de D-372 e escrevendo em M-232
+Lendo de D-373 e escrevendo em M-233
+Lendo de D-374 e escrevendo em M-234
+Lendo de D-375 e escrevendo em M-235
+Lendo de D-376 e escrevendo em M-236
+Lendo de D-377 e escrevendo em M-237
+Lendo de D-378 e escrevendo em M-238
+Lendo de D-379 e escrevendo em M-239
+Página 20 nos endereços 230-239
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 199
+Página: 19
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 240
+END_DISCO = 410
+QUADRO LIVRE: 24
+Lendo de D-410 e escrevendo em M-240
+Lendo de D-411 e escrevendo em M-241
+Lendo de D-412 e escrevendo em M-242
+Lendo de D-413 e escrevendo em M-243
+Lendo de D-414 e escrevendo em M-244
+Lendo de D-415 e escrevendo em M-245
+Lendo de D-416 e escrevendo em M-246
+Lendo de D-417 e escrevendo em M-247
+Lendo de D-418 e escrevendo em M-248
+Lendo de D-419 e escrevendo em M-249
+Página 24 nos endereços 240-249
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 201
+Página: 20
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 165
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 60
+END_DISCO = 480
+QUADRO LIVRE: 25
+Lendo de D-480 e escrevendo em M-250
+Lendo de D-481 e escrevendo em M-251
+Lendo de D-482 e escrevendo em M-252
+Lendo de D-483 e escrevendo em M-253
+Lendo de D-484 e escrevendo em M-254
+Lendo de D-485 e escrevendo em M-255
+Lendo de D-486 e escrevendo em M-256
+Lendo de D-487 e escrevendo em M-257
+Lendo de D-488 e escrevendo em M-258
+Lendo de D-489 e escrevendo em M-259
+Página 6 nos endereços 250-259
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 144
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 162
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 170
+END_DISCO = 590
+QUADRO LIVRE: 26
+Lendo de D-590 e escrevendo em M-260
+Lendo de D-591 e escrevendo em M-261
+Lendo de D-592 e escrevendo em M-262
+Lendo de D-593 e escrevendo em M-263
+Lendo de D-594 e escrevendo em M-264
+Lendo de D-595 e escrevendo em M-265
+Lendo de D-596 e escrevendo em M-266
+Lendo de D-597 e escrevendo em M-267
+Lendo de D-598 e escrevendo em M-268
+Lendo de D-599 e escrevendo em M-269
+Página 17 nos endereços 260-269
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 170
+Página: 17
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 239
+END_DISCO = 650
+QUADRO LIVRE: 27
+Lendo de D-650 e escrevendo em M-270
+Lendo de D-651 e escrevendo em M-271
+Lendo de D-652 e escrevendo em M-272
+Lendo de D-653 e escrevendo em M-273
+Lendo de D-654 e escrevendo em M-274
+Lendo de D-655 e escrevendo em M-275
+Lendo de D-656 e escrevendo em M-276
+Lendo de D-657 e escrevendo em M-277
+Lendo de D-658 e escrevendo em M-278
+Lendo de D-659 e escrevendo em M-279
+Página 23 nos endereços 270-279
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 170
+Página: 17
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 189
+END_DISCO = 600
+QUADRO LIVRE: 28
+Lendo de D-600 e escrevendo em M-280
+Lendo de D-601 e escrevendo em M-281
+Lendo de D-602 e escrevendo em M-282
+Lendo de D-603 e escrevendo em M-283
+Lendo de D-604 e escrevendo em M-284
+Lendo de D-605 e escrevendo em M-285
+Lendo de D-606 e escrevendo em M-286
+Lendo de D-607 e escrevendo em M-287
+Lendo de D-608 e escrevendo em M-288
+Lendo de D-609 e escrevendo em M-289
+Página 18 nos endereços 280-289
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 189
+Página: 18
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 190
+END_DISCO = 610
+QUADRO LIVRE: 29
+Lendo de D-610 e escrevendo em M-290
+Lendo de D-611 e escrevendo em M-291
+Lendo de D-612 e escrevendo em M-292
+Lendo de D-613 e escrevendo em M-293
+Lendo de D-614 e escrevendo em M-294
+Lendo de D-615 e escrevendo em M-295
+Lendo de D-616 e escrevendo em M-296
+Lendo de D-617 e escrevendo em M-297
+Lendo de D-618 e escrevendo em M-298
+Lendo de D-619 e escrevendo em M-299
+Página 19 nos endereços 290-299
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 189
+Página: 18
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 240
+END_DISCO = 660
+QUADRO LIVRE: 30
+Lendo de D-660 e escrevendo em M-300
+Lendo de D-661 e escrevendo em M-301
+Lendo de D-662 e escrevendo em M-302
+Lendo de D-663 e escrevendo em M-303
+Lendo de D-664 e escrevendo em M-304
+Lendo de D-665 e escrevendo em M-305
+Lendo de D-666 e escrevendo em M-306
+Lendo de D-667 e escrevendo em M-307
+Lendo de D-668 e escrevendo em M-308
+Lendo de D-669 e escrevendo em M-309
+Página 24 nos endereços 300-309
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 3 1
+PC: 191
+Página: 19
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 1
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 163
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 60
+END_DISCO = 730
+QUADRO LIVRE: 31
+Lendo de D-730 e escrevendo em M-310
+Lendo de D-731 e escrevendo em M-311
+Lendo de D-732 e escrevendo em M-312
+Lendo de D-733 e escrevendo em M-313
+Lendo de D-734 e escrevendo em M-314
+Lendo de D-735 e escrevendo em M-315
+Lendo de D-736 e escrevendo em M-316
+Lendo de D-737 e escrevendo em M-317
+Lendo de D-738 e escrevendo em M-318
+Lendo de D-739 e escrevendo em M-319
+Página 6 nos endereços 310-319
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 142
+Página: 14
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 4
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 3
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 2 (Chamada de sistema)
+SO: chamada de sistema 2
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 160
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 237
+END_DISCO = 900
+QUADRO LIVRE: 32
+Lendo de D-900 e escrevendo em M-320
+Lendo de D-901 e escrevendo em M-321
+Lendo de D-902 e escrevendo em M-322
+Lendo de D-903 e escrevendo em M-323
+Lendo de D-904 e escrevendo em M-324
+Lendo de D-905 e escrevendo em M-325
+Lendo de D-906 e escrevendo em M-326
+Lendo de D-907 e escrevendo em M-327
+Lendo de D-908 e escrevendo em M-328
+Lendo de D-909 e escrevendo em M-329
+Página 23 nos endereços 320-329
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 168
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 1
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 168
+Página: 16
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 170
+END_DISCO = 840
+QUADRO LIVRE: 33
+Lendo de D-840 e escrevendo em M-330
+Lendo de D-841 e escrevendo em M-331
+Lendo de D-842 e escrevendo em M-332
+Lendo de D-843 e escrevendo em M-333
+Lendo de D-844 e escrevendo em M-334
+Lendo de D-845 e escrevendo em M-335
+Lendo de D-846 e escrevendo em M-336
+Lendo de D-847 e escrevendo em M-337
+Lendo de D-848 e escrevendo em M-338
+Lendo de D-849 e escrevendo em M-339
+Página 17 nos endereços 330-339
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 170
+Página: 17
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 187
+END_DISCO = 850
+QUADRO LIVRE: 34
+Lendo de D-850 e escrevendo em M-340
+Lendo de D-851 e escrevendo em M-341
+Lendo de D-852 e escrevendo em M-342
+Lendo de D-853 e escrevendo em M-343
+Lendo de D-854 e escrevendo em M-344
+Lendo de D-855 e escrevendo em M-345
+Lendo de D-856 e escrevendo em M-346
+Lendo de D-857 e escrevendo em M-347
+Lendo de D-858 e escrevendo em M-348
+Lendo de D-859 e escrevendo em M-349
+Página 18 nos endereços 340-349
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 187
+Página: 18
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 190
+END_DISCO = 860
+QUADRO LIVRE: 35
+Lendo de D-860 e escrevendo em M-350
+Lendo de D-861 e escrevendo em M-351
+Lendo de D-862 e escrevendo em M-352
+Lendo de D-863 e escrevendo em M-353
+Lendo de D-864 e escrevendo em M-354
+Lendo de D-865 e escrevendo em M-355
+Lendo de D-866 e escrevendo em M-356
+Lendo de D-867 e escrevendo em M-357
+Lendo de D-868 e escrevendo em M-358
+Lendo de D-869 e escrevendo em M-359
+Página 19 nos endereços 350-359
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 189
+Página: 18
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 200
+END_DISCO = 870
+QUADRO LIVRE: 36
+Lendo de D-870 e escrevendo em M-360
+Lendo de D-871 e escrevendo em M-361
+Lendo de D-872 e escrevendo em M-362
+Lendo de D-873 e escrevendo em M-363
+Lendo de D-874 e escrevendo em M-364
+Lendo de D-875 e escrevendo em M-365
+Lendo de D-876 e escrevendo em M-366
+Lendo de D-877 e escrevendo em M-367
+Lendo de D-878 e escrevendo em M-368
+Lendo de D-879 e escrevendo em M-369
+Página 20 nos endereços 360-369
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 199
+Página: 19
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 240
+END_DISCO = 910
+QUADRO LIVRE: 37
+Lendo de D-910 e escrevendo em M-370
+Lendo de D-911 e escrevendo em M-371
+Lendo de D-912 e escrevendo em M-372
+Lendo de D-913 e escrevendo em M-373
+Lendo de D-914 e escrevendo em M-374
+Lendo de D-915 e escrevendo em M-375
+Lendo de D-916 e escrevendo em M-376
+Lendo de D-917 e escrevendo em M-377
+Lendo de D-918 e escrevendo em M-378
+Lendo de D-919 e escrevendo em M-379
+Página 24 nos endereços 370-379
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 201
+Página: 20
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 210
+END_DISCO = 880
+QUADRO LIVRE: 38
+Lendo de D-880 e escrevendo em M-380
+Lendo de D-881 e escrevendo em M-381
+Lendo de D-882 e escrevendo em M-382
+Lendo de D-883 e escrevendo em M-383
+Lendo de D-884 e escrevendo em M-384
+Lendo de D-885 e escrevendo em M-385
+Lendo de D-886 e escrevendo em M-386
+Lendo de D-887 e escrevendo em M-387
+Lendo de D-888 e escrevendo em M-388
+Lendo de D-889 e escrevendo em M-389
+Página 21 nos endereços 380-389
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 4 1
+PC: 209
+Página: 20
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 3 (E/S: relógio)
+Quantum p_atual: 0
+pend 0 2
+2
+pend 1 0
+pend 2 0
+pend 3 1
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 191
+Página: 19
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 213
+END_DISCO = 380
+QUADRO LIVRE: 39
+Lendo de D-380 e escrevendo em M-390
+Lendo de D-381 e escrevendo em M-391
+Lendo de D-382 e escrevendo em M-392
+Lendo de D-383 e escrevendo em M-393
+Lendo de D-384 e escrevendo em M-394
+Lendo de D-385 e escrevendo em M-395
+Lendo de D-386 e escrevendo em M-396
+Lendo de D-387 e escrevendo em M-397
+Lendo de D-388 e escrevendo em M-398
+Lendo de D-389 e escrevendo em M-399
+Página 21 nos endereços 390-399
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 213
+Página: 21
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Página ausente
+COMP: 220
+END_DISCO = 390
+QUADRO LIVRE: 40
+Lendo de D-390 e escrevendo em M-400
+Lendo de D-391 e escrevendo em M-401
+Lendo de D-392 e escrevendo em M-402
+Lendo de D-393 e escrevendo em M-403
+Lendo de D-394 e escrevendo em M-404
+Lendo de D-395 e escrevendo em M-405
+Lendo de D-396 e escrevendo em M-406
+Lendo de D-397 e escrevendo em M-407
+Lendo de D-398 e escrevendo em M-408
+Lendo de D-399 e escrevendo em M-409
+Página 22 nos endereços 400-409
+pend 0 2
+2
+pend 1 1
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 2 1
+PC: 219
+Página: 21
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Instrução inválida
+Matando processo
+Morto processo
+pend 0 2
+2
+Processo desbloqueado
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 3
+PROC ATUAL: 1 1
+PC: 38
+Página: 3
+RETORNO DESPACHA: 0
+teste
+SO: recebi IRQ 1 (Erro de execução)
+SO: IRQ erro na CPU: Instrução inválida
+Matando processo
+Morto processo
+pend 2 0
+pend 3 0
+Escalonando agora
+TAM: 2
+PROC ATUAL: 4 1
+Tempo execução: 4268
+CMD: 'F'
+Fim da execução.
+relógio: 78357

@@ -65,6 +65,7 @@ void mem_quadros_remove_fila(mem_quadros_t *self, int indice) {
     if (indice == -1) {
         self->f_ini = (self->f_ini + 1) % self->cap;
         self->f_tam--;
+        return;
     }
     for (int i = self->f_ini; i < self->f_ini + self->f_tam; i++) {
         if (self->f[i % self->cap].indice == indice) {
@@ -100,4 +101,13 @@ int mem_quadros_pega_dono(mem_quadros_t *self, int indice) {
 }
 int mem_quadros_pega_pagina(mem_quadros_t *self, int indice) {
     return self->quadros[indice].pagina;
+}
+
+void mem_quadros_remove_processo(mem_quadros_t *self, int pid) {
+    for (int i = 0; i < self->cap; i++) {
+        if (self->quadros[i].dono == pid) {
+            self->quadros[i].livre = 1;
+            mem_quadros_remove_fila(self, i);
+        }
+    }
 }

@@ -205,6 +205,8 @@ static int so_mata_processo(so_t *self, int id) {
     }
     if (index == -1) return -1;
     self->hist = historico_adiciona_metrica(self->hist, self->proc_tabela[index]);
+    mem_quadros_remove_processo(self->quadros, processo_pega_id(self->proc_tabela[index]));
+
     processo_mata(self->proc_tabela[index]);
     self->proc_tabela[index] = NULL;
     return 0;
@@ -364,19 +366,37 @@ static int so_trata_bloq_saida(so_t *self, processo_t *p) {
 }
 
 // TRATAMENTO DE PAGE FAULT {{{1
-static void so_trata_pag_ausente(so_t *self, int comp) {
-    int pag_disco = processo_pega_pagina_disco(self->proc_atual) + comp/TAM_PAGINA;
-    int end_disco_ini = pag_disco * TAM_PAGINA;
-    int dado;
-    int quadro_livre = mem_quadros_tem_livre(self->quadros);
-    console_printf("QUADRO LIVRE: %d", quadro_livre);
-    if (quadro_livre == -1) {
-        quadro_livre = mem_quadros_libera_quadro(self->quadros);
-        int pid = mem_quadros_pega_dono(self->quadros, quadro_livre);
-        int pagina = mem_quadros_pega_pagina(self->quadros, quadro_livre);
-        processo_t *p = so_busca_processo(self, pid);
+static int so_libera_pagina(so_t *self) {
+    int quadro_livre = mem_quadros_libera_quadro(self->quadros);
+    int pid = mem_quadros_pega_dono(self->quadros, quadro_livre);
+    int pagina = mem_quadros_pega_pagina(self->quadros, quadro_livre);
+    processo_t *p = so_busca_processo(self, pid);
+    if (p == NULL) {
+        console_printf("PROCESSO %d NAO ENCONTRADO", pid);
+        self->erro_interno = 1;
+    }
+    tabpag_t *tab = processo_pega_tabpag(p);
+    if (tab == NULL) {
+        console_printf("TABELA DO PROCESSO %d NAO ENCONTRADO", pid);
+        self->erro_interno = 1;
+    }
+    else {
         tabpag_invalida_pagina(processo_pega_tabpag(p), pagina);
     }
+    return quadro_livre;
+}
+
+static void so_trata_pag_ausente(so_t *self, int comp) {
+    console_printf("COMP: %d", comp);
+    int pag_disco = processo_pega_pagina_disco(self->proc_atual) + comp/TAM_PAGINA;
+    int end_disco_ini = pag_disco * TAM_PAGINA;
+    console_printf("END_DISCO = %d", end_disco_ini);
+    int dado;
+    int quadro_livre = mem_quadros_tem_livre(self->quadros);
+    if (quadro_livre == -1) {
+        quadro_livre = so_libera_pagina(self);
+    }
+    console_printf("QUADRO LIVRE: %d", quadro_livre);
     int end_mem_ini = quadro_livre * TAM_PAGINA;
     for (int i = 0; i < TAM_PAGINA; i++) {
         if (mem_le(self->disco, end_disco_ini + i, &dado) != ERR_OK) {
@@ -387,10 +407,11 @@ static void so_trata_pag_ausente(so_t *self, int comp) {
             console_printf("Erro na escrita na memória");
             return;
         }
+        console_printf("Lendo de D-%d e escrevendo em M-%d", end_disco_ini + i, end_mem_ini + i);
     }
     tabpag_define_quadro(processo_pega_tabpag(self->proc_atual), comp / TAM_PAGINA, quadro_livre);
     mem_quadros_muda_estado(self->quadros, quadro_livre, 0, processo_pega_id(self->proc_atual));
-    console_printf("Página nos endereços %d-%d", quadro_livre * TAM_PAGINA, (quadro_livre + 1) * TAM_PAGINA - 1);
+    console_printf("Página %d nos endereços %d-%d", comp/TAM_PAGINA, quadro_livre * TAM_PAGINA, (quadro_livre + 1) * TAM_PAGINA - 1);
     processo_atualiza_n_pag_ausente(self->proc_atual);
     self->metricas.n_pag_ausente++;
 }
@@ -523,6 +544,7 @@ static int so_despacha(so_t *self)
   mmu_define_tabpag(self->mmu, processo_pega_tabpag(self->proc_atual));
   mem_escreve(self->mem, IRQ_END_erro, ERR_OK);
   console_printf("PC: %d", pc);
+  console_printf("Página: %d", pc/TAM_PAGINA);
   return 0;
 }
 
@@ -617,7 +639,7 @@ static void so_trata_irq_err_cpu(so_t *self)
   if(err == ERR_OK) return;
   if(err == ERR_PAG_AUSENTE) {
       int comp;
-      mem_le(self->mem, IRQ_END_complemento, &comp);
+      comp = processo_pega_reg_comp(self->proc_atual);
       so_trata_pag_ausente(self, comp);
       return;
   }

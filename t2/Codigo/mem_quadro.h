@@ -9,5 +9,6 @@ void mem_quadros_muda_estado(mem_quadros_t *self, int indice, bool livre, int do
 int mem_quadros_libera_quadro(mem_quadros_t *self);
 int mem_quadros_pega_dono(mem_quadros_t *self, int indice);
 int mem_quadros_pega_pagina(mem_quadros_t *self, int indice);
+void mem_quadros_remove_processo(mem_quadros_t *self, int pid);
 
 #endif
