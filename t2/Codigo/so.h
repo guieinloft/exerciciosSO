@@ -14,7 +14,7 @@ typedef struct so_t so_t;
 #include "es.h"
 #include "console.h" // só para uma gambiarra
 
-so_t *so_cria(cpu_t *cpu, mem_t *mem, mmu_t *mmu,
+so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
               es_t *es, console_t *console);
 void so_destroi(so_t *self);
 

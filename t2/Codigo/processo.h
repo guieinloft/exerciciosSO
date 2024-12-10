@@ -1,6 +1,8 @@
 #ifndef PROCESSO_H
 #define PROCESSO_H
 
+#include "tabpag.h"
+
 typedef struct processo_t processo_t;
 typedef struct historico_t historico_t;
 
@@ -40,10 +42,12 @@ proc_bloqueio_t processo_pega_bloq_motivo(processo_t *self);
 void processo_salva_reg_pc(processo_t *self, int pc);
 void processo_salva_reg_a(processo_t *self, int a);
 void processo_salva_reg_x(processo_t *self, int x);
+void processo_salva_reg_comp(processo_t *self, int comp);
 
 int processo_pega_reg_pc(processo_t *self);
 int processo_pega_reg_a(processo_t *self);
 int processo_pega_reg_x(processo_t *self);
+int processo_pega_reg_comp(processo_t *self);
 int processo_pega_id(processo_t *self);
 
 void processo_muda_quantum(processo_t *self, int quantum);
@@ -54,6 +58,8 @@ void processo_reseta_quantum(processo_t *self);
 void processo_muda_priori(processo_t *self, double priori);
 void processo_recalcula_priori(processo_t *self);
 double processo_pega_priori(processo_t *self);
+
+tabpag_t *processo_pega_tabpag(processo_t *self);
 
 // METRICAS
 void processo_atualiza_metricas(processo_t *self, int delta);

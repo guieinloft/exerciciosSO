@@ -1,6 +1,7 @@
 // INCLUDES {{{1
 #include <stdlib.h>
 #include "processo.h"
+#include "tabpag.h"
 
 // STRUCTS {{{1
 struct processo_t {
@@ -8,12 +9,14 @@ struct processo_t {
     int a;
     int x;
     int pc;
+    int comp;
     proc_estado_t estado;
     proc_bloqueio_t bloq_motivo;
     int max_quantum;
     int quantum;
     double priori;
     proc_metricas_t metricas;
+    tabpag_t *tabpag;
 };
 
 struct historico_t {
@@ -35,6 +38,7 @@ processo_t *processo_cria(int id, int pc, int max_quantum) {
     p->max_quantum = max_quantum;
     p->quantum = max_quantum;
     p->priori = 0.5;
+    p->tabpag = tabpag_cria();
     return p;
 }
 
@@ -67,6 +71,9 @@ void processo_salva_reg_a(processo_t *self, int a) {
 void processo_salva_reg_x(processo_t *self, int x) {
     self->x = x;
 }
+void processo_salva_reg_comp(processo_t *self, int comp) {
+    self->comp = comp;
+}
 
 int processo_pega_reg_pc(processo_t *self) {
     if (self != NULL) return self->pc;
@@ -78,6 +85,10 @@ int processo_pega_reg_a(processo_t *self) {
 }
 int processo_pega_reg_x(processo_t *self) {
     if (self != NULL) return self->x;
+    return 0;
+}
+int processo_pega_reg_comp(processo_t *self) {
+    if (self != NULL) return self->comp;
     return 0;
 }
 int processo_pega_id(processo_t *self) {
@@ -115,7 +126,13 @@ double processo_pega_priori(processo_t *self) {
     return self->priori;
 }
 
+tabpag_t *processo_pega_tabpag(processo_t *self) {
+    if (self != NULL) return self->tabpag;
+    return NULL;
+}
+
 void processo_mata(processo_t *self) {
+    tabpag_destroi(self->tabpag);
     free(self);
 }
 

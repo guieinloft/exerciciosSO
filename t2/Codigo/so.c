@@ -56,6 +56,7 @@ typedef struct so_metricas_t {
 struct so_t {
   cpu_t *cpu;
   mem_t *mem;
+  mem_t *disco;
   mmu_t *mmu;
   es_t *es;
   console_t *console;
@@ -98,7 +99,7 @@ static bool so_copia_str_do_processo(so_t *self, int tam, char str[tam],
 // CRIAÇÃO {{{1
 
 
-so_t *so_cria(cpu_t *cpu, mem_t *mem, mmu_t *mmu,
+so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
               es_t *es, console_t *console)
 {
   so_t *self = malloc(sizeof(*self));
@@ -106,6 +107,7 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, mmu_t *mmu,
 
   self->cpu = cpu;
   self->mem = mem;
+  self->disco = disco;
   self->mmu = mmu;
   self->es = es;
   self->console = console;
@@ -161,7 +163,7 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, mmu_t *mmu,
   //   não vão ser usadas por programas de usuário)
   // t2: o controle de memória livre deve ser mais aprimorado que isso  
   self->quadro_livre = 99 / TAM_PAGINA + 1;
-  console_printf("criando");
+  console_printf("Criando SO");
 
   return self;
 }
@@ -263,8 +265,9 @@ static void so_imprime_metricas(so_t *self) {
         }
     }
     */
+    
 }
-
+/*
 static void so_imprime_metricas_arquivo(so_t *self) {
     char nome[100];
     sprintf(nome, "../Metricas/log_%d_%d_%d.txt", ESC_TIPO, INTERVALO_INTERRUPCAO, MAX_QUANTUM);
@@ -288,11 +291,12 @@ static void so_imprime_metricas_arquivo(so_t *self) {
         }
     }
 }
-
+*/
 // TRATAMENTO DE BLOQUEIO {{{1
 
 static int so_trata_bloq_espera(so_t *self, processo_t *p) {
   int pid = processo_pega_reg_x(p);
+  console_printf("%d", pid);
   if (pid == processo_pega_id(p)) {
       so_desbloqueia_processo(self, p);
       return 1;
@@ -404,19 +408,22 @@ static void so_salva_estado_da_cpu(so_t *self)
   // se não houver processo corrente, não faz nada
   if (self->proc_atual == NULL) return;
   if (processo_pega_estado(self->proc_atual) != PROC_EXECUTANDO) return;
-  int pc, a, x;
+  int pc, a, x, comp;
   mem_le(self->mem, IRQ_END_PC, &pc);
   mem_le(self->mem, IRQ_END_A, &a);
   mem_le(self->mem, IRQ_END_X, &x);
+  mem_le(self->mem, IRQ_END_complemento, &comp);
   processo_salva_reg_pc(self->proc_atual, pc);
   processo_salva_reg_a(self->proc_atual, a);
   processo_salva_reg_x(self->proc_atual, x);
+  processo_salva_reg_comp(self->proc_atual, comp);
 }
 
 static void so_trata_pendencias(so_t *self)
 {
     for (int i = 0; i < PROC_TAM_TABELA; i++) {
         processo_t *p = self->proc_tabela[i];
+        if (p != NULL) console_printf("pend %d %d", i, processo_pega_estado(p));
         if (p != NULL && processo_pega_estado(p) == PROC_BLOQUEADO) {
             switch (processo_pega_bloq_motivo(p)) {
                 case PROC_BLOQ_ESPERA:
@@ -459,13 +466,16 @@ static int so_despacha(so_t *self)
   if (self->erro_interno) return 1;
   if (self->proc_atual == NULL) return 1;
   if (processo_pega_estado(self->proc_atual) != PROC_EXECUTANDO) return 1;
-  int pc, a, x;
+  int pc, a, x, comp;
   pc = processo_pega_reg_pc(self->proc_atual);
   a = processo_pega_reg_a(self->proc_atual);
   x = processo_pega_reg_x(self->proc_atual);
+  comp = processo_pega_reg_comp(self->proc_atual);
   mem_escreve(self->mem, IRQ_END_PC, pc);
   mem_escreve(self->mem, IRQ_END_A, a);
   mem_escreve(self->mem, IRQ_END_X, x);
+  mem_escreve(self->mem, IRQ_END_complemento, comp);
+  mmu_define_tabpag(self->mmu, processo_pega_tabpag(self->proc_atual));
   console_printf("PC: %d", pc);
   return 0;
 }
@@ -481,7 +491,7 @@ int so_desliga(so_t *self) {
     }
 
     so_imprime_metricas(self);
-    so_imprime_metricas_arquivo(self);
+    //so_imprime_metricas_arquivo(self);
     return 1;
 }
 
@@ -559,6 +569,13 @@ static void so_trata_irq_err_cpu(so_t *self)
   err_t err = err_int;
   console_printf("SO: IRQ erro na CPU: %s", err_nome(err));
   if(err == ERR_OK) return;
+  if(err == ERR_PAG_AUSENTE) {
+      int comp;
+      mem_le(self->mem, IRQ_END_complemento, &comp);
+      console_printf("ENDEREÇO: %d", comp);
+      self->erro_interno = 1;
+      return;
+  }
   console_printf("Matando processo");
   if (self->proc_atual == NULL) return;
   if (so_mata_processo(self, 0) == 0) {
@@ -703,7 +720,7 @@ static void so_chamada_cria_proc(so_t *self)
       if (ender_carga == 0) {
         // deveria escrever no PC do descritor do processo criado
         so_adiciona_processo(self, processo);
-        processo_salva_reg_a(self->proc_atual, -1);
+        processo_salva_reg_a(self->proc_atual, self->proc_ultimo_id);
         return;
       } // else?
     }
@@ -737,7 +754,7 @@ static void so_chamada_espera_proc(so_t *self)
 {
   processo_t *p = self->proc_atual;
   int pid = processo_pega_reg_x(p);
-  if (pid == processo_pega_id(p)) {
+  if (pid <= processo_pega_id(p)) {
       return;
   }
   for (int i = 0; i < PROC_TAM_TABELA; i++) {
@@ -816,7 +833,7 @@ static int so_carrega_programa_na_memoria_virtual(so_t *self,
   // mapeia as páginas nos quadros
   int quadro = quadro_ini;
   for (int pagina = pagina_ini; pagina <= pagina_fim; pagina++) {
-    //tabpag_define_quadro(self->tabpag_global, pagina, quadro);
+    tabpag_define_quadro(processo_pega_tabpag(processo), pagina, quadro);
     quadro++;
   }
   self->quadro_livre = quadro;
