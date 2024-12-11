@@ -1,0 +1,90 @@
+Tempo execução: 27046
+Tempo ocioso:   5477
+N. preempções:  0
+N. pag_ausente:  34
+N. interrup. 0: 1
+N. interrup. 1: 34
+N. interrup. 2: 462
+N. interrup. 3: 540
+N. interrup. 4: 0
+N. interrup. 5: 0
+
+ID: 1
+N. preempções: 2
+T. retorno:    27030
+T. resposta:   0
+N. pag. ausente:   7
+Vezes em 0: 12
+Tempo em 0: 0
+Vezes em 1: 12
+Tempo em 1: 1070
+Vezes em 2: 9
+Tempo em 2: 25960
+Vezes bloqueado por 0: 0
+Tempo bloqueado por 0: 0
+Vezes bloqueado por 1: 0
+Tempo bloqueado por 1: 0
+Vezes bloqueado por 2: 2
+Tempo bloqueado por 2: 23305
+Vezes bloqueado por 3: 7
+Tempo bloqueado por 3: 2655
+
+ID: 4
+N. preempções: 4
+T. retorno:    23330
+T. resposta:   86
+N. pag. ausente:   9
+Vezes em 0: 107
+Tempo em 0: 9279
+Vezes em 1: 107
+Tempo em 1: 8289
+Vezes em 2: 102
+Tempo em 2: 5762
+Vezes bloqueado por 0: 0
+Tempo bloqueado por 0: 0
+Vezes bloqueado por 1: 93
+Tempo bloqueado por 1: 3707
+Vezes bloqueado por 2: 0
+Tempo bloqueado por 2: 0
+Vezes bloqueado por 3: 9
+Tempo bloqueado por 3: 2055
+
+ID: 2
+N. preempções: 38
+T. retorno:    20023
+T. resposta:   166
+N. pag. ausente:   9
+Vezes em 0: 55
+Tempo em 0: 9133
+Vezes em 1: 55
+Tempo em 1: 8375
+Vezes em 2: 16
+Tempo em 2: 2515
+Vezes bloqueado por 0: 0
+Tempo bloqueado por 0: 0
+Vezes bloqueado por 1: 7
+Tempo bloqueado por 1: 374
+Vezes bloqueado por 2: 0
+Tempo bloqueado por 2: 0
+Vezes bloqueado por 3: 9
+Tempo bloqueado por 3: 2141
+
+ID: 3
+N. preempções: 13
+T. retorno:    14056
+T. resposta:   198
+N. pag. ausente:   9
+Vezes em 0: 36
+Tempo em 0: 7139
+Vezes em 1: 36
+Tempo em 1: 3835
+Vezes em 2: 22
+Tempo em 2: 3082
+Vezes bloqueado por 0: 0
+Tempo bloqueado por 0: 0
+Vezes bloqueado por 1: 13
+Tempo bloqueado por 1: 642
+Vezes bloqueado por 2: 0
+Tempo bloqueado por 2: 0
+Vezes bloqueado por 3: 9
+Tempo bloqueado por 3: 2440
