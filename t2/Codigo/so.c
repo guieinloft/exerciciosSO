@@ -46,6 +46,7 @@
 #define MAX_QUANTUM 5
 
 #define ESC_TIPO ESC_PRIORIDADE
+#define MEM_Q_TIPO MEM_Q_FIFO
 
 typedef struct so_metricas_t {
     int t_exec;
@@ -160,9 +161,8 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, mem_t *disco, mmu_t *mmu,
   // t2: o controle de memória livre deve ser mais aprimorado que isso  
   self->quadro_livre_pri = 99 / TAM_PAGINA + 1;
   self->quadro_livre_sec = 0;
-  console_printf("%d TAM MEMORIA", MEM_TAM);
 
-  self->quadros = mem_quadros_cria(MEM_TAM / TAM_PAGINA,  99 / TAM_PAGINA + 1);
+  self->quadros = mem_quadros_cria(MEM_TAM / TAM_PAGINA, 99 / TAM_PAGINA + 1, MEM_Q_TIPO);
 
   return self;
 }
@@ -365,9 +365,32 @@ static int so_trata_bloq_saida(so_t *self, processo_t *p) {
 }
 
 // TRATAMENTO DE PAGE FAULT {{{1
+static int so_escolhe_pagina_pra_liberar(so_t *self) {
+    while(1) {
+        int pid = mem_quadros_pega_dono(self->quadros, -1);
+        int pagina = mem_quadros_pega_pagina(self->quadros, -1);
+        processo_t *p = so_busca_processo(self, pid);
+        tabpag_t *tab = processo_pega_tabpag(p);
+        bool r = tabpag_bit_acesso(tab, pagina);
+        if (!r) {
+            return mem_quadros_libera_quadro_fifo(self->quadros);
+        }
+        mem_quadros_manda_fim_fila(self->quadros);
+        tabpag_zera_bit_acesso(tab, pagina);
+    }
+}
+
 static int so_libera_pagina(so_t *self) {
     console_printf("SUBSTITUINDO PAGINA");
-    int quadro_livre = mem_quadros_libera_quadro(self->quadros);
+    int quadro_livre; 
+    switch(MEM_Q_TIPO) {
+        case MEM_Q_SC:
+        quadro_livre = so_escolhe_pagina_pra_liberar(self);
+        break;
+        default: 
+        quadro_livre = mem_quadros_libera_quadro_fifo(self->quadros);
+        break;
+    }
     int pid = mem_quadros_pega_dono(self->quadros, quadro_livre);
     int pagina = mem_quadros_pega_pagina(self->quadros, quadro_livre);
     processo_t *p = so_busca_processo(self, pid);
@@ -791,7 +814,7 @@ static void so_chamada_cria_proc(so_t *self)
   // t1: deveria ler o X do descritor do processo criador
   if (mem_le(self->mem, IRQ_END_X, &ender_proc) == ERR_OK) {
     char nome[100];
-    processo_t *p2 = processo; // gambiarra (se não o processo principal corrompe)
+    processo_t *p2 = processo; // com TAM_PAGINA < 7, o processo principal corrompe, logo isso aqui é um workaround
     bool copia_str = so_copia_str_do_processo(self, 100, nome, ender_proc, processo);
     console_printf("%llu", p2);
     if (copia_str) {

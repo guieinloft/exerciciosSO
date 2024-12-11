@@ -11,3 +11,22 @@ logging file:  The current logfile is "gdb.txt".
 logging overwrite:  off: Logging appends to the log file.
 logging redirect:  off: Output will go to both the screen and the log file.
 quit
+Starting program: /home/billy/projects/cc/exerciciosSO/t2/Codigo/main 
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.archlinux.org>
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555c45b in tabpag__pagina_valida (self=0x0, pagina=0) at tabpag.c:51
+51	  if (pagina < 0 || pagina >= self->tam_tab) return false;
+Undefined command: "log".  Try "help".
+logging debugredirect:  off: Debug output will go to both the screen and the log file.
+logging enabled:  on: Logging is enabled.
+logging file:  The current logfile is "gdb.txt".
+logging overwrite:  off: Logging appends to the log file.
+logging redirect:  off: Output will go to both the screen and the log file.
+quit

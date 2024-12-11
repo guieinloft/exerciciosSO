@@ -2,6 +2,7 @@
 #include <stdbool.h>
 
 #include "mem_quadro.h"
+#include "console.h"
 
 typedef struct quadro {
     bool livre; // se a posicao da memoria esta livre ou nao
@@ -11,12 +12,12 @@ typedef struct quadro {
 
 typedef struct fila {
     int indice;
-    bool r;
 } fila;
 
 struct mem_quadros_t {
     int cap;
     quadro *quadros;
+    mem_q_tipo_t tipo;
 
     // fila
     int f_ini;
@@ -24,10 +25,11 @@ struct mem_quadros_t {
     fila *f;
 };
 
-mem_quadros_t *mem_quadros_cria(int cap, int quadro_livre) {
+mem_quadros_t *mem_quadros_cria(int cap, int quadro_livre, mem_q_tipo_t tipo) {
     mem_quadros_t *mq = (mem_quadros_t*)malloc(sizeof(mem_quadros_t));
     mq->quadros = (quadro*)malloc(sizeof(quadro) * cap);
     mq->cap = cap;
+    mq->tipo = tipo;
     for (int i = 0; i < cap; i++) {
         if (i < quadro_livre) {
             mq->quadros[i].livre = 0;
@@ -78,6 +80,11 @@ void mem_quadros_remove_fila(mem_quadros_t *self, int indice) {
     }
 }
 
+void mem_quadros_manda_fim_fila(mem_quadros_t *self) {
+    self->f[(self->f_ini + self->f_tam) % self->cap].indice = self->f[self->f_ini].indice;
+    self->f_ini = (self->f_ini + 1) % self->cap;
+}
+
 void mem_quadros_muda_estado(mem_quadros_t *self, int indice, bool livre, int dono, int pagina) {
     self->quadros[indice].livre = livre;
     self->quadros[indice].dono = dono;
@@ -90,7 +97,7 @@ void mem_quadros_muda_estado(mem_quadros_t *self, int indice, bool livre, int do
     }
 }
 
-int mem_quadros_libera_quadro(mem_quadros_t *self) { 
+int mem_quadros_libera_quadro_fifo(mem_quadros_t *self) {
     int indice = self->f[self->f_ini].indice;
     mem_quadros_remove_fila(self, -1);
     self->quadros[indice].livre = 1;
@@ -98,9 +105,16 @@ int mem_quadros_libera_quadro(mem_quadros_t *self) {
 }
 
 int mem_quadros_pega_dono(mem_quadros_t *self, int indice) {
+    if (indice == -1) {
+        return self->quadros[self->f[self->f_ini].indice].dono;
+    }
     return self->quadros[indice].dono;
 }
+
 int mem_quadros_pega_pagina(mem_quadros_t *self, int indice) {
+    if (indice == -1) {
+        return self->quadros[self->f[self->f_ini].indice].pagina;
+    }
     return self->quadros[indice].pagina;
 }
 
@@ -110,5 +124,18 @@ void mem_quadros_remove_processo(mem_quadros_t *self, int pid) {
             self->quadros[i].livre = 1;
             mem_quadros_remove_fila(self, i);
         }
+    }
+}
+
+int mem_quadros_pega_tam(mem_quadros_t *self) {
+    return self->f_tam;
+}
+
+void mem_quadros_lista_fila(mem_quadros_t *self) {
+    for (int i = self->f_ini; i < self->f_ini + self->f_tam; i++) {
+        quadro q;
+        q.dono = self->quadros[self->f[i % self->cap].indice].dono;
+        q.pagina = self->quadros[self->f[i % self->cap].indice].pagina;
+        console_printf("DONO: %d, PAGINA: %d", q.dono, q.pagina);
     }
 }
