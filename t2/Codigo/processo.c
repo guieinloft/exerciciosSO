@@ -1,5 +1,6 @@
 // INCLUDES {{{1
 #include <stdlib.h>
+#include <string.h>
 #include "processo.h"
 #include "tabpag.h"
 
@@ -18,6 +19,7 @@ struct processo_t {
     proc_metricas_t metricas;
     tabpag_t *tabpag;
     int pagina_disco;
+    int t_disco;
 };
 
 struct historico_t {
@@ -40,6 +42,7 @@ processo_t *processo_cria(int id, int pc, int max_quantum) {
     p->quantum = max_quantum;
     p->priori = 0.5;
     p->tabpag = tabpag_cria();
+    p->t_disco = 0;
     return p;
 }
 
@@ -58,9 +61,25 @@ proc_estado_t processo_pega_estado(processo_t *self) {
 void processo_bloqueia(processo_t *self, proc_bloqueio_t motivo) {
     processo_muda_estado(self, PROC_BLOQUEADO);
     self->bloq_motivo = motivo;
+    self->metricas.bloqueio_vezes[motivo]++;
 }
+
 proc_bloqueio_t processo_pega_bloq_motivo(processo_t *self) {
     return self->bloq_motivo;
+}
+
+void processo_bloqueia_disco(processo_t *self, int t_disco) {
+    processo_bloqueia(self, PROC_BLOQ_DISCO);
+    self->t_disco = t_disco;
+}
+
+int processo_pega_t_disco(processo_t *self) {
+    if (self != NULL) return self->t_disco;
+    return 0;
+}
+
+void processo_decrementa_t_disco(processo_t *self) {
+    if (self != NULL) self->t_disco--;
 }
 
 void processo_salva_reg_pc(processo_t *self, int pc) {
@@ -157,6 +176,10 @@ void metricas_inicializa(processo_t *self) {
         self->metricas.estado_vezes[i] = 0;
         self->metricas.estado_tempo[i] = 0;
     }
+    for (int i = 0; i < N_PROC_BLOQUEIO; i++) {
+        self->metricas.bloqueio_vezes[i] = 0;
+        self->metricas.bloqueio_tempo[i] = 0;
+    }
     self->metricas.estado_vezes[PROC_PRONTO] = 1;
 }
     
@@ -164,6 +187,9 @@ void metricas_inicializa(processo_t *self) {
 void processo_atualiza_metricas(processo_t *self, int delta) {
     self->metricas.tempo_retorno += delta;
     self->metricas.estado_tempo[self->estado] += delta;
+    if(self->estado == PROC_BLOQUEADO) {
+        self->metricas.bloqueio_tempo[self->bloq_motivo] += delta;
+    }
     self->metricas.tempo_resposta = self->metricas.estado_tempo[PROC_PRONTO] / self->metricas.estado_vezes[PROC_PRONTO];
 }
 

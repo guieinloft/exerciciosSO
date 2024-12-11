@@ -48,6 +48,8 @@
 #define ESC_TIPO ESC_PRIORIDADE
 #define MEM_Q_TIPO MEM_Q_FIFO
 
+#define TEMPO_DISCO 10
+
 typedef struct so_metricas_t {
     int t_exec;
     int t_ocioso;
@@ -82,6 +84,8 @@ struct so_t {
   mem_quadros_t *quadros;
   int quadro_livre_pri;
   int quadro_livre_sec;
+
+  int t_disco;
 };
 
 
@@ -213,7 +217,12 @@ static int so_mata_processo(so_t *self, int id) {
 }
 
 static void so_bloqueia_processo(so_t *self, proc_bloqueio_t motivo) {
-    processo_bloqueia(self->proc_atual, motivo);
+    if (motivo == PROC_BLOQ_DISCO) {
+        processo_bloqueia_disco(self->proc_atual, self->t_disco);
+    }
+    else {
+        processo_bloqueia(self->proc_atual, motivo);
+    }
     escalonador_remove_processo(self->esc, 0);
     console_printf("Processo %d bloqueado", processo_pega_id(self->proc_atual));
 }
@@ -283,7 +292,7 @@ static void so_imprime_metricas(so_t *self) {
 
 static void so_imprime_metricas_arquivo(so_t *self) {
     char nome[100];
-    sprintf(nome, "../Metricas/log_%d.txt", TAM_PAGINA);
+    sprintf(nome, "../Metricas/log_%d_%d.txt", MEM_TAM, TAM_PAGINA);
     FILE *log = fopen(nome, "w");
     fprintf(log, "Tempo execução: %d\n", self->metricas.t_exec);
     fprintf(log, "Tempo ocioso:   %d\n", self->metricas.t_ocioso);
@@ -303,6 +312,10 @@ static void so_imprime_metricas_arquivo(so_t *self) {
         for (int i = 0; i < N_PROC_ESTADO; i++) {
             fprintf(log, "Vezes em %d: %d\n", i, metricas.estado_vezes[i]);
             fprintf(log, "Tempo em %d: %d\n", i, metricas.estado_tempo[i]);
+        }
+        for (int i = 0; i < N_PROC_BLOQUEIO; i++) {
+            fprintf(log, "Vezes bloqueado por %d: %d\n", i, metricas.bloqueio_vezes[i]);
+            fprintf(log, "Tempo bloqueado por %d: %d\n", i, metricas.bloqueio_tempo[i]);
         }
     }
 }
@@ -364,7 +377,50 @@ static int so_trata_bloq_saida(so_t *self, processo_t *p) {
     return 1;
 }
 
+static int so_trata_bloq_disco(so_t *self, processo_t *p) {
+  processo_decrementa_t_disco(p);
+  self->t_disco--;
+  console_printf("TEMPO: %d", processo_pega_t_disco(p));
+  if (processo_pega_t_disco(p) <= 0) {
+      console_printf("DESBLOQUEEI PROCESSO DISCO");
+      so_desbloqueia_processo(self, p);
+      return 1;
+  }
+  return 0;
+}
+
 // TRATAMENTO DE PAGE FAULT {{{1
+static int so_move_disco_mem(so_t *self, int end_disco_ini, int end_mem_ini) {
+    int dado;
+    for (int i = 0; i < TAM_PAGINA; i++) {
+        if (mem_le(self->disco, end_disco_ini + i, &dado) != ERR_OK) {
+            console_printf("Erro na leitura do disco");
+            return -1;
+        }
+        if (mem_escreve(self->mem, end_mem_ini + i, dado) != ERR_OK) {
+            console_printf("Erro na escrita na memória");
+            return -1;
+        }
+        console_printf("Lendo de D-%d e escrevendo em M-%d", end_disco_ini + i, end_mem_ini + i);
+    }
+    return 0;
+}
+
+static int so_move_mem_disco(so_t *self, int end_mem_ini, int end_disco_ini) {
+  int dado;
+    for (int i = 0; i < TAM_PAGINA; i++) {
+      if (mem_le(self->mem, end_mem_ini + i, &dado) != ERR_OK) {
+        console_printf("Erro na leitura da memória");
+        return -1;
+      }
+      if (mem_escreve(self->disco, end_disco_ini + i, dado) != ERR_OK) {
+        console_printf("Erro na escrita no disco");
+        return -1;
+      }
+    }
+  return 0;
+}
+
 static int so_escolhe_pagina_pra_liberar(so_t *self) {
     while(1) {
         int pid = mem_quadros_pega_dono(self->quadros, -1);
@@ -400,17 +456,7 @@ static int so_libera_pagina(so_t *self) {
         int pag_disco = processo_pega_pagina_disco(p) + pagina;
         int end_disco_ini = pag_disco * TAM_PAGINA;
         int end_mem_ini = quadro_livre * TAM_PAGINA;
-        int dado;
-        for (int i = 0; i < TAM_PAGINA; i++) {
-            if (mem_le(self->mem, end_mem_ini + i, &dado) != ERR_OK) {
-                console_printf("Erro na leitura da memória");
-                return -1;
-            }
-            if (mem_escreve(self->disco, end_disco_ini + i, dado) != ERR_OK) {
-                console_printf("Erro na escrita no disco");
-                return -1;
-            }
-        }
+        so_move_mem_disco(self, end_mem_ini, end_disco_ini);
     }
     tabpag_invalida_pagina(tab, pagina);
     console_printf("Liberado pg %d do proc %d", pagina, pid);
@@ -422,29 +468,21 @@ static void so_trata_pag_ausente(so_t *self, int comp) {
     int pag_disco = processo_pega_pagina_disco(self->proc_atual) + comp/TAM_PAGINA;
     int end_disco_ini = pag_disco * TAM_PAGINA;
     console_printf("END_DISCO = %d", end_disco_ini);
-    int dado;
     int quadro_livre = mem_quadros_tem_livre(self->quadros);
     if (quadro_livre == -1) {
         quadro_livre = so_libera_pagina(self);
     }
     console_printf("QUADRO LIVRE: %d", quadro_livre);
     int end_mem_ini = quadro_livre * TAM_PAGINA;
-    for (int i = 0; i < TAM_PAGINA; i++) {
-        if (mem_le(self->disco, end_disco_ini + i, &dado) != ERR_OK) {
-            console_printf("Erro na leitura do disco");
-            return;
-        }
-        if (mem_escreve(self->mem, end_mem_ini + i, dado) != ERR_OK) {
-            console_printf("Erro na escrita na memória");
-            return;
-        }
-        console_printf("Lendo de D-%d e escrevendo em M-%d", end_disco_ini + i, end_mem_ini + i);
-    }
+    so_move_disco_mem(self, end_disco_ini, end_mem_ini);
     tabpag_define_quadro(processo_pega_tabpag(self->proc_atual), comp / TAM_PAGINA, quadro_livre);
     mem_quadros_muda_estado(self->quadros, quadro_livre, 0, processo_pega_id(self->proc_atual), comp / TAM_PAGINA);
     console_printf("Página %d nos endereços %d-%d", comp/TAM_PAGINA, quadro_livre * TAM_PAGINA, (quadro_livre + 1) * TAM_PAGINA - 1);
     processo_atualiza_n_pag_ausente(self->proc_atual);
     self->metricas.n_pag_ausente++;
+    self->t_disco += TEMPO_DISCO;
+    so_bloqueia_processo(self, PROC_BLOQ_DISCO);
+    console_printf("BLOQUEIO DISCO");
 }
 
 // TRATAMENTO DE INTERRUPÇÃO {{{1
@@ -532,6 +570,8 @@ static void so_trata_pendencias(so_t *self)
                 case PROC_BLOQ_SAIDA:
                 so_trata_bloq_saida(self, p);
                 break;
+                case PROC_BLOQ_DISCO:
+                so_trata_bloq_disco(self, p);
                 default:
                 break;
             }
@@ -818,6 +858,7 @@ static void so_chamada_cria_proc(so_t *self)
     bool copia_str = so_copia_str_do_processo(self, 100, nome, ender_proc, processo);
     console_printf("%llu", p2);
     if (copia_str) {
+      console_printf("Chegou até aqui");
       int ender_carga = so_carrega_programa(self, processo, nome);
       // o endereço de carga é endereço virtual, deve ser 0
       if (ender_carga == 0) {
@@ -977,21 +1018,26 @@ static bool so_copia_str_do_processo(so_t *self, int tam, char str[tam],
     err_t erro_mmu = mmu_le(self->mmu, end_virt + indice_str, &caractere, usuario);
     if (erro_mmu != ERR_OK) {
         if (erro_mmu == ERR_PAG_AUSENTE) {
+            console_printf("ERRO: PAGINA AUSENTE");
             so_trata_pag_ausente(self, end_virt + indice_str);
             indice_str--;
         }
         else {
-            return false;
+          console_printf("ERRO: %d", erro_mmu);
+          return false;
         }
     }
     else if (caractere < 0 || caractere > 255) {
+      console_printf("ERRO: CARACTER INVALIDO");
       return false;
     }
+    
     str[indice_str] = caractere;
     if (caractere == 0) {
       return true;
     }
   }
+  console_printf("ERRO: ESTOUROU TAMANHO");
   return false;
 }
 

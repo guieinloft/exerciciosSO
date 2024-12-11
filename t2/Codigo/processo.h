@@ -17,6 +17,7 @@ typedef enum {
     PROC_BLOQ_ENTRADA,
     PROC_BLOQ_SAIDA,
     PROC_BLOQ_ESPERA,
+    PROC_BLOQ_DISCO,
     N_PROC_BLOQUEIO
 } proc_bloqueio_t;
 
@@ -28,6 +29,9 @@ typedef struct proc_metricas_t {
 
     int estado_vezes[N_PROC_ESTADO];
     int estado_tempo[N_PROC_ESTADO];
+
+    int bloqueio_vezes[N_PROC_BLOQUEIO];
+    int bloqueio_tempo[N_PROC_BLOQUEIO];
 } proc_metricas_t;
 
 // PROCESSOS
@@ -39,6 +43,9 @@ proc_estado_t processo_pega_estado(processo_t *self);
 
 void processo_bloqueia(processo_t *self, proc_bloqueio_t motivo);
 proc_bloqueio_t processo_pega_bloq_motivo(processo_t *self);
+void processo_bloqueia_disco(processo_t *self, int t_disco);
+int processo_pega_t_disco(processo_t *self);
+void processo_decrementa_t_disco(processo_t *self);
 
 void processo_salva_reg_pc(processo_t *self, int pc);
 void processo_salva_reg_a(processo_t *self, int a);
