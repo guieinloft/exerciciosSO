@@ -46,7 +46,7 @@
 #define MAX_QUANTUM 5
 
 #define ESC_TIPO ESC_PRIORIDADE
-#define MEM_Q_TIPO MEM_Q_FIFO
+#define MEM_Q_TIPO MEM_Q_SC
 
 #define TEMPO_DISCO 10
 
